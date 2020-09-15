@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://reverent-dubinsky-a7f8b9.netlify.app"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 author = "Matheus Almeida"
