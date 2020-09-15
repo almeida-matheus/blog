@@ -1,0 +1,112 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+author = "Matheus Almeida"
+title = "Matheus Almeida"
+theme = "hugo-vitae"
+paginate = 10
+enableRobotsTXT = true
+
+copyright = "Criado por [Matheus](https://almeida-matheus.github.io) ©"
+
+pygmentsstyle = "colorful"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+googleAnalytics = ""
+
+[taxonomies]
+	tag = "tags"
+	series = "series"
+
+[params]
+	# Use homepage.md instead of a list of posts
+	homepage = false
+
+	# Add meta keywords in head part (Site Keywords or Tags of Page)
+	keywords = ["Matheus Almeida Costa","Matheus Almeida","blog matheus almeida","site matheus almeida"]
+
+	# Add meta description in head part
+	description = "Matheus Almeida Costa"
+
+	# Add pagetitle to homepage <title> tag
+	pagetitle = "Tecnologia da Informacao"
+
+	# Add a subtitle to your website
+	subtitle = "Nesse blog eu compartilho meus conhecimentos"
+
+	# Activate to show authors on pages if available
+	#listAuthor = true
+
+	# Add math typesetting with KaTeX (Global with this Param)
+	math = true
+
+	# Optional 80x80 avatar image.
+	avatar = "/img/logo_black.png"
+
+	# Optional favicons for website
+	favicon = true
+
+	# Add list of sections that should show up on the homepage
+        mainSections = ["post"]
+
+	# Add list of Sections/Types that should no be considered by RSS
+	#nofeedSections = ["post"]
+
+	# Deactivate Taxonomies for specific page types
+	#disableTaxoTypes = [""]
+
+	# Custom CSS applied to default styles. (Path could be "static/css/")
+	customCSS = "css/custom.css"
+
+# Comments
+[params.comments]
+# Enable Comments with "true"
+enabled = true
+
+# Comment provider:
+#   disqus (https://disqus.com)
+#   commento (https://commento.io)
+engine = "disqus"
+
+# Content types to disable comments on.
+#disableOnTypes = ["page"]
+
+[params.comments.disqus]
+shortname = "almeida-matheus" # Paste the shortname from your Disqus dashboard.
+
+[params.comments.commento]
+#host = "" # Paste the domain of you commento.io system
+
+# Navigation
+[[menu.main]]
+name = "Posts"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 2
+
+# Social Menu
+
+[[params.social]]
+name = "Site"
+icon = "fas fa-user-circle"
+url = "https://almeida-matheus.github.io"
+
+[[params.social]]
+name = "LinkedIn"
+icon = "fab fa-linkedin"
+url = "https://github.com/almeida-matheus"
+
+[[params.social]]
+name = "Github"
+icon = "fab fa-github"
+url = "https://github.com/dataCobra/hugo-vitae"
+
+[[params.social]]
+name = "Email"
+icon = "fas fa-envelope"
+cmd = "mailto:almeidamatheus.m@gmail.com"
