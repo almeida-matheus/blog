@@ -1,4 +1,4 @@
-baseURL = "https://reverent-dubinsky-a7f8b9.netlify.app"
+baseURL = "almeidamatheus.netlify.app"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 author = "Matheus Almeida"
@@ -99,12 +99,12 @@ url = "https://almeida-matheus.github.io"
 [[params.social]]
 name = "LinkedIn"
 icon = "fab fa-linkedin"
-url = "https://github.com/almeida-matheus"
+url = "https://www.linkedin.com/in/matheus-almeida-costa/"
 
 [[params.social]]
 name = "Github"
 icon = "fab fa-github"
-url = "https://github.com/dataCobra/hugo-vitae"
+url = "https://github.com/almeida-matheus"
 
 [[params.social]]
 name = "Email"
