@@ -42,10 +42,11 @@
     font-family: "Roboto Regular", serif;
     font-weight: 400;
     font-size: 18px;
-    color: #333;
+    color: #eee;
     line-height: 1.6rem;
     max-width: 800px;
     margin: 20px auto 0 auto;
+    background-color: #212121;
   }
   
   header {
@@ -67,13 +68,13 @@
     text-align: right;
     font-size: 0.75em;
     color: #999;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #212121;
     margin-top: 10px;
     padding: 5px 0;
   }
   
   footer a {
-    color: #555;
+    color: #eee;
   }
   
   footer a:hover {
@@ -81,7 +82,7 @@
   }
   
   html,button,input,select,textarea {
-    color: #333;
+    color: #eee;
   }
   
   b, strong {
@@ -101,7 +102,7 @@
       display: block;
       height: 1px;
       border: 0;
-      border-top: 1px solid #ccc;
+      border-top: 1px solid #212121;
       margin: 1rem 0;
       padding: 0;
   }
@@ -148,7 +149,7 @@
   }
   
   h1, h2, h3, h4, h5, h6 {
-      color: #333;
+      color: #eee;
       font-weight: 500;
       line-height: 1.3em;
       margin: 30px 0 20px 0;
@@ -194,29 +195,29 @@
   
   table th,
   table td {
-    border-bottom: 1px solid #dee2e6;
+    border-bottom: 1px solid #212121;
     padding: 0.75rem;
     vertical-align: top;
   }
   
   table thead th {
-    border-bottom: 2px solid #dee2e6;
+    border-bottom: 2px solid #212121;
     vertical-align: bottom;
   }
   
   table tbody + tbody {
-    border-top: 2px solid #dee2e6;
+    border-top: 2px solid #212121;
   }
   
   table tbody tr:nth-of-type(even) {
     background-color: #808080;
-    color: #fff;
+    color: #212121;
   }
   
   table th {
-    background-color: #333;
-    border-color: #333;
-    color: #fff;
+    background-color: #eee;
+    border-color: #eee;
+    color: #212121;
   }
   
   #avatar {
@@ -236,7 +237,7 @@
   }
   
   #title a {
-    color: #333;
+    color: #eee;
   }
   
   #title a:hover {
@@ -268,8 +269,8 @@
   }
   
   #mainmenu nav {
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
+    border-top: 1px solid rgb(122, 122, 122);
+    border-bottom: 1px solid rgb(122, 122, 122);
     padding: 5px 0 5px 0;
   }
   
@@ -284,7 +285,7 @@
   }
   
   .icons {
-    color: #333;
+    color: #eee;
     font-size: 1.4rem;
   }
   
@@ -343,7 +344,7 @@
       padding: 2px 4px;
       border-radius: 4px;
       margin-left: 6px;
-      background-color: #f9f2f4;
+      background-color: #212121;
   }
   
   .post .tags a {
@@ -358,7 +359,7 @@
   }
   
   .post .tags a:hover {
-      border: 1px solid #FFFFFF;
+      border: 1px solid #212121;
   }
   
   .post ul li {
@@ -461,7 +462,7 @@
   
   .highlight {
     background: 0 0;
-    background-color: #FAFAFA;
+    background-color: #212121;
   }
   
   pre, textarea {
@@ -487,9 +488,9 @@
   
   p code {
     border-radius: 5px;
-    border-right: 4px solid #F1F1F1;
-    border-left: 4px solid #F1F1F1;
-    background: #F1F1F1;
+    border-right: 4px solid #212121;
+    border-left: 4px solid #212121;
+    background: #212121;
   }
   
   @media screen and (max-width: 800px) {

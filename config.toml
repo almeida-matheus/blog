@@ -42,7 +42,7 @@ googleAnalytics = ""
 	math = true
 
 	# Optional 80x80 avatar image.
-	avatar = "/img/logo_black.png"
+	avatar = "/img/logo_white.png"
 
 	# Optional favicons for website
 	favicon = true
