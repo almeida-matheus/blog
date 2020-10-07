@@ -78,7 +78,7 @@
   }
   
   footer a:hover {
-    color: #008200
+    color: #00cc00
   }
   
   html,button,input,select,textarea {
@@ -90,7 +90,7 @@
   }
   
   a {
-    color: #008200;
+    color: #00cc00;
     text-decoration: none;
     word-break: break-word;
   }
@@ -135,7 +135,7 @@
   blockquote {
     margin-left: 1rem;
     font-size: 1.2rem;
-    border-left: 2px solid #008200;
+    border-left: 2px solid #00cc00;
     padding-left: 20px;
   }
   
@@ -339,7 +339,7 @@
   }
   
   .post .draft-label {
-      color: #008200;
+      color: #00cc00;
       text-decoration: none;
       padding: 2px 4px;
       border-radius: 4px;
@@ -349,7 +349,7 @@
   
   .post .tags a {
       display: inline-block;
-      border: 1px solid #008200;
+      border: 1px solid #00cc00;
       border-radius: 3px;
       padding: 0px 6px;
       line-height: 20px;
@@ -459,6 +459,10 @@
     margin-top: 0;
     padding: 20px;
   }
+  /*font black in box code*/
+  .highlight pre code{
+    color: black;
+  }
   
   .highlight {
     background: 0 0;
@@ -493,6 +497,10 @@
     background: #212121;
   }
   
+  .fa-linkedin {
+    color: whitesmoke
+  }
+
   @media screen and (max-width: 800px) {
     body {
       margin: 0 auto;
@@ -518,7 +526,7 @@
     blockquote {
       margin-left: 1rem;
       font-size: 1rem;
-      border-left: 2px solid #008200;
+      border-left: 2px solid #00cc00;
       padding-left: 20px;
     }
   

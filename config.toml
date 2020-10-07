@@ -17,7 +17,11 @@ googleAnalytics = ""
 
 [taxonomies]
 	tag = "tags"
+	category = "categories"
 	series = "series"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
 
 [params]
 	# Use homepage.md instead of a list of posts
@@ -85,9 +89,14 @@ url = "/"
 weight = 1
 
 [[menu.main]]
+name = "Search"
+url = "/search"
+weight = 2
+
+[[menu.main]]
 name = "Tags"
 url = "/tags"
-weight = 2
+weight = 3
 
 # Social Menu
 
@@ -97,16 +106,6 @@ icon = "fas fa-user-circle"
 url = "https://almeida-matheus.github.io"
 
 [[params.social]]
-name = "LinkedIn"
-icon = "fab fa-linkedin"
-url = "https://www.linkedin.com/in/matheus-almeida-costa/"
-
-[[params.social]]
 name = "Github"
 icon = "fab fa-github"
 url = "https://github.com/almeida-matheus"
-
-[[params.social]]
-name = "Email"
-icon = "fas fa-envelope"
-cmd = "mailto:almeidamatheus.m@gmail.com"
