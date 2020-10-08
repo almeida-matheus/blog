@@ -11,11 +11,11 @@ tags = [
 
 ## Sobre o Hugo
 
-O framework [hugo](https://gohugo.io/) é um gerador de sites estáticos, desenvolvido utilizando a linguagem Go, sua principal vantagem é o desempenho comparado aos seus concorrentes como wordpress, jekyll, etc.
+O framework [hugo](https://gohugo.io/) é um gerador de sites estáticos, desenvolvido na linguagem Go, sua principal vantagem é o desempenho comparado aos seus concorrentes como wordpress, jekyll, etc.
 
 ---
 
-## 1º Instalar o hugo
+## 1º passo - Instalar o hugo
 
 ```
 sudo apt-get install hugo
@@ -29,13 +29,18 @@ hugo new site nome_site
 
 vá para a pasta criada: **cd nome_site**
 
-## Estrutura do hugo
+## Extra- Estrutura do hugo
 
 Digitando **ls** ou **tree** você poderá observar a estrutura da pasta criada
 
-- a pasta archetypes contém default.md, que é basicamente o cabeçalho de todas as páginas, nesse arquivo temos como exemplo o titulo, a data e rascunho (draft)
+- pasta archetypes contém default.md: que é basicamente o cabeçalho de todas as páginas, nesse arquivo temos como exemplo o titulo, a data e rascunho (draft)
+- arquivo config.toml: é nele que voce modifica a estrura básica do site, como o titulo, menus de navegação, url do site, etc
+- pasta content: é onde tem o conteudo do site, por exemplo, onde fica a pasta do site, a página sobre, etc
+- pasta layout: é onde fica os arquivos HTML, responsavel pela estrutura do site
+- pasta static: é onde fica os arquivos reponsáveis pela estilização e ações por meios de scripts, arquivos de CSS e javascript respectivamente 
+- pasta themes: é nessa pasta onde fica o tema adicionado
 
-## Preparar o ambiente
+## 3º passo - Preparar o ambiente
 
 Como iremos hospedar o projeto na netlify devemos adicionar esse arquivo
 
@@ -82,9 +87,9 @@ Devemos mudar o nome do dominio do site na Netlify, o caminho é esse abaixo:
 
 Domain settings > Domain management > Options > Edit site name
 
-## 3º passo - adicionar um tema
+## 4º passo - adicionar um tema
 
-Primeiramente escolha um tema de sua preferência: [https://themes.gohugo.io/](https://themes.gohugo.io/)
+Primeiramente escolha um tema de sua preferência [clicando aqui](https://themes.gohugo.io/)
 
 - Clique em Download
 - No GitHub clique em Code e copie a url Https
@@ -105,7 +110,7 @@ Iremos copiar tudo que está na pasta exampleSite dentro do tema para a raiz do 
 cp -r themes/xxxx/exampleSite/* .
 ```
 
-## 4º passo - customizar o site
+## 5º passo - customizar o site
 
 ### Configurar o config.toml ou config.yaml
 
@@ -129,21 +134,21 @@ Arquivo a ser modificado: /themes/xxxx/static/css/style.css
 
 Arquivo recriado com as suas alterações em: /static/css/style.css
 
-## 5º passo - adicionar uma página ou post
+## 6º passo - adicionar uma página ou post
 
 ```
-hugo new posts/post-exemplo.md
+hugo new post/post-exemplo.md
 ```
 
 O caminho da postagem irá estar em /content/post/post-exemplo.md
 
-Agora você pode editar o post utilizando a linguagem de marcação **Markdown**, nesse exemplo eu utilizei o Visual Studio Code para editar
+Agora você pode editar o post utilizando a linguagem de marcação [Markdown](https://www.markdownguide.org/basic-syntax/, nesse exemplo eu utilizei o Visual Studio Code para editar
 
 ```
 code /content/post/post-exemplo.md
 ```
 
-## 6º passo - rodar o projeto
+## 7º passo - rodar o projeto
 
 Rode o projeto na sua máquina local e cheque se está tudo certo como deveria antes de hospedar na nuvem
 
@@ -153,15 +158,14 @@ hugo server -D
 
 -D é para mostrar os posts que estão com o rascunho ativado (draft: true)
 
-## 7º passo - atualizar o projeto
+## 8º passo - atualizar o projeto
 
 ```
 git status
 git add .
 git commit -m " config blog added"
 git push origin master 
-
 ```
 
-Feito isso é só clicar no link do seu site hospedado na netlify e se site estará funcionando perfeitamente
+Feito isso é só clicar no link do seu site hospedado na netlify e seu site estará funcionando perfeitamente
 
