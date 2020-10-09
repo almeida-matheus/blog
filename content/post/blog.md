@@ -29,7 +29,7 @@ hugo new site nome_site
 
 vá para a pasta criada: **cd nome_site**
 
-## Extra- Estrutura do hugo
+## Extra - Estrutura do hugo
 
 Digitando **ls** ou **tree** você poderá observar a estrutura da pasta criada
 
@@ -42,7 +42,7 @@ Digitando **ls** ou **tree** você poderá observar a estrutura da pasta criada
 
 ## 3º passo - Preparar o ambiente
 
-Como iremos hospedar o projeto na netlify devemos adicionar esse arquivo
+Como iremos hospedar o site na netlify, então temos que adicionar o arquivo netlify.toml no projeto, para isso devemos:
 
 Criar o arquivo netlify.toml
 
@@ -142,7 +142,7 @@ hugo new post/post-exemplo.md
 
 O caminho da postagem irá estar em /content/post/post-exemplo.md
 
-Agora você pode editar o post utilizando a linguagem de marcação [Markdown](https://www.markdownguide.org/basic-syntax/, nesse exemplo eu utilizei o Visual Studio Code para editar
+Agora você pode editar o post utilizando a linguagem de marcação [Markdown](https://www.markdownguide.org/basic-syntax/) (nesse exemplo eu utilizei o Visual Studio Code para editar)
 
 ```
 code /content/post/post-exemplo.md

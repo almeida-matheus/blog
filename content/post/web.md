@@ -3,7 +3,7 @@ title = "A base da WEB"
 date = 2020-10-07T20:41:47-03:00
 draft = false
 author = "Matheus Almeida Costa"
-description = "Entenda os protocolos da web e suas requições"
+description = "Entenda os protocolos da web e suas requições na teoria e na prática"
 tags = [
     "redes",
 ]
@@ -72,7 +72,7 @@ A partir de então os dados compartilhados entre o navegador e o servidor da web
 
 Lembra quando eu citei a seguinte etapa do HTTP request / response? "O servidor web recebe a requisição e se a página existir o servidor executa a aplicação para processar a requisição e retorna o código 200". Pois é, isso é só um cenário de vários possíveis, porque por exemplo, se o cliente fizer requisição de uma página que não existe no site, o servidor retornara uma mensagem de erro com o código 404 para o cliente (navegador). 
 
-Confira abaixo os códigos de status das respostas HTTP
+Confira abaixo os códigos de status das respostas **HTTP**
 
 - Respostas de informação (100 - 199)
 - Respostas de sucesso (200 - 299)
@@ -94,20 +94,46 @@ O protocolo HTTP define um conjunto de métodos de requisição responsáveis po
 - **CONNECT**: Converte a requisição de conexão para um túnel TCP/IP transparente, usualmente para facilitar comunicação criptografada com SSL (HTTPS) através de um proxy HTTP não criptografado.
 - **PATCH**: Usado para aplicar modificações parciais a um recurso.
 
-Os principais métodos são GET e POST.
+Os principais métodos são **GET** e **POST**.
 
-As requisições do tipo GET são recomendadas para obter dados de um determinado recurso. Como em um formulário de busca ou em uma listagem de todos os produtos cadastrados.
+As requisições do tipo **GET** são recomendadas para obter dados de um determinado recurso. Como em um formulário de busca ou em uma listagem de todos os produtos cadastrados.
 
-Já as requisições POST são mais utilizadas para para enviar informações para serem processadas, como por exemplo, criar algum recurso, como um produto, ou um cliente.
+Já as requisições **POST** são mais utilizadas para para enviar informações para serem processadas, como por exemplo, criar algum recurso, como um produto, ou um cliente.
 
-Sendo que o método GET que quando utilizado, os parâmetros são passados no cabeçalho da requisição e por isso podem ser vistos pela URL. Já o método POST ao contrário do GET, envia os parâmetros no corpo da requisição HTTP, ou seja, escodem eles da URL.
+Sendo que o método **GET** que quando utilizado, os parâmetros são passados no cabeçalho da requisição e por isso podem ser vistos pela URL. Já o método **POST** ao contrário do **GET**, envia os parâmetros no corpo da requisição **HTTP**, ou seja, escodem eles da URL.
 
-Vale ressaltar que você pode checar tudo isso através da ferramenta de desenvolvedor dos navegadores, para ativar geralmente é com a tecla f12 ou ctrl + shift + i
+Vale ressaltar que você pode checar tudo isso através da ferramenta de desenvolvedor dos navegadores, para ativar geralmente é com a tecla f12 ou ctrl + shift + i.
 
-Confira a imagem abaixo um exemplo de requisição HTTP
+Confira a imagem abaixo um exemplo de requisição **HTTP**.
 
 ![htttp-headers-body](/images/htttp-headers-body.png)
 
+# Interceptando requisições HTTP na prática
 
+## Ferramenta
+
+Irei utilizar o [Wireshark](https://www.wireshark.org/), que é uma ferramenta utilizada para analisar os tráfegos da rede, sendo categorizado como um sniffer, já que através dele podemos capturar todos os pacotes que estão circulando na rede.
+
+## Alvo
+
+O alvo desse exemplo é o meu antigo colégio, mais precisamente a página de login do sistemas de notas, perceba que a URL do site é precedido pelo protocolo **HTTP**.
+
+![login-coltec](/images/login-coltec.png)
+
+## Utilizando a ferramenta
+
+Irei deixar o captura de dados ativada no Wireshark, e nesse meio tempo irei clicar no botão enviar do site para enviar o formulário contendo o login e senha para o servidor.
+
+Devemos levar em consideração que a requisição é **HTTP** e o método utilizado para enviar o login e senha para o servidor é o **POST.** 
+
+Então devemos filtrar os dados no Wireshark dessa forma: http.request.method=="POST"
+
+![wireshark-coltec](/images/wireshark-coltec.png)
+
+Selecionando esse pacote e expandindo as informações do formulário HTML iremos achar o login e senha em formato de texto sem criptografia alguma.
+
+## Conclusão
+
+Considerando que a rede wireless desse colégio é pública, ou seja, os professores e os alunos ficam conectados na mesma rede, basta deixar o Wireshark capturando todos os pacotes de rede e quando algum professor fazer o login no sistemas de nota do colégio, no mesmo momento irá aparecer esse pacote e dentro dele poderíamos visualizar as credenciais utilizados  pelo professor para fazer login. Por isso que é tão importante ter um site com a URL precedida do **HTTPS**, por que se o site estivesse seguro nada disso seria possível porque todos os dados estariam criptografados, podendo ser descriptografado somente com uma chave particular, que nesse caso, só o servidor iria ter.
 
 
