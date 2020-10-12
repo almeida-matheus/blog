@@ -198,6 +198,7 @@
     border-bottom: 1px solid #212121;
     padding: 0.75rem;
     vertical-align: top;
+    text-align: center;
   }
   
   table thead th {
@@ -210,8 +211,15 @@
   }
   
   table tbody tr:nth-of-type(even) {
-    background-color: #808080;
+    background-color: #d8d8d8;
     color: #212121;
+    text-align: center;
+  }
+
+  table tbody tr:nth-of-type(odd) {
+    background-color: #a6a6a6;
+    color: #212121;
+    text-align: center;
   }
   
   table th {

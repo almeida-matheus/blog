@@ -18,10 +18,7 @@ A Rede Mundial de Computadores ou World Wide Web (www) trata da comunicação en
 
 # O que é HTTP e HTTPS?
 
-Hypertext Transfer Protocol e Hypertext Transfer Protocol Secure respectivamente, são protocolos de comunicação utilizados na transferência de dados entre o cliente e o servidor.
-
-# Para que serve na prática?
-
+Hypertext Transfer Protocol e Hypertext Transfer Protocol Secure são protocolos de comunicação utilizados na transferência de dados entre o cliente e o servidor.<br>
 Ao se conectar na URL do site na WEB é possível ver os conteúdos que existem nesse site, e isso é graças ao protocolo HTTP E HTTPS. Já que eles determinam como qualquer dado recebido ou enviado é transmitido.
 
 # Qual a diferença entre HTTP e HTTPS?
@@ -60,13 +57,17 @@ Vale ressaltar que quando você instala um certificado SSL a transmissão de dad
 - O cliente (navegador) recebe a resposta e exibe o conteúdo da aplicação requisitada caso o código 200 de sucesso seja retornado
 
 
-Observação: se for HTTPS, antes de passar a segunda etapa, irá ocorrer as seguintes etapas:
+Observação: se for **HTTPS**, antes de passar para a segunda etapa, irá ocorrer as seguintes etapas:
 
-- Considerando que o site é protegido por SSL, o servidor da web enviará uma cópia do certificado SSL do site para o navegador.
-- O navegador verifica se o certificado é original com o emissor do certificado. Precisa ser uma autoridade de certificação confiável
-- Se estiver OK, o navegador envia uma mensagem ao servidor da web e troca as informações de criptografia necessárias: uma chave (PKI) e um código de hash
+- Considerando que o site é protegido por SSL/TLS, ocorre o SSL/TLS handshake para estabelecer uma conexão encriptada entre dois pontos usando SSL (semelhante ao 3-way TCP handshake).
+- Com a conexão estabelecida o cliente envia para o servidor um "Client Hello" contendo as versões de TLS suportadas, as cipher suites suportadas e uma chave randômica.
+- Então o servidor responde com "Server Hello" enviando uma cópia do certificado dele mesmo, o protocolo escolhido (sempre o protocolo mais atualizado), o cipher escolhido e outra chave randômica.
+- Daí o navegador verifica se o certificado é original com o emissor do certificado. Precisa ser uma autoridade de certificação confiável caso contrário pode ocorrer aqueles erros de validação em certificados self-signed
+- Se estiver OK, o navegador envia uma mensagem ao servidor da web e troca as informações de criptografia necessárias: chaves (PKI) e código de hash
 
 A partir de então os dados compartilhados entre o navegador e o servidor da web são criptografados.
+
+![tls-ssl-handshake](/images/tls-ssl-handshake.png)
 
 ## Códigos de resposta HTTP
 
@@ -77,7 +78,7 @@ Confira abaixo os códigos de status das respostas **HTTP**
 - Respostas de informação (100 - 199)
 - Respostas de sucesso (200 - 299)
 - Redirecionamentos (300 - 399)
-- Erros do cliente (300 - 399)
+- Erros do cliente (400 - 499)
 - Erros do servidor (500 - 599)
 
 # Métodos de requisição HTTP
