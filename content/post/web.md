@@ -99,7 +99,7 @@ Os principais métodos são **GET** e **POST**.
 
 As requisições do tipo **GET** são recomendadas para obter dados de um determinado recurso. Como em um formulário de busca ou em uma listagem de todos os produtos cadastrados.
 
-Já as requisições **POST** são mais utilizadas para para enviar informações para serem processadas, como por exemplo, criar algum recurso, como um produto, ou um cliente.
+Já as requisições **POST** são mais utilizadas para enviar informações para serem processadas, como por exemplo, criar algum recurso, como um produto, ou um cliente.
 
 Sendo que o método **GET** que quando utilizado, os parâmetros são passados no cabeçalho da requisição e por isso podem ser vistos pela URL. Já o método **POST** ao contrário do **GET**, envia os parâmetros no corpo da requisição **HTTP**, ou seja, escodem eles da URL.
 

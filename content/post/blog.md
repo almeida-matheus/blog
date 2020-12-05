@@ -71,10 +71,10 @@ Agora devemos colocar o site no GitHub, primeiramente é preciso criar um reposi
 
 ```
 git init
+git remote add origin https://github.com/xxxx/xxxx.git
 git status
 git add .
 git commit -m "first commit"
-git remote add origin https://github.com/xxxx/xxxx.git
 git push origin master 
 ```
 
@@ -98,13 +98,11 @@ O método git clone para instalar temas não é compatível com o Netlify. Se vo
 
 Uma abordagem melhor é instalar um tema como um submódulo git. Então iremos adicionar o seguinte comando para o tema ir na pasta themes
 
-git submodule add <url> <caminho>
-
 ```
 git submodule add https://github.com/xxxx/hugo-theme-xxxx themes/xxxx
 ```
 
-Iremos copiar tudo que está na pasta exampleSite dentro do tema para a raiz do site que criamos
+Iremos copiar tudo que está na pasta exampleSite dentro do tema para a raiz do site que criamos (o comando abaixo é para ser utilizado na raiz do site)
 
 ```
 cp -r themes/xxxx/exampleSite/* .
