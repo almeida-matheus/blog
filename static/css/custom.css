@@ -472,18 +472,18 @@
     margin-bottom: 0;
     margin-top: 0;
     padding: 20px;
-    background-color: #C8C8C8 !important;
+    background-color: #383838 !important;
   }
   /*font black in box code*/
   .highlight pre code{
-    color: black;
-    background-color: #C8C8C8 !important;
+    color: whitesmoke;
+    background-color: #383838 !important;
 
   }
   
   .highlight {
     background: 0 0;
-    background-color: #C8C8C8 !important;
+    background-color: #383838 !important;
   }
   
   pre, textarea {

@@ -167,3 +167,11 @@ git push origin master
 
 Feito isso é só clicar no link do seu site hospedado na netlify e seu site estará funcionando perfeitamente
 
+
+Confira o tutorial em forma de vídeo:
+
+
+{{< youtube TXGwLp1tqOE >}}
+
+<br>
+
