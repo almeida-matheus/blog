@@ -200,28 +200,32 @@
     border-bottom: 1px solid #212121;
     padding: 0.75rem;
     vertical-align: top;
-    text-align: center;
+    /* text-align: center; */
+    /* text-align: left; */
   }
   
   table thead th {
-    border-bottom: 2px solid #212121;
+    /* border-bottom: 2px solid #212121; */
     vertical-align: bottom;
   }
   
   table tbody + tbody {
-    border-top: 2px solid #212121;
+    /* border-top: 2px solid #212121; */
   }
   
   table tbody tr:nth-of-type(even) {
     background-color: #d8d8d8;
     color: #212121;
-    text-align: center;
+    /* text-align: center; */
+    /* text-align: left; */
+
   }
 
   table tbody tr:nth-of-type(odd) {
     background-color: #a6a6a6;
     color: #212121;
-    text-align: center;
+    /* text-align: center; */
+    /* text-align: left; */
   }
   
   table th {

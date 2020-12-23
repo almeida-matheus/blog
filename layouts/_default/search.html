@@ -14,10 +14,10 @@
 form.search-box input {
   padding: 10px;
   font-size: 17px;
-  border: 1px solid grey;
+  border: 1px solid black;
   float: left;
   width: 80%;
-  background: #f1f1f1;
+  background: #e6e6e6;
   color: black;
 }
 
@@ -29,7 +29,7 @@ form.search-box button {
   background: #005e00;
   color: white;
   font-size: 17px;
-  border: 1px solid grey;
+  border: 1px solid black;
   border-left: none; /* Prevent double borders */
   cursor: pointer;
 }
@@ -48,7 +48,7 @@ form.search-box::after {
 <section class="resume-section p-3 p-lg-5 d-flex flex-column">
   <div class="my-auto" >
     <form class="search-box" action="{{ "search" | absURL }}">
-      <input id="search-query" name="s" placeholder="Search a word..."/>
+      <input id="search-query" name="s" placeholder="Pesquise por uma palavra chave"/>
       <button type="submit"><i class="fa fa-search"></i></button>
     </form>
     <div id="search-results">

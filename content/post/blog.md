@@ -4,7 +4,7 @@ date = 2020-10-06T18:18:11-03:00
 draft = false
 author = "Matheus Almeida Costa"
 description = "Entenda como criar um blog utilizando o framework Hugo"
-tags = [
+categoria = [
     "diversos",
 ]
 +++

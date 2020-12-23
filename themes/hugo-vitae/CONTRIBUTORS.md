@@ -10,3 +10,5 @@ collaboration of others.
 * [Christoph Petrausch](https://github.com/hikhvar)
 * [Mohamed Muhannad](https://github.com/muhannad0)
 * [Jon Besga](https://github.com/jonbesga)
+* [Mochammad Ihza Rizky Karim](https://github.com/ihzarizkyk)
+* [Bernardo Ayala](https://github.com/nardoyala)

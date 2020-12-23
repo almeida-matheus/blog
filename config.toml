@@ -7,7 +7,7 @@ theme = "hugo-vitae"
 paginate = 10
 enableRobotsTXT = true
 
-copyright = "Criado por [Matheus](https://almeida-matheus.github.io) ©"
+copyright = ""
 
 pygmentsstyle = "colorful"
 pygmentscodefences = true
@@ -17,7 +17,7 @@ googleAnalytics = ""
 
 [taxonomies]
 	tag = "tags"
-	category = "categories"
+	category = "categoria"
 	series = "series"
 
 [outputs]
@@ -84,28 +84,33 @@ shortname = "almeida-matheus" # Paste the shortname from your Disqus dashboard.
 
 # Navigation
 [[menu.main]]
-name = "Posts"
+name = "Postagens"
 url = "/"
 weight = 1
 
 [[menu.main]]
-name = "Search"
+name = "Pesquisa"
 url = "/search"
 weight = 2
 
 [[menu.main]]
-name = "Tags"
-url = "/tags"
+name = "Categorias"
+url = "/categoria"
 weight = 3
 
 # Social Menu
 
 [[params.social]]
 name = "Site"
-icon = "fas fa-user-circle"
-url = "https://almeida-matheus.github.io"
+icon = "fab fa-odnoklassniki-square fa-xs"
+url = "https://almeida-matheus.github.io/"
+
+[[params.social]]
+name = "Linkedin"
+icon = "fab fa-linkedin"
+url = "https://www.linkedin.com/in/matheus-almeida-costa/"
 
 [[params.social]]
 name = "Github"
-icon = "fab fa-github"
+icon = "fab fa-github-square"
 url = "https://github.com/almeida-matheus"

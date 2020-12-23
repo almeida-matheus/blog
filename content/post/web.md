@@ -1,10 +1,10 @@
 +++ 
 title = "A base da WEB"
-date = 2020-10-07T20:41:47-03:00
+date = 2020-10-08T20:41:47-03:00
 draft = false
 author = "Matheus Almeida Costa"
 description = "Entenda os protocolos da web e suas requições na teoria e na prática"
-tags = [
+categoria = [
     "redes",
 ]
 +++
@@ -34,7 +34,7 @@ Em poucas palavras, podemos dizer que ambos tem a mesma função, porém o HTTPS
 | Camada               | Aplicação | Transporte |
 | Certificado          | Não       | SSL/TLS    |
 | Criptografia         | Não       | Sim        |
-| Validação do domínio | Não       | Sim        |
+<!--| Validação do domínio | Não       | Sim        | -->
 
 # Porque o HTTPS é mais seguro?
 
