@@ -1,11 +1,11 @@
 +++ 
-title = "Como criar um blog utilizando o framework Hugo"
+title = "Como criar um blog utilizando o Hugo"
 date = 2020-10-06T18:18:11-03:00
 draft = false
 author = "Matheus Almeida Costa"
-description = "Entenda como criar um blog utilizando o framework Hugo"
+description = "Saiba como criar um blog utilizando o framework Hugo"
 categoria = [
-    "diversos",
+    "ferramentas",
 ]
 +++
 
@@ -21,7 +21,7 @@ O framework [hugo](https://gohugo.io/) é um gerador de sites estáticos, desenv
 sudo apt-get install hugo
 ```
 
-## 2º passo - criar um site
+## 2º passo - Criar um site
 
 ```
 hugo new site nome_site
@@ -87,12 +87,12 @@ Devemos mudar o nome do dominio do site na Netlify, o caminho é esse abaixo:
 
 Domain settings > Domain management > Options > Edit site name
 
-## 4º passo - adicionar um tema
+## 4º passo - Adicionar um tema
 
 Primeiramente escolha um tema de sua preferência [clicando aqui](https://themes.gohugo.io/)
 
 - Clique em Download
-- No GitHub clique em Code e copie a url Https
+- No GitHub clique em Code e copie a URL HTTPS
 
 O método git clone para instalar temas não é compatível com o Netlify. Se você fosse usar o clone do git, seria necessário remover recursivamente o subdiretório .git da pasta do tema e, portanto, impediria a compatibilidade com versões futuras do tema.
 
@@ -108,7 +108,7 @@ Iremos copiar tudo que está na pasta exampleSite dentro do tema para a raiz do 
 cp -r themes/xxxx/exampleSite/* .
 ```
 
-## 5º passo - customizar o site
+## 5º passo - Customizar o site
 
 ### Configurar o config.toml ou config.yaml
 
@@ -132,7 +132,7 @@ Arquivo a ser modificado: /themes/xxxx/static/css/style.css
 
 Arquivo recriado com as suas alterações em: /static/css/style.css
 
-## 6º passo - adicionar uma página ou post
+## 6º passo - Adicionar uma página ou post
 
 ```
 hugo new post/post-exemplo.md
@@ -146,7 +146,7 @@ Agora você pode editar o post utilizando a linguagem de marcação [Markdown](h
 code /content/post/post-exemplo.md
 ```
 
-## 7º passo - rodar o projeto
+## 7º passo - Rodar o projeto
 
 Rode o projeto na sua máquina local e cheque se está tudo certo como deveria antes de hospedar na nuvem
 
@@ -156,7 +156,7 @@ hugo server -D
 
 -D é para mostrar os posts que estão com o rascunho ativado (draft: true)
 
-## 8º passo - atualizar o projeto
+## 8º passo - Atualizar o projeto
 
 ```
 git status

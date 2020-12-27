@@ -3,29 +3,29 @@ title = "A base da WEB"
 date = 2020-10-08T20:41:47-03:00
 draft = false
 author = "Matheus Almeida Costa"
-description = "Entenda os protocolos da web e suas requições na teoria e na prática"
+description = "Entenda os protocolos da web e suas requições"
 categoria = [
     "redes",
 ]
 +++
 
-# Rede Mundial de Computadores
+## Rede Mundial de Computadores
 
 A Rede Mundial de Computadores ou World Wide Web (www) trata da comunicação entre clientes e servidores da internet.
 
 - Clientes geralmente são navegadores, mas podem ser qualquer tipo de programa ou dispositivo.
 - Servidores geralmente são computadores na nuvem onde está armazenado a aplicação (site)
 
-# O que é HTTP e HTTPS?
+## O que é HTTP e HTTPS?
 
 Hypertext Transfer Protocol e Hypertext Transfer Protocol Secure são protocolos de comunicação utilizados na transferência de dados entre o cliente e o servidor.<br>
 Ao se conectar na URL do site na WEB é possível ver os conteúdos que existem nesse site, e isso é graças ao protocolo HTTP E HTTPS. Já que eles determinam como qualquer dado recebido ou enviado é transmitido.
 
-# Qual a diferença entre HTTP e HTTPS?
+## Qual a diferença entre HTTP e HTTPS?
 
 Em poucas palavras, podemos dizer que ambos tem a mesma função, porém o HTTPS é uma versão do HTTP mais segura, não é atoa que o seu significado é Hypertext Transfer Protocol Secure.
 
-## Confira a tabela abaixo com as principais diferenças
+### Confira a tabela abaixo com as principais diferenças
 
 | Serviço              | HTTP      | HTTPS      |
 |----------------------|-----------|------------|
@@ -36,7 +36,7 @@ Em poucas palavras, podemos dizer que ambos tem a mesma função, porém o HTTPS
 | Criptografia         | Não       | Sim        |
 <!--| Validação do domínio | Não       | Sim        | -->
 
-# Porque o HTTPS é mais seguro?
+## Porque o HTTPS é mais seguro?
 
 Por causa dos certificados SSL/TLS, sendo SSL (Secure Sockets Layer) uma tecnologia para proteger uma conexão de Internet criptografando dados enviados entre um site e um navegador (ou entre dois servidores). Já o TLS (Transport Layer Security) é uma versão atualizada e mais segura do SSL.
 
@@ -44,9 +44,9 @@ O SSL/TLS é essencial sempre que houver informações sensíveis sendo transmit
 
 Vale ressaltar que quando você instala um certificado SSL a transmissão de dados é configurada para ser feita via HTTPS. Ambas as tecnologias andam de mãos dadas e não funcionam uma sem a outra.
 
-# Como é o funcionamento desses protocolos?
+## Como é o funcionamento desses protocolos?
 
-## HTTP Request / Response
+### HTTP Request / Response
 
 - O  cliente (navegador) entra em contato com um servidor DNS para descobrir o ip e onde o site está hospedado e, em seguida, envia um HTTP request (requisição) para o servidor web
 
@@ -69,7 +69,7 @@ A partir de então os dados compartilhados entre o navegador e o servidor da web
 
 ![tls-ssl-handshake](/images/tls-ssl-handshake.png)
 
-## Códigos de resposta HTTP
+### Códigos de resposta HTTP
 
 Lembra quando eu citei a seguinte etapa do HTTP request / response? "O servidor web recebe a requisição e se a página existir o servidor executa a aplicação para processar a requisição e retorna o código 200". Pois é, isso é só um cenário de vários possíveis, porque por exemplo, se o cliente fizer requisição de uma página que não existe no site, o servidor retornara uma mensagem de erro com o código 404 para o cliente (navegador). 
 
@@ -81,7 +81,7 @@ Confira abaixo os códigos de status das respostas **HTTP**
 - Erros do cliente (400 - 499)
 - Erros do servidor (500 - 599)
 
-# Métodos de requisição HTTP
+## Métodos de requisição HTTP
 
 O protocolo HTTP define um conjunto de métodos de requisição responsáveis por indicar a ação a ser executada para um dado recurso, sendo eles:
 
@@ -103,13 +103,13 @@ Já as requisições **POST** são mais utilizadas para enviar informações p
 
 Sendo que o método **GET** que quando utilizado, os parâmetros são passados no cabeçalho da requisição e por isso podem ser vistos pela URL. Já o método **POST** ao contrário do **GET**, envia os parâmetros no corpo da requisição **HTTP**, ou seja, escodem eles da URL.
 
-Vale ressaltar que você pode checar tudo isso através da ferramenta de desenvolvedor dos navegadores, para ativar geralmente é com a tecla f12 ou ctrl + shift + i.
+Você pode checar essas requisições através da ferramenta de desenvolvedor dos navegadores
 
 Confira a imagem abaixo um exemplo de requisição **HTTP**.
 
 ![htttp-headers-body](/images/htttp-headers-body.png)
 
-# Interceptando requisições HTTP na prática
+## Interceptando requisições HTTP na prática
 
 ## Ferramenta
 

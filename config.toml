@@ -37,7 +37,7 @@ googleAnalytics = ""
 	pagetitle = "Tecnologia da Informacao"
 
 	# Add a subtitle to your website
-	subtitle = "Nesse blog eu compartilho meus conhecimentos"
+	subtitle = "Blog pessoal sobre Tecnologia da Informação"
 
 	# Activate to show authors on pages if available
 	#listAuthor = true
@@ -102,7 +102,7 @@ weight = 3
 
 [[params.social]]
 name = "Site"
-icon = "fab fa-odnoklassniki-square fa-xs"
+icon = "fab fa-odnoklassniki-square"
 url = "https://almeida-matheus.github.io/"
 
 [[params.social]]
