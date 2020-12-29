@@ -1,0 +1,18 @@
+# i18n/en.yaml
+- id: prevpage
+  translation: "← Prev page"
+
+- id: nextpage
+  translation: "Next page →"
+
+- id: nojscomments
+  translation: "Please enable JavaScript to load the comments."
+
+- id: authorpretext
+  translation: "Written by"
+
+- id: 404title
+  translation: "Erro 404"
+
+- id: 404text
+  translation: "Não há nenhum conteúdo para ser exibido aqui meu truta, confira se a URL está correta"

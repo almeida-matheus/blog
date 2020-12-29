@@ -3,7 +3,7 @@ title = "A base da WEB"
 date = 2020-10-08T20:41:47-03:00
 draft = false
 author = "Matheus Almeida Costa"
-description = "Entenda os protocolos da web e suas requições"
+description = "Entenda os protocolos da WEB e suas requições"
 categoria = [
     "redes",
 ]

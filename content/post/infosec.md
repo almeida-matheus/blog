@@ -3,7 +3,7 @@ title = "Introdução a Segurança da Informação"
 date = 2020-12-23T17:51:28-03:00
 draft = false
 author = "Matheus Almeida Costa"
-description = "Entenda o que é Segurança da Informação"
+description = "Entenda os princípios básicos da Segurança da Informação"
 categoria = [
     "segurança",
 ]
@@ -11,7 +11,7 @@ categoria = [
 
 ## Definição
 
-Segurança da informação é a disciplina que envolve um conjunto de medidas necessárias que envolve a preservação da confidencialidade, integridade e disponibilidade da informação através da tecnologia, processos e pessoas.
+Segurança da informação é a disciplina que envolve um conjunto de medidas necessárias para garantir a preservação da confidencialidade, integridade e disponibilidade da informação através das tecnologias, processos e pessoas.
 
 A Segurança da Informação é um meio para garantir que o negócio possa atingir seus objetivos, para isso faz se o uso de controles adequados para tratar uma série de ameaças, com o objetivo assegurar o sucesso e continuidade do negócio e minimizar as consequências dos passives incidentes.
 
@@ -58,11 +58,11 @@ Confira todos os atributos relacionados a Segurança da Informação de maneira 
 
 A prática da segurança da informação em uma empresa é de extrema importância, embora não ajude especificamente a aumentar a receita, vai ajudar a reduzir os impactos incidentes relacionados a segurança.
 
-exemplo 1: Um ransomware afeta os computadores e servidores de várias empresas; seria um cenário horrível porque os arquivos seriam criptografados gerando uma interrupção de atividades que dependem desses arquivos. 
+Exemplo 1: Um ransomware afeta os computadores e servidores de várias empresas; seria um cenário horrível porque os arquivos seriam criptografados gerando uma interrupção de atividades que dependem desses arquivos. 
 
-exemplo 2: Cibercriminosos invadem os servidores de uma empresa e divulgam dados cruciais de funcionários dessa empresa de maneira pública na internet.
+Exemplo 2: Cibercriminosos invadem os servidores de uma empresa e divulgam dados cruciais de funcionários dessa empresa de maneira pública na internet.
 
-Levando em consideração que uma empresa adota determinados controles estabelecidos na sua [Politica de Segurança da Informação](https://almeidamatheus.netlify.app/post/psi/) e que esses são seguidos de maneira adequada, dificilmente essa empresa seria afetada pelos ataques descritos acima, evitando assim prejuízos financeiros graves e de certa forma essa empresa seria mais competitiva que a concorrência.
+Levando em consideração que uma empresa adota determinados controles estabelecidos na sua [Politica de Segurança da Informação](https://blog.matheustech.com.br/post/psi/) e que esses são seguidos de maneira adequada, dificilmente essa empresa seria afetada pelos ataques descritos acima, evitando assim prejuízos financeiros graves e de certa forma essa empresa seria mais competitiva que a concorrência.
 
 Vale ressaltar também a Lei Geral de Proteção de Dados (LGPD) já é realidade, o que reforça ainda mais a importância da adoção de práticas de segurança da informação.
 

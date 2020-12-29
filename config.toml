@@ -1,4 +1,4 @@
-baseURL = "https://almeidamatheus.netlify.app"
+baseURL = "https://blog.matheustech.com.br"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 author = "Matheus Almeida"
@@ -34,7 +34,7 @@ googleAnalytics = ""
 	description = "Matheus Almeida Costa"
 
 	# Add pagetitle to homepage <title> tag
-	pagetitle = "Tecnologia da Informacao"
+	pagetitle = "Blog"
 
 	# Add a subtitle to your website
 	subtitle = "Blog pessoal sobre Tecnologia da Informação"
@@ -103,12 +103,12 @@ weight = 3
 [[params.social]]
 name = "Site"
 icon = "fab fa-odnoklassniki-square"
-url = "https://almeida-matheus.github.io/"
+url = "https://matheustech.com.br"
 
 [[params.social]]
 name = "Linkedin"
 icon = "fab fa-linkedin"
-url = "https://www.linkedin.com/in/matheus-almeida-costa/"
+url = "https://www.linkedin.com/in/matheus-almeida-costa"
 
 [[params.social]]
 name = "Github"
