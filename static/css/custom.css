@@ -556,7 +556,10 @@ p code {
   }
   #title {
     line-height: 1em;
-    font-size: 1.5rem !important;
+    font-size: 1.8rem !important;
+    padding-bottom: 5px !important;
+    font-weight: 900;
+    /* color: #00cc00 !important; */
   }
   #titletext {
     margin: 0 0 10px 0;
@@ -566,6 +569,10 @@ p code {
   }
   #subtitle {
     margin: 5px 0 5px 0;
+  }
+  #social{
+    padding-bottom: 3px !important;
+    padding-top: 1px !important;
   }
   #social nav ul {
     justify-content: center;
@@ -585,7 +592,5 @@ p code {
   }
   .icons {
     font-size: 1.8rem;
-    padding-bottom: 3px !important;
-    padding-top: 1px !important;
   }
 }

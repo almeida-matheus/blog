@@ -1,5 +1,5 @@
 +++ 
-title = "Introdução a Segurança da Informação"
+title = "Segurança da Informação"
 date = 2020-12-23T17:51:28-03:00
 draft = false
 author = "Matheus Almeida Costa"
