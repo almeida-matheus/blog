@@ -67,7 +67,9 @@ Observação: se for **HTTPS**, antes de passar para a segunda etapa, irá ocorr
 
 A partir de então os dados compartilhados entre o navegador e o servidor da web são criptografados.
 
-![tls-ssl-handshake](/images/tls-ssl-handshake.png)
+TLS SSL Handshake         
+:--------------------------------------------------:
+![tls-ssl-handshake](https://almeidamatheus.netlify.app/images/web-tls-ssl-handshake.png)
 
 ### Códigos de resposta HTTP
 
@@ -107,19 +109,23 @@ Você pode checar essas requisições através da ferramenta de desenvolvedor do
 
 Confira a imagem abaixo um exemplo de requisição **HTTP**.
 
-![htttp-headers-body](/images/htttp-headers-body.png)
+Requisição HTTP         
+:--------------------------------------------------:
+![](https://almeidamatheus.netlify.app/images/web-http-headers-body.png)
 
 ## Interceptando requisições HTTP na prática
 
 ## Ferramenta
 
-Irei utilizar o [Wireshark](https://www.wireshark.org/), que é uma ferramenta utilizada para analisar os tráfegos da rede, sendo categorizado como um sniffer, já que através dele podemos capturar todos os pacotes que estão circulando na rede.
+Irei utilizar o Wireshark, que é uma ferramenta utilizada para analisar os tráfegos da rede, sendo categorizado como um sniffer, já que através dele podemos capturar todos os pacotes que estão circulando na rede.
 
 ## Alvo
 
 O alvo desse exemplo é o meu antigo colégio, mais precisamente a página de login do sistemas de notas, perceba que a URL do site é precedido pelo protocolo **HTTP**.
 
-![login-coltec](/images/login-coltec.png)
+Página de login      
+:--------------------------------------------------:
+![login-coltec](https://almeidamatheus.netlify.app/images/web-login-coltec.png)
 
 ## Utilizando a ferramenta
 
@@ -129,7 +135,9 @@ Devemos levar em consideração que a requisição é **HTTP** e o método utili
 
 Então devemos filtrar os dados no Wireshark dessa forma: http.request.method=="POST"
 
-![wireshark-coltec](/images/wireshark-coltec.png)
+Metódo POST no Wireshark        
+:--------------------------------------------------:
+![wireshark-coltec](https://almeidamatheus.netlify.app/images/web-wireshark-coltec.png)
 
 Selecionando esse pacote e expandindo as informações do formulário HTML iremos achar o login e senha em formato de texto sem criptografia alguma.
 

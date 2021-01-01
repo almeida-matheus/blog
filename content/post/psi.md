@@ -3,7 +3,7 @@ title = "Política de Segurança da Informação"
 date = 2020-12-30T20:39:25-03:00
 draft = false
 author = "Matheus Almeida Costa"
-description = "Entenda o que é e  saiba como criar uma"
+description = "Entenda o que é e  saiba como criar uma PSI"
 categoria = [
     "segurança",
 ]
@@ -69,7 +69,9 @@ Uma politica de segurança da informação organizada e bem estruturada é essen
 
 Nesse artigo proponho a ideia de dividir a politica de segurança da informação em vários documentos, mas essa não é a única maneira de estruturar, isso porque a estrutura hierárquica dos documentos variam conforme o contexto especifico da organização.
 
-![psi](https://almeidamatheus.netlify.app/images/4-psi1.png)
+Estrutura da Política de Segurança da Informação          
+:--------------------------------------------------:
+![psi](https://almeidamatheus.netlify.app/images/psi-psi.png)
 
 
 - **Políticas**: Diretrizes estratégicas que definem com o tema SI é encarado dentro da organização (politica central).

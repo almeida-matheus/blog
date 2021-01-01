@@ -19,6 +19,8 @@ A Segurança da Informação é um meio para garantir que o negócio possa ating
 
 Em inglês, a sigla CIA significa "Confidentiality", "Integrity" e "Availability", o que corresponde à sigla CID em português (Confidencialidade, Integridade e Disponibilidade). Esses são os principais pilares que representam os principais atributos de um sistema seguro.
 
+Pilares da Segurança da Informação         
+:--------------------------------------------------:
 ![cia](https://almeidamatheus.netlify.app/images/3-cia.png)
 
 ### **Confidencialidade**
@@ -64,6 +66,6 @@ Exemplo 2: Cibercriminosos invadem os servidores de uma empresa e divulgam dados
 
 Levando em consideração que uma empresa adota determinados controles estabelecidos na sua [Politica de Segurança da Informação](https://blog.matheustech.com.br/post/psi/) e que esses são seguidos de maneira adequada, dificilmente essa empresa seria afetada pelos ataques descritos acima, evitando assim prejuízos financeiros graves e de certa forma essa empresa seria mais competitiva que a concorrência.
 
-Vale ressaltar também a Lei Geral de Proteção de Dados (LGPD) já é realidade, o que reforça ainda mais a importância da adoção de práticas de segurança da informação.
+Vale ressaltar também a [Lei Geral de Proteção de Dados (LGPD)](https://blog.matheustech.com.br/post/lgpd/) já é realidade, o que reforça ainda mais a importância da adoção de práticas de segurança da informação.
 
 

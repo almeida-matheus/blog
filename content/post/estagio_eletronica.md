@@ -40,11 +40,11 @@ As imagens abaixo são esboços do layout e esquemático de uma PCB
 
 Layout            
 :--------------------------------------------------:
-![](/images/estagio-layout.png)
+![](https://almeidamatheus.netlify.app/images/estagio-layout.png)
 
 Esquemático           
 :--------------------------------------------------:
-![](/images/estagio-esquematico.png)
+![](https://almeidamatheus.netlify.app/images/estagio-esquematico.png)
 
 
 ### Microcontroladores
@@ -55,9 +55,9 @@ Meu contato com microcontroladores se intensificou mais na reta final do estági
 
 As imagens abaixo são os esboços de projetos envolvendo microcontroladores
 
-STM32            |  Arduino
+STM32 | Arduino
 :-------------------------:|:-------------------------:
-![](/images/estagio-letra.jpg) | ![](/images/estagio-arduinoled1.jpg)
+![](https://almeidamatheus.netlify.app/images/estagio-letra.jpg) | ![](https://almeidamatheus.netlify.app/images/estagio-arduinoled1.jpg)
 
 ### Outras atividades
 
@@ -69,19 +69,18 @@ Leitura de datasheets era imprescindível para realizar ambas atividades acima. 
 - Organização dos componentes da empresa
 - Criação de planilha com informações de cada componente (nome, tipo, quantidade, local)
 
-Fios            |  Transistor
+Fios | Transistor
 :-------------------------:|:-------------------------:
-![](/images/estagio-solda.jpg) | ![](/images/estagio-transistor.jpg)
+![](https://almeidamatheus.netlify.app/images/estagio-solda.jpg) | ![](https://almeidamatheus.netlify.app/images/estagio-transistor.jpg)
 
 Planilha            
 :--------------------------------------------------:
-![](/images/estagio-planilha.png)
+![](https://almeidamatheus.netlify.app/images/estagio-planilha.png)
 
-    
 
 ## Conclusão
 
-No estágio eu pude vivenciar o conteúdo teórico adquirido em sala de aula, proporcionando uma maior compreensão dos conteúdos abordados pelo curso. Também obtive novos conhecimentos técnicos sobre eletrônica (hard skills) . 
+No estágio eu tive a oportunidade de vivenciar o conteúdo teórico adquirido nas aulas, proporcionando uma maior compreensão dos conteúdos abordados pelo curso. Também obtive novos conhecimentos técnicos sobre eletrônica (hard skills) . 
 
 Os funcionários eram pessoas boas, respeitosas, e essa convivência com eles me proporcionou o aprimoramento de habilidades interpessoais (soft skills), principalmente o trabalho em equipe.
 
