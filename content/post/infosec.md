@@ -21,7 +21,7 @@ Em inglês, a sigla CIA significa "Confidentiality", "Integrity" e "Availability
 
 Pilares da Segurança da Informação         
 :--------------------------------------------------:
-![cia](https://almeidamatheus.netlify.app/images/3-cia.png)
+![cia](https://almeidamatheus.netlify.app/images/infosec-cia.png)
 
 ### **Confidencialidade**
 
