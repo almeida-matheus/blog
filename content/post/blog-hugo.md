@@ -5,7 +5,7 @@ draft = false
 author = "Matheus Almeida Costa"
 description = "Saiba como criar um blog utilizando o framework Hugo"
 categoria = [
-    "ferramentas",
+    "Ferramentas",
 ]
 +++
 

@@ -5,7 +5,7 @@ draft = false
 author = "Matheus Almeida Costa"
 description = "Minha experiência como estagiário Técnico em Eletrônica"
 categoria = [
-    "experiência",
+    "Experiência",
 ]
 +++
 
@@ -20,7 +20,7 @@ O estágio foi realizado no centro de Belo Horizonte/MG do dia 16/08/2019 até 1
 
 A FW&HW Sistemas é uma startup de base tecnológica, que desenvolve produtos eletrônicos inovadores, com tecnologias atuais, proporcionando versatilidade, eficiência e robustez, produtos esses que são baseados em módulos eletrônicos de terceiros, podendo atender a demandas específicas.
 
-Tendo sua atividade econômica principal relacionada ao desenvolvimento e licenciamento de programas embarcados (firmwares) e a parte física (hardwares),tanto é que esse é o motivo do nome da startup.
+Tem sua atividade econômica principal relacionada ao desenvolvimento e licenciamento de programas embarcados (firmwares) e a parte física (hardwares), tanto é que esse é o motivo do nome da startup.
 
 ## Atividades realizadas
 
@@ -61,7 +61,7 @@ STM32 | Arduino
 
 ### Outras atividades
 
-Leitura de datasheets era imprescindível para realizar ambas atividades acima. Além de montar circuitos em protoboards e soldar componentes, realizei algumas atividades que não necessariamente eram envolvidas com eletrônica em si, dentre elas destaco:
+A leitura de datasheets era imprescindível para realizar ambas atividades acima. Além de montar circuitos em protoboards e soldar componentes, realizei algumas atividades que não necessariamente eram envolvidas com eletrônica em si, dentre elas destaco:
 
 - Formatação dos notebooks
 - Instalação dos softwares necessários para o trabalho
@@ -82,7 +82,7 @@ Planilha
 
 No estágio eu tive a oportunidade de vivenciar o conteúdo teórico adquirido nas aulas, proporcionando uma maior compreensão dos conteúdos abordados pelo curso. Também obtive novos conhecimentos técnicos sobre eletrônica (hard skills) . 
 
-Os funcionários eram pessoas boas, respeitosas, e essa convivência com eles me proporcionou o aprimoramento de habilidades interpessoais (soft skills), principalmente o trabalho em equipe.
+Os funcionários eram pessoas boas, respeitosas, e essa convivência com eles me proporcionou o aprimoramento de habilidades interpessoais (soft skills), dentre as quais destaco: a habilidade de saber receber feedback e usar ao meu favor,a resiliência e o trabalho em equipe.
 
 No geral eu tive uma ótima experiência nesse estágio e com certeza contribuiu muito para minha vida profissional.
 

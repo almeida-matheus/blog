@@ -5,7 +5,7 @@ draft = false
 author = "Matheus Almeida Costa"
 description = "Entenda o que HTTP e HTTPS e quais são as diferenças"
 categoria = [
-    "redes",
+    "Redes",
 ]
 +++
 

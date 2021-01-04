@@ -89,13 +89,13 @@ url = "/"
 weight = 1
 
 [[menu.main]]
-name = "Pesquisa"
-url = "/search"
+name = "Categorias"
+url = "/categoria"
 weight = 2
 
 [[menu.main]]
-name = "Categorias"
-url = "/categoria"
+name = "Pesquisa"
+url = "/search"
 weight = 3
 
 # Social Menu

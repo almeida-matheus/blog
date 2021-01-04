@@ -5,7 +5,7 @@ draft = false
 author = "Matheus Almeida Costa"
 description = "Entenda os princípios básicos da Segurança da Informação"
 categoria = [
-    "segurança",
+    "Segurança",
 ]
 +++
 

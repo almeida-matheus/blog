@@ -5,7 +5,7 @@ draft = false
 author = "Matheus Almeida Costa"
 description = "Entenda o que é e  saiba como criar uma PSI"
 categoria = [
-    "segurança",
+    "Segurança",
 ]
 +++
 
