@@ -21,7 +21,7 @@ Em inglês, a sigla CIA significa "Confidentiality", "Integrity" e "Availability
 
 Pilares da Segurança da Informação         
 :--------------------------------------------------:
-![cia](https://almeidamatheus.netlify.app/images/infosec-cia.png)
+![cia](https://almeidamatheus.netlify.app/uploads/20/12/infosec-cia.png)
 
 ### **Confidencialidade**
 
@@ -64,8 +64,8 @@ Exemplo 1: Um ransomware afeta os computadores e servidores de várias empresas;
 
 Exemplo 2: Cibercriminosos invadem os servidores de uma empresa e divulgam dados cruciais de funcionários dessa empresa de maneira pública na internet.
 
-Levando em consideração que uma empresa adota determinados controles estabelecidos na sua [Politica de Segurança da Informação](https://blog.matheustech.com.br/post/psi/) e que esses são seguidos de maneira adequada, dificilmente essa empresa seria afetada pelos ataques descritos acima, evitando assim prejuízos financeiros graves e de certa forma essa empresa seria mais competitiva que a concorrência.
+Levando em consideração que uma empresa adota determinados controles estabelecidos na sua [Politica de Segurança da Informação](https://blog.matheustech.com.br/post/politica-de-seguranca-da-informacao/) e que esses são seguidos de maneira adequada, dificilmente essa empresa seria afetada pelos ataques descritos acima, evitando assim prejuízos financeiros graves e de certa forma essa empresa seria mais competitiva que a concorrência.
 
-Vale ressaltar também a [Lei Geral de Proteção de Dados (LGPD)](https://blog.matheustech.com.br/post/lgpd/) já é realidade, o que reforça ainda mais a importância da adoção de práticas de segurança da informação.
+Vale ressaltar também a [Lei Geral de Proteção de Dados (LGPD)](https://blog.matheustech.com.br/post/lei-geral-de-protecao-de-dados-pessoais-lgpd/) já é realidade, o que reforça ainda mais a importância da adoção de práticas de segurança da informação.
 
 

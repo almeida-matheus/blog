@@ -40,11 +40,11 @@ As imagens abaixo são esboços do layout e esquemático de uma PCB
 
 Layout            
 :--------------------------------------------------:
-![](https://almeidamatheus.netlify.app/images/estagio-layout.png)
+![](https://almeidamatheus.netlify.app/uploads/21/01/estagio-layout.png)
 
 Esquemático           
 :--------------------------------------------------:
-![](https://almeidamatheus.netlify.app/images/estagio-esquematico.png)
+![](https://almeidamatheus.netlify.app/uploads/21/01/estagio-esquematico.png)
 
 
 ### Microcontroladores
@@ -57,7 +57,7 @@ As imagens abaixo são os esboços de projetos envolvendo microcontroladores
 
 STM32 | Arduino
 :-------------------------:|:-------------------------:
-![](https://almeidamatheus.netlify.app/images/estagio-letra.jpg) | ![](https://almeidamatheus.netlify.app/images/estagio-arduinoled1.jpg)
+![](https://almeidamatheus.netlify.app/uploads/21/01/estagio-letra.jpg) | ![](https://almeidamatheus.netlify.app/uploads/21/01/estagio-arduinoled1.jpg)
 
 ### Outras atividades
 
@@ -71,11 +71,11 @@ A leitura de datasheets era imprescindível para realizar ambas atividades acima
 
 Fios | Transistor
 :-------------------------:|:-------------------------:
-![](https://almeidamatheus.netlify.app/images/estagio-solda.jpg) | ![](https://almeidamatheus.netlify.app/images/estagio-transistor.jpg)
+![](https://almeidamatheus.netlify.app/uploads/21/01/estagio-solda.jpg) | ![](https://almeidamatheus.netlify.app/uploads/21/01/estagio-transistor.jpg)
 
 Planilha            
 :--------------------------------------------------:
-![](https://almeidamatheus.netlify.app/images/estagio-planilha.png)
+![](https://almeidamatheus.netlify.app/uploads/21/01/estagio-planilha.png)
 
 
 ## Conclusão

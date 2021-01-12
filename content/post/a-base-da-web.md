@@ -3,7 +3,7 @@ title = "A base da WEB"
 date = 2021-01-03T23:30:34-03:00
 draft = false
 author = "Matheus Almeida Costa"
-description = "Entenda assuntos a respeito de uma requisição WEB"
+description = "Entenda assuntos por trás de uma requisição WEB"
 categoria = [
     "Redes",
 ]
@@ -19,9 +19,9 @@ Um exemplo de IP é o 216.58.202.238, acessando esse IP teremos acesso ao Google
 
 A URL (Uniform Resource Locator) é o endereço virtual de uma aplicação na WEB
 
-Para melhor exemplificar vamos levar em consideração o site atual: [https://blog.matheustech.com.br/post/web/](https://blog.matheustech.com.br/post/web/)
+Para melhor exemplificar vamos levar em consideração o site atual: [https://blog.matheustech.com.br/post/a-base-da-web/](https://blog.matheustech.com.br/post/a-base-da-web/)
 
-A URL sempre inicia com o protocolo (https://). Seguida pelo domínio (blog.matheustech.com.br), o blog é o sub-dominio do matheustech.com.br. Após isso é especificado o caminho para um recurso (/post/web/), o recurso recurso é algo concreto na aplicação que queremos acessar
+A URL sempre inicia com o protocolo (https://). Seguida pelo domínio (blog.matheustech.com.br), o blog é o sub-dominio do matheustech.com.br. Após isso é especificado o caminho para um recurso (/post/a-base-da-web), o recurso recurso é algo concreto na aplicação que queremos acessar
 
 Vale a pena ressaltar que depois do domínio pode vir a porta, se não for definida é utilizada a porta padrão desse protocolo (blog.matheustech.com.br:443)
 
@@ -49,7 +49,7 @@ De maneira resumido HTTP e HTTPS são protocolos que definem as regras da comuni
 
 Uma comunicação com HTTP sempre é iniciada pelo cliente que manda uma requisição ao servidor esperando por uma resposta.
 
-Para saber mais sobre esses protocolos confira [essa postagem](https://blog.matheustech.com.br/post/protocolo-comunicacao/).
+Para saber mais sobre esses protocolos confira [essa postagem](https://blog.matheustech.com.br/post/protocolos-http-e-https/).
 
 
 ## **Métodos de requisição HTTP**

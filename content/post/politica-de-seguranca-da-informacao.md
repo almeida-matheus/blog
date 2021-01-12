@@ -71,7 +71,7 @@ Nesse artigo proponho a ideia de dividir a politica de segurança da informaçã
 
 Estrutura da Política de Segurança da Informação          
 :--------------------------------------------------:
-![psi](https://almeidamatheus.netlify.app/images/psi-psi.png)
+![psi](https://almeidamatheus.netlify.app/uploads/20/12/psi-psi.png)
 
 
 - **Políticas**: Diretrizes estratégicas que definem com o tema SI é encarado dentro da organização (politica central).

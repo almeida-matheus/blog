@@ -76,7 +76,7 @@ Quando o cliente faz uma requisição para o servidor que utiliza o HTTPS aconte
 
 TLS SSL Handshake         
 :--------------------------------------------------:
-![tls-ssl-handshake](https://almeidamatheus.netlify.app/images/web-tls-ssl-handshake.png)
+![tls-ssl-handshake](https://almeidamatheus.netlify.app/uploads/21/01/web-tls-ssl-handshake.png)
 
 - Ocorre o SSL/TLS handshake para estabelecer uma conexão encriptada entre dois pontos usando SSL (semelhante ao 3-way TCP handshake).
 - Com a conexão estabelecida o cliente envia para o servidor um “Client Hello” contendo as versões de TLS suportadas, as cipher suites suportadas e uma chave randômica.
