@@ -118,6 +118,6 @@ Confira a imagem abaixo um exemplo de requisição **HTTP**.
 
 Requisição HTTP         
 :--------------------------------------------------:
-![](https://almeidamatheus.netlify.app/images/web-http-headers-body.png)
+![](https://almeidamatheus.netlify.app/uploads/21/01/web-http-headers-body.png)
 
 
