@@ -32,15 +32,16 @@ SSH significa secure shell, é um protocolo de rede criptografado utilizado para
 
 Todas essas etapas descritas acima é para estabelecer a conexão, antes de enviar qualquer dado, por isso o SSH é seguro, não é atoa que seu nome é secure shell.
 
-Observação: da para ver todas essas etapas de maneira detalhanda passando `-vvv` como parâmetro no comando de conexão `ssh usuario@ip`.
+Uma maneira de ver todas as etapas detalhadas de uma conexão SSH é passando o `-vvv` como argumento, exemplo: `ssh usuario@ip -vvv`
+
 
 ## Configurar o SSH na prática
 
-Para isso irei utilizar o OpenSSH
+Para isso irei utilizar o OpenSSH.
 
 ### Servidor
 
-1 - instalar
+1 - Instalar
 
 ```
 apt install openssh-server
@@ -48,13 +49,13 @@ apt install openssh-server
 yum install openssh-server -y
 ```
 
-2 - iniciar o serviço
+2 - Iniciar o serviço
 
 ```
 systemctl start sshd
 ```
 
-por padrão abre a porta 22 
+(Por padrão abre a porta 22 )
 
 ### Testar funcionamento
 
@@ -64,21 +65,21 @@ No cliente basta usar o netcat no IP desse servidor
 nc -v 10.10.10.10 22
 ```
 
-se tiver um resultado como SSH - 2.0-OpenSSH_7.4 significa que o serviço está ativo
+(Se tiver um resultado como SSH - 2.0-OpenSSH_7.4 significa que o serviço está ativo)
 
-No servidor basta usar o comando ss (antigo netstat) para confirma se está escutando na porta 22 com o TCP
+No servidor basta usar o comando `ss` (antigo netstat) para confirma se está escutando na porta 22 com o TCP
 
 ```
 ss -ln | grep 22
 ```
 
-Se não aparecer nada na tela é porque o serviço não está ativo
+(Se não aparecer nada na tela é porque o serviço não está ativo)
 
 Se o serviço não estiver ativo provavelmente é porque o firewall está bloqueando, nesse caso tem que criar uma exceção pra porta do SSH no firewall, outra opção é checar os possíveis erros no /var/log.
 
 ### Cliente
 
-1 - instalar
+1 - Instalar
 
 ```
 apt-get install openssh-client
@@ -86,7 +87,7 @@ apt-get install openssh-client
 yum install openssh-client 
 ```
 
-2 - conectar no ssh
+2 - Conectar no ssh
 
 ```
 ssh usuario@10.10.10.10
@@ -99,22 +100,22 @@ Conexão SSH
 ![](https://almeidamatheus.netlify.app/uploads/21/01/ssh-conexao.png)
 
 
-O cliente tem 2 chaves, uma pública e outra privada, a chave pública deve ser exclusiva do próprio equipamento, já a chave pública pode ser compartilhada com outros
+O cliente tem 2 chaves, uma pública e outra privada, a chave pública pode ser compartilhada com os outros, diferente da chave privada, que deve ficar no próprio dispositivo, de maneira confidencial.
 
 Para o cliente poder conectar via SSH no servidor, a chave pública do cliente (id_rsa.pub) deve estar no arquivo authorized_keys do servidor, esse arquivo guarda as chaves dos clientes autorizados para a conexão SSH.
 
-A chave pública e privada são complementares, isso porque quando o cliente for abrir uma conexão, ele envia sua chave privada e o servidor confere se essa chave privada complementa a chave pública autorizada, caso for acontece a autenticação da conexão.
+A chave pública e privada são complementares, isso porque quando o cliente for abrir uma conexão, ele envia sua chave privada e o servidor confere se essa chave privada complementa a chave pública autorizada, caso for, acontece a autenticação da conexão.
 
 ### Servidor
 
-local das chaves:
+Local das chaves:
 
 /etc/ssh 
 
 (ssh_host_rsa_key e ssh_host_rsa_key.pub)
 
 
-arquivo de configuração:
+Arquivo de configuração:
 
 /etc/ssh/sshd_config
 
@@ -123,7 +124,7 @@ Modificar no arquivo de configuração:
 
 `PubkeyAuthentication yes`
 
-o PubkeyAuthentication habilita a autenticação de chaves, já o AuthorizedKeysFile é o lugar onde vai ficar armazenada as chaves autorizadas, por padrão é em ~/.ssh/authorized_keys
+O PubkeyAuthentication habilita a autenticação de chaves, já o AuthorizedKeysFile é o lugar onde vai ficar armazenada as chaves autorizadas, por padrão é em ~/.ssh/authorized_keys
 
 
 Configuração SSH          
@@ -131,7 +132,7 @@ Configuração SSH
 ![](https://almeidamatheus.netlify.app/uploads/21/01/ssh-configuracao-chave.png)
 
 
-sempre que modificar esse arquivo de configuração tem que reiniciar o serviço SSH
+Sempre que modificar esse arquivo de configuração tem que reiniciar o serviço SSH
 
 ```
 systemctl restart sshd
@@ -139,41 +140,39 @@ systemctl restart sshd
 
 ### Cliente
 
-local das chaves:
+Local das chaves:
 
 ~/.ssh
 
 (id_rsa e id_rsa.pub)
 
-local de configuração do ssh
+Local de configuração do ssh
 
 /etc/ssh/ssh_config
 
-sempre que configurar tem que reiniciar o serviço com o comando  `systemctl restart ssh`
+Sempre que configurar tem que reiniciar o serviço com o comando  `systemctl restart ssh`
 
-gerar chave no cliente com ssh-keygen
+Gerar chave no cliente com ssh-keygen
 
 ```
 ssh-keygen -b 2048 -t rsa -v
 ```
 
-essa chave deve estar no authorized_keys do servidor
-
-portanto basta utilizar o comando:
+Essa chave deve estar no authorized_keys do servidor, portanto basta utilizar o comando:
 
 ```
 ssh-copy-id usuario@ip
 ```
 
-ou simplesmente copiar a chave pública do cliente `~/.ssh/id_rsa.pub` e colocar no arquivo authorized_keys do servidor `~/.ssh/authorized_keys`
+Ou simplesmente copiar a chave pública do cliente `~/.ssh/id_rsa.pub` e colocar no arquivo authorized_keys do servidor `~/.ssh/authorized_keys`
 
-após isso basta conectar normalmente
+Após isso basta conectar normalmente
 
 ```
 ssh usuario@10.10.10.10 -p 22
 ```
 
-observação: `-p` é a porta; se o local padrão da chave privada for alterado deve passar o caminho dela "path" pelo parâmetro `-i`
+Observação: `-p` é a porta; se o local padrão da chave privada for alterado deve passar o caminho dela "path" pelo argumento `-i`
 
 ## Medidas de segurança
 
@@ -191,27 +190,27 @@ Para fica ainda mais seguro, utilizar um pen drive com a chave privada para faze
 ssh -i /mnt/id_rsa usuario@10.10.10.10
 ```
 
--i é para especificar o caminho da chave privada
+`-i` é para especificar o caminho da chave privada.
 
 ### Servidor
 
-Além do método de autenticação por chaves assimétricas podemos configurar mais coisas no no arquivo de configuração do SSH
+Além do método de autenticação por chaves assimétricas podemos configurar mais coisas no arquivo de configuração do SSH (sshd_config). Essa técnica é chamada de Hardening.
 
-Desabilitar o acesso por senha
+Desabilitar o acesso por senha:
 
 **`PasswordAuthentication no`**
 
-(isso se a autenticação por chave tiver ativada)
+(Isso se a autenticação por chave tiver ativada)
 
-Não permitir acesso como root
+Não permitir acesso como root:
 
 **`PermitRootLogin no`**
 
-Mudar a porta TCP do SSH
+Mudar a porta TCP do SSH:
 
 **`Port 30022`**
 
-Desabilitar a opção de acesso com senha vazia
+Desabilitar a opção de acesso com senha vazia:
 
 **`PermitEmptyPasswords no`**
 
@@ -221,7 +220,7 @@ Bloquear conexão de usuários ou grupos especificos:
 
 **`DenyGroups nome_do_grupo12`**
 
-Embora  a opção de cima seja uma boa medida de segurança, a opção de baixo é melhor porque nega todo o resto
+(Embora  a opção de cima seja uma boa medida de segurança, a opção de baixo é melhor porque nega todo o resto)
 
 Permitir alguns usuários ou grupos específicos:
 
@@ -229,11 +228,11 @@ Permitir alguns usuários ou grupos específicos:
 
 **`AllowGroups nome_do_grupo`**
 
-Utilizar a versão mais segura do protocolo
+Utilizar a versão mais segura do protocolo:
 
 **`Protocol 2`**
 
-Definir um tempo limite de inatividade, ao passar desse tempo o usuário será automaticamente desconectado (terminal ocioso a partir do último comando)
+Definir um tempo limite de inatividade, ao passar desse tempo o usuário será automaticamente desconectado (terminal ocioso a partir do último comando):
 
 **`ClientAliveInterval 360`**
 
@@ -245,29 +244,29 @@ Limitar o número de tentativas de conexão:
 
 **`MaxAuthTries 6`**
 
-Limitar a quantidade de  pessoas  que podem estar logadas simultaneamente utilizando shell via SSH
+Limitar a quantidade de  pessoas  que podem estar logadas simultaneamente utilizando shell via SSH:
 
 **`MaxSessions 10`**
 
-Limitar o número de conexões não autenticadas por um determinado IP
+Limitar o número de conexões não autenticadas por um determinado IP:
 
 **`MaxStartups 5:60:10`**
 
-(quando tiver 5 conexões não autenticadas, a partir daí irá rejeitar 60% das conexões do IP do cliente, quando chegar a 10 conexões não autenticadas desse mesmo endereço IP irá rejeitar todas, evitar bruteforce)
+(Quando tiver 5 conexões não autenticadas, a partir daí irá rejeitar 60% das conexões do IP do cliente, quando chegar a 10 conexões não autenticadas desse mesmo endereço IP irá rejeitar todas, evitar bruteforce)
 
-Autenticar com as contas do linux com todas restrições do PAM
+Autenticar com as contas do linux com todas restrições do PAM:
 
 **`UsePAM yes`**
 
-Mostrar quando ocorreu a ultima conexão do usuário
+Mostrar quando ocorreu a ultima conexão do usuário:
 
 **`PrintLasLog yes`**
 
-Tempo do Inicio da autenticação e final da autenticação
+Tempo do Inicio da autenticação e final da autenticação:
 
 **`LoginGraceTime 60`**
 
-Verificar se o usuário tem as devidas permissões
+Verificar se o usuário tem as devidas permissões:
 
 **`StrictModes yes`**
 
@@ -275,15 +274,15 @@ banner de aviso quando for conectar:
 
 **`Banner /etc/issue.net`**
 
-(deve digitar o banner no arquivo /etc/issue.net)
+(Deve digitar o banner no arquivo /etc/issue.net)
 
-banner depois de conectado
+banner depois de conectado:
 
 **`PrintMotd yes`**
 
-(deve digitar o banner no arquivo /etc/motd)
+(Deve digitar o banner no arquivo /etc/motd)
 
-Para aplicar as modificações do arquivo de configuração devemos utilizar os seguintes comandos
+Para aplicar as modificações do arquivo de configuração devemos utilizar os seguintes comandos:
 
 ```
 /etc/init.d/ssh restart
@@ -295,11 +294,11 @@ service ssh restart
 
 Outras dicas de segurança:
 
-Utilizar a versão do SSH mais atualizada possível, porque versões anteriores podem ter vulnerabilidades conhecidas
+Utilizar a versão do SSH mais atualizada possível, porque versões anteriores podem ter vulnerabilidades.
 
-Não colocar nomes de usuários comuns, porque a chance dos nomes estarem em dicionários "wordlist" de atacantes é baixa
+Não colocar nomes de usuários comuns, porque a chance dos nomes comuns estarem em dicionários "wordlist" de atacantes é alta.
 
-Para garantir ainda mais a segurança do SSH deve utilizar programas externos, como um firewall e o fail2ban.
+Para garantir ainda mais a segurança deve utilizar programas externos, como um firewall e o fail2ban.
 
 
 

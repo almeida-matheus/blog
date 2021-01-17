@@ -461,14 +461,15 @@ ul.flat li {
   margin-left: 0;
 }
 
-code, kbd, pre, samp {
+kbd, pre, samp {
   font-family: "Roboto Mono", monospace;
   font-size: 0.95em;
 }
 
 code {
   font-family: 'Source Code Pro', monospace;
-  font-size: 0.95em;
+  font-size: 0.85em;
+  background-color: #383838 !important;
 }
 
 .highlight pre {
