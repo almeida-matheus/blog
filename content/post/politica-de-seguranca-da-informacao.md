@@ -9,9 +9,6 @@ categoria = [
 ]
 +++
 
-
-# Política de Segurança da Informação
-
 ## Definição
 
 Política de Segurança da Informação (PSI) é uma declaração que define o papel da segurança da informação e de que forma essa vai ser conduzida dentro de uma organização (baseline).
@@ -65,7 +62,7 @@ Isso realça o ponto de partida essencial, que é o apoio da alta direção, poi
 
 ## Documentos
 
-Uma politica de segurança da informação organizada e bem estruturada é essencial para ser realmente funcional em uma organização, porque a ideia é que essa a politica seja algo acessível, mesmo que o colaborador seja razoavelmente leigo em SI e pode ler e compreender ao menos os princípios básicos, então o que fizer para poder otimizar vira beneficio pratico ao longo da operação da empresa
+Uma politica de segurança da informação organizada e bem estruturada é essencial para ser realmente funcional em uma organização, a ideia é que essa a politica seja algo acessível para que mesmo pessoas mais legaias em segurança possam ler e compreender ao menos os princípios básicos, então o que fizer para poder otimizar vira beneficio pratico ao longo da operação da empresa
 
 Nesse artigo proponho a ideia de dividir a politica de segurança da informação em vários documentos, mas essa não é a única maneira de estruturar, isso porque a estrutura hierárquica dos documentos variam conforme o contexto especifico da organização.
 
@@ -74,9 +71,9 @@ Estrutura da Política de Segurança da Informação
 ![psi](https://almeidamatheus.netlify.app/uploads/20/12/psi-psi.png)
 
 
-- **Políticas**: Diretrizes estratégicas que definem com o tema SI é encarado dentro da organização (politica central).
-- **Normas e padrões**: Definições táticas dos processos e orientações relacionadas a gestão de SI (politicas complementares/derivadas).
-- **Procedimentos e orientações**: Procedimentos operacionais e instruções de trabalho necessárias para executar as atividades relacionadas a SI .
+- **Políticas**: Diretrizes estratégicas que definem com o tema segurança da informação é encarado dentro da organização (politica central).
+- **Normas e padrões**: Definições táticas dos processos e orientações relacionadas a gestão de segurança da informação (politicas complementares/derivadas).
+- **Procedimentos e orientações**: Procedimentos operacionais e instruções de trabalho necessárias para executar as atividades relacionadas a segurança da informação.
 
 **Exemplo prático:**
 
@@ -88,7 +85,7 @@ Procedimento: Criar um procedimento explicando o passo a passo de como realizar 
 
 **Observação:**
 
-Nestes documentos é interessante seguir uma abordagem mais pragmática, direto ao ponto, ser abrangente mas se manter dentro de um escopo específico, controlar somente o necessário, evitar jargões, sempre utilizar a linguagem de maneira formal e clara. Tudo isso para facilitar a compreensão e uso efetivo da politica. Além do mais, a Politica de Segurança da Informação pode vir a ser usada pela organização durante ações trabalhistas, cíveis ou mesmo criminais.
+Nestes documentos é interessante seguir uma abordagem mais pragmática, direto ao ponto, ser abrangente mas se manter dentro de um escopo específico, controlar somente o necessário, evitar jargões, sempre utilizar a linguagem de maneira formal e clara. Tudo isso para facilitar a compreensão e uso efetivo da politica. Além do mais, a politica de segurança da informação pode vir a ser usada pela organização durante ações trabalhistas, cíveis ou mesmo criminais.
 
 ### Hierarquia dos documentos
 
@@ -174,7 +171,7 @@ Situação da aprovação, como por exemplo a data e a assinatura dos responsáv
 
 ### Sobre
 
-Lembrando que a ideia é pegar as diretrizes que foram apresentadas na Política Central (PGSI) e expandir de forma a cobrir adequadamente o assunto.
+A ideia é pegar as diretrizes que foram apresentadas na Política Central (PGSI) e completar e expandir de forma a cobrir adequadamente o assunto.
 
 Embora as políticas complementares (normas) foquem nos aspectos táticos tratando de assuntos específicos, não é aqui que define os procedimentos operacionais.
 
@@ -182,49 +179,49 @@ Embora as políticas complementares (normas) foquem nos aspectos táticos tratan
 
 A estrutura desses documentos tem como base a Politica Central (PGSI), então temos introdução, propósito, escopo, diretrizes, papeis e responsabilidades, sanções e punições, revisões, gestão da norma.
 
-Contudo vale ressaltar algumas normas que podem ser utilizadas, mas como disse anteriormente, isso varia de cada organização, dependendo do contexto que ela está inserida, portanto deve-se criar as normas conforme a necessidade.
+Então temos que ressaltar algumas normas que podem ser utilizadas, mas como disse anteriormente, isso varia de cada organização, dependendo do contexto que ela está inserida, portanto deve-se criar as normas conforme a necessidade.
 
 ### Exemplo de normas
 
 **Norma de classificação, manuseio e rotulagem da informação:**
 
-Completar a Política Central (PGSI), definindo como a informação será classificada, rotulada e manuseada de forma segura.
+Definir como a informação será classificada, rotulada e manuseada de forma segura.
 
 **Norma de uso aceitável de ativos de informação:**
 
-Completar a Política Central (PGSI), definindo as diretrizes para o uso aceitável de ativos de informação pelos usuários autorizados.
+Definir as diretrizes para o uso aceitável de ativos de informação pelos usuários autorizados.
 
 **Norma de Gestão de identidade e controle de acesso:**
 
-Completar a Política Central (PGSI), definindo as diretrizes para controlar o acesso a ativos/serviços de informação.
+Definir as diretrizes para controlar o acesso a ativos/serviços de informação.
 
 **Norma de acesso a internet e comportamento em mídias sociais:**
 
-Completar a Política Central (PGSI), definindo as diretrizes para utilização segura da internet e do comportamento de usuários em mídias e redes sociais.
+Definir as diretrizes para utilização segura da internet e do comportamento de usuários em mídias e redes sociais.
 
 **Norma de uso de e-mail e comunicadores instantâneos:** 
 
-Completar a Política Central (PGSI), definindo as diretrizes para a utilização dos serviços de e-mail e comunicadores instantâneos.
+Definir as diretrizes para a utilização dos serviços de e-mail e comunicadores instantâneos.
 
 **Norma de proteção contra códigos maliciosos:**
 
-Completar a Política Central (PGSI), definindo as diretrizes para proteção da informação contra ameaças e códigos malicioso de qualquer natureza.
+definiras diretrizes para proteção da informação contra ameaças e códigos malicioso de qualquer natureza.
 
 **Norma de uso de equipamentos computacionais pessoais em ambiente corporativo (BYOD):**
 
-Completar a Política Central (PGSI), definindo as regras para o uso seguro de equipamentos pessoais para o manuseio de informações corporativas.
+Definir as regras para o uso seguro de equipamentos pessoais para o manuseio de informações corporativas.
 
 **Norma de acesso remoto:**
 
-Completar a Política Central (PGSI), definindo as diretrizes para o acesso remoto a informação, garantindo níveis adequados de proteção.
+Definir as diretrizes para o acesso remoto a informação, garantindo níveis adequados de proteção.
 
 **Norma de monitoramento de ativos/serviços da informação:**
 
-Completar a Política Central (PGSI), definindo as diretrizes para o monitoramento de ativos/serviços de informação e recursos computacionais.
+Definir as diretrizes para o monitoramento de ativos/serviços de informação e recursos computacionais.
 
 **Norma de tratamento de incidentes de segurança da informação:**
 
-Completar a Política Central (PGSI), definindo as diretrizes para garantir a resposta e tratamento adequados de incidentes de segurança da informação.
+Definir as diretrizes para garantir a resposta e tratamento adequados de incidentes de segurança da informação.
 
 ## Termo de uso de Sistemas Internos
 

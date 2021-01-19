@@ -5,7 +5,7 @@ draft = false
 author = "Matheus Almeida Costa"
 description = "Uma visão geral sobre sistemas operacionais, kernel e shell"
 categoria = [
-    "",
+    "Linux",
 ]
 +++
 

@@ -47,7 +47,8 @@ Exemplo de ameaça: Um cibercriminoso realiza um ataque de negação de serviço
 
 Exemplo de reforço: Manutenção em hardwares, assim como software atualizados, firewall bem configurado. Um plano de Recuperação de Desastres (RD) que contenha procedimentos e diretrizes para se administrar crises, sendo assim imprescindível a realização periódica de backups para recuperar dados se necessário.
 
-Confira todos os atributos relacionados a Segurança da Informação de maneira resumida.
+
+Confira esses e outros atributos relacionados a Segurança da Informação de maneira resumida.
 
 - **Confidencialidade:** As informações sigilosas devem ser acessadas somente por pessoas autorizadas.
 - **Integridade:** Os dados não devem ser alterados ou excluídos de forma não prevista ou autorizada, ou seja, é a garantia de que os dados estarão íntegros.
