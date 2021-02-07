@@ -12,17 +12,15 @@ categoria = [
 
 ## O que é Linux?
 
-Linux é um componente de um sistema operacional, é o núcleo do sistema, este é chamado de kernel.
+Linux é um componente de um sistema operacional, ele é o núcleo do sistema, que é chamado de kernel.
 
 ## Hardware
 
-Tudo começa com o hardware, o componente mais baixo nível de um computador, que é todo componente físico, interno ou externo, que determina do que um dispositivo é capaz e como você pode usá-lo. De maneira resumida é a implementação física do sistema
+Tudo começa com o hardware, o componente mais baixo nível de um computador, que é todo componente físico, interno ou externo, que determina do que um dispositivo é capaz e como você pode usá-lo. De maneira resumida é a implementação física do sistema.
 
 ## Sistema Operacional
 
 Sistema Operacional é um programa (software) que gerencia recursos de software e hardware.  É formado por um conjunto de rotinas que oferece serviços aos usuários e às suas aplicações. Ele tem a função de fornecer instruções ao hardware, capacitando a realização das operações de um equipamento. 
-
-Dentro do sistema operacional temos os componentes abaixo:
 
 ## Kernel
 
@@ -67,9 +65,7 @@ Exemplo: Debian, Mint, Fedora, Manjaro
 
 ## Interface Gráfica
 
-É a interface gráfica que é responsável pela aparência do sistema operacional, tendo um contato direto com o usuário, exibindo todas as informações da melhor maneira possível.
-
-Uma parte muito importante é a interface gráfica, que terá um contato direto com o usuário, exibindo todas as informações da melhor maneira possível.
+É a interface gráfica que é responsável pela aparência do sistema operacional, tendo um contato direto com o usuário, exibindo as informações visualmente.
 
 Existem muitas interfaces disponíveis no mundo Linux, mas entre as mais famosas podemos encontrar:
 
@@ -82,12 +78,12 @@ Cada interface apresenta suas devidas diferenças, algumas tem foco mais no dese
 
 ## Comandos Linux
 
-Existem alguns comandos que podemos ver o que foi dito acima
+Existem alguns comandos que podemos ver o que foi dito acima.
 
 Através do comando `hostnamectl`  podemos ver o sistema operacional e sua versão; kernel e sua versão; arquitetura.
 
 ```
-	 Static hostname: mint
+   Static hostname: mint
          Icon name: computer-laptop
            Chassis: laptop
         Machine ID: b76cc7b1bbdc489e93909d**********

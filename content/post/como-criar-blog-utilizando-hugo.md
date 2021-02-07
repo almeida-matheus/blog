@@ -15,23 +15,23 @@ O framework [hugo](https://gohugo.io/) é um gerador de sites estáticos, desenv
 
 ---
 
-## 1º passo - Instalar o hugo
+## 1º - Instalar o hugo
 
 ```
 sudo apt-get install hugo
 ```
 
-## 2º passo - Criar um site
+## 2º - Criar um site
 
 ```
 hugo new site nome_site
 ```
 
-vá para a pasta criada: **cd nome_site**
+vá para a pasta criada: `cd nome_site`
 
-## Extra - Estrutura do hugo
+## Estrutura do hugo
 
-Digitando **ls** ou **tree** você poderá observar a estrutura da pasta criada
+Digitando `ls` ou `tree` você poderá observar a estrutura da pasta criada
 
 - pasta archetypes contém default.md: que é basicamente o cabeçalho de todas as páginas, nesse arquivo temos como exemplo o titulo, a data e rascunho (draft)
 - arquivo config.toml: é nele que voce modifica a estrura básica do site, como o titulo, menus de navegação, url do site, etc
@@ -40,7 +40,7 @@ Digitando **ls** ou **tree** você poderá observar a estrutura da pasta criada
 - pasta static: é onde fica os arquivos reponsáveis pela estilização e ações por meios de scripts, arquivos de CSS e javascript respectivamente 
 - pasta themes: é nessa pasta onde fica o tema adicionado
 
-## 3º passo - Preparar o ambiente
+## 3º - Preparar o ambiente
 
 Como iremos hospedar o site na netlify, então temos que adicionar o arquivo netlify.toml no projeto, para isso devemos:
 
@@ -56,7 +56,7 @@ Modificar o arquivo (nesse exemplo eu utilizei o Visual Studio Code para editar)
 code netlify.toml
 ```
 
-Adicionar o código abaixo (alterar o hugo_version para a versão do seu hugo, para ver isso digite **hugo —version**)
+Adicionar o código abaixo (alterar o hugo_version para a versão do seu hugo, para ver isso digite `hugo version`)
 
 ```
 [build]
@@ -87,7 +87,7 @@ Devemos mudar o nome do dominio do site na Netlify, o caminho é esse abaixo:
 
 Domain settings > Domain management > Options > Edit site name
 
-## 4º passo - Adicionar um tema
+## 4º - Adicionar um tema
 
 Primeiramente escolha um tema de sua preferência [clicando aqui](https://themes.gohugo.io/)
 
@@ -108,13 +108,13 @@ Iremos copiar tudo que está na pasta exampleSite dentro do tema para a raiz do 
 cp -r themes/xxxx/exampleSite/* .
 ```
 
-## 5º passo - Customizar o site
+## 5º - Customizar o site
 
 ### Configurar o config.toml ou config.yaml
 
 Modifique os dados do site através do config conforme o necessário
 
-Importante: no arquivo config.toml deve alterar o atributo baseURL para o nome de domínio que você configurou na netilify
+Importante: no arquivo config.toml tem alterar o atributo baseURL para o nome de domínio que você configurou na netilify
 
 ```
 baseURL = "https://xxxx.netlify.com"
@@ -132,23 +132,24 @@ Arquivo a ser modificado: /themes/xxxx/static/css/style.css
 
 Arquivo recriado com as suas alterações em: /static/css/style.css
 
-## 6º passo - Adicionar uma página ou post
+## 6º - Adicionar uma página ou post
 
+Na raiz do projeto execute o seguinte comando para criar uma postagem
 ```
 hugo new post/post-exemplo.md
 ```
 
 O caminho da postagem irá estar em /content/post/post-exemplo.md
 
-Agora você pode editar o post utilizando a linguagem de marcação [Markdown](https://www.markdownguide.org/basic-syntax/) (nesse exemplo eu utilizei o Visual Studio Code para editar)
+Para editar o post basta utilizar a linguagem de marcação [Markdown](https://www.markdownguide.org/basic-syntax/) (nesse exemplo eu utilizei o Visual Studio Code para editar)
 
 ```
 code /content/post/post-exemplo.md
 ```
 
-## 7º passo - Rodar o projeto
+## 7º - Rodar o projeto
 
-Rode o projeto na sua máquina local e cheque se está tudo certo como deveria antes de hospedar na nuvem
+Rode o projeto na sua máquina local para visualiza-lo antes de enviar as modificações para a nuvem
 
 ```
 hugo server -D
@@ -156,8 +157,9 @@ hugo server -D
 
 -D é para mostrar os posts que estão com o rascunho ativado (draft: true)
 
-## 8º passo - Atualizar o projeto
+## 8º - Atualizar o projeto
 
+Na raiz do projeto execute os seguintes comandos
 ```
 git status
 git add .

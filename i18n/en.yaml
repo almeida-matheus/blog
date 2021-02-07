@@ -1,15 +1,15 @@
 # i18n/en.yaml
 - id: prevpage
-  translation: "← Prev page"
+  translation: "🡨 Página anterior"
 
 - id: nextpage
-  translation: "Next page →"
+  translation: "Próxima página 🡪"
 
 - id: nojscomments
-  translation: "Please enable JavaScript to load the comments."
+  translation: "Por favor, habilite o JavaScript para carregar os comentários."
 
 - id: authorpretext
-  translation: "Written by"
+  translation: "Escrito por"
 
 - id: 404title
   translation: "Erro 404"

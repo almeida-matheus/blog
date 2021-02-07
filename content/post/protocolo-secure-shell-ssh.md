@@ -19,6 +19,7 @@ SSH significa secure shell, é um protocolo de rede criptografado utilizado para
 - Servidor responde com o protocolo e sua Public Host Key
 - Cliente confirma que esse é o servidor correto
 - Geração da Public Key
+- 
     - Gerar um Large Prime Number
     - Acordar o método de encriptação (exemplo: AES)
     - Gerar uma Private Key
@@ -26,14 +27,16 @@ SSH significa secure shell, é um protocolo de rede criptografado utilizado para
     - Number para gerar a Public Key
     - Realizada a troca de Public Keys (a chave publica do servidor pro cliente e chave publica do cliente pro servidor)
 - Geração da Secret Session Key
+- 
     - Combinar Private Key local + Public Key recebida + Large Prime Number para gerar a Secret Session Key
     - Ela será igual para ambos (tanto o cliente e servidor tera essa chave localmente)
 - Essa Secret Session Key (simétrica) é usada para encriptar e decriptar a conexão
 
 Todas essas etapas descritas acima é para estabelecer a conexão, antes de enviar qualquer dado, por isso o SSH é seguro, não é atoa que seu nome é secure shell.
 
-Uma maneira de ver todas as etapas detalhadas de uma conexão SSH é passando o `-vvv` como argumento, exemplo: `ssh usuario@ip -vvv`
+Uma maneira de ver todas as etapas detalhadas de uma conexão SSH é passando o `-vvv` como argumento, exemplo: `ssh usuario@192.168.0.10 -vvv`
 
+Observação: Neste artigo estou levando em consideracão que o usuário do servidor se chama usuario e que o ip é 192.168.0.10
 
 ## Configurar o SSH na prática
 
@@ -62,7 +65,7 @@ systemctl start sshd
 No cliente basta usar o netcat no IP desse servidor
 
 ```
-nc -v 10.10.10.10 22
+nc -v 192.168.0.10 22
 ```
 
 (Se tiver um resultado como SSH - 2.0-OpenSSH_7.4 significa que o serviço está ativo)
@@ -108,16 +111,12 @@ A chave pública e privada são complementares, isso porque quando o cliente for
 
 ### Servidor
 
-Local das chaves:
-
-/etc/ssh 
+Local das chaves: /etc/ssh 
 
 (ssh_host_rsa_key e ssh_host_rsa_key.pub)
 
 
-Arquivo de configuração:
-
-/etc/ssh/sshd_config
+Arquivo de configuração: /etc/ssh/sshd_config
 
 
 Modificar no arquivo de configuração:
@@ -140,15 +139,11 @@ systemctl restart sshd
 
 ### Cliente
 
-Local das chaves:
-
-~/.ssh
+Local das chaves: ~/.ssh
 
 (id_rsa e id_rsa.pub)
 
-Local de configuração do ssh
-
-/etc/ssh/ssh_config
+Local de configuração do ssh: /etc/ssh/ssh_config
 
 Sempre que configurar tem que reiniciar o serviço com o comando  `systemctl restart ssh`
 
@@ -161,7 +156,7 @@ ssh-keygen -b 2048 -t rsa -v
 Essa chave deve estar no authorized_keys do servidor, portanto basta utilizar o comando:
 
 ```
-ssh-copy-id usuario@ip
+ssh-copy-id usuario@192.168.0.10
 ```
 
 Ou simplesmente copiar a chave pública do cliente `~/.ssh/id_rsa.pub` e colocar no arquivo authorized_keys do servidor `~/.ssh/authorized_keys`
@@ -169,7 +164,7 @@ Ou simplesmente copiar a chave pública do cliente `~/.ssh/id_rsa.pub` e colocar
 Após isso basta conectar normalmente
 
 ```
-ssh usuario@10.10.10.10 -p 22
+ssh usuario@192.168.0.10 -p 22
 ```
 
 Observação: `-p` é a porta; se o local padrão da chave privada for alterado deve passar o caminho dela "path" pelo argumento `-i`
@@ -187,7 +182,7 @@ Para fazer isso basta utilizar o comando `ssh-add`  e para listar a chave por im
 Para fica ainda mais seguro, utilizar um pen drive com a chave privada para fazer a conexão SSH é uma opção, assim utilizaria o seguinte comando:
 
 ```
-ssh -i /mnt/id_rsa usuario@10.10.10.10
+ssh -i /mnt/id_rsa usuario@192.168.0.10
 ```
 
 `-i` é para especificar o caminho da chave privada.
@@ -238,7 +233,7 @@ Definir um tempo limite de inatividade, ao passar desse tempo o usuário será a
 
 **`ClientAliveCountMax 0`**
 
-(da pra fazer a mesma coisa utilizando o comando export TMOUT=360 no terminal)
+(Da pra fazer a mesma coisa utilizando o comando export TMOUT=360 no terminal)
 
 Limitar o número de tentativas de conexão:
 
