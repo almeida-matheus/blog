@@ -36,7 +36,7 @@ Portanto para criar as diversas placas eu tive que dedicar boa parte do meu temp
 
 O objetivo dessas placas seria para a criação de uCMods que são módulos de processamento com funções já pré-programadas e que podem ser reconfiguradas pelo usuário via smartphone.
 
-As imagens abaixo são esboços do layout e esquemático de uma PCB 
+As imagens abaixo são layout e esquemático de uma PCB respectivamente.
 
 Layout            
 :--------------------------------------------------:
@@ -51,9 +51,9 @@ Esquemático
 
 Microcontrolador é uma espécie de computador em um único circuito integrado, constituído de um processador (CPU) e outros periféricos necessários como: memória de armazenamento de programa, memória para armazenamento de variáveis, periféricos para comunicação de entrada e saída, conversor analógico/digital etc.
 
-Meu contato com microcontroladores se intensificou mais na reta final do estágio, lá eu utilizei o Arduino e os da STMicroeletronics de arquitetura ARM, sempre utilizando a linguagem C. Todos os projetos foram sempre relacionados ao controle de LEDs
+Meu contato com microcontroladores se intensificou mais na reta final do estágio, lá eu utilizei o Arduino e os da STMicroeletronics de arquitetura ARM, sempre utilizando a linguagem C. Todos os projetos foram sempre relacionados ao controle de LEDs.
 
-As imagens abaixo são os esboços de projetos envolvendo microcontroladores
+As imagens abaixo são os esboços de projetos envolvendo microcontroladores.
 
 STM32 | Arduino
 :-------------------------:|:-------------------------:
@@ -63,11 +63,11 @@ STM32 | Arduino
 
 A leitura de datasheets era imprescindível para realizar ambas atividades acima. Além de montar circuitos em protoboards e soldar componentes, realizei algumas atividades que não necessariamente eram envolvidas com eletrônica em si, dentre elas destaco:
 
-- Formatação dos notebooks
-- Instalação dos softwares necessários para o trabalho
-- Preparação dos materiais (desencapar fios, cortas as fitas retirando o silicone)
-- Organização dos componentes da empresa
-- Criação de planilha com informações de cada componente (nome, tipo, quantidade, local)
+- Formatação dos notebooks.
+- Instalação dos softwares necessários para o trabalho.
+- Preparação dos materiais (desencapar fios, cortas as fitas retirando o silicone, etc).
+- Organização dos componentes da empresa.
+- Criação de uma planilha com informações de cada componente.
 
 Fios | Transistor
 :-------------------------:|:-------------------------:
@@ -82,7 +82,7 @@ Planilha
 
 No estágio eu tive a oportunidade de vivenciar o conteúdo teórico adquirido nas aulas, proporcionando uma maior compreensão dos conteúdos abordados pelo curso. Também obtive novos conhecimentos técnicos sobre eletrônica (hard skills) . 
 
-Os funcionários eram pessoas boas, respeitosas, e essa convivência com eles me proporcionou o aprimoramento de habilidades interpessoais (soft skills), dentre as quais destaco: a habilidade de saber receber feedback e usar ao meu favor,a resiliência e o trabalho em equipe.
+A convivência com os outros colaboradores me proporcionou o aprimoramento de habilidades interpessoais (soft skills), dentre as quais destaco: a habilidade de saber receber feedback e usar ao meu favor, a resiliência e o trabalho em equipe.
 
 No geral eu tive uma ótima experiência nesse estágio e com certeza contribuiu muito para minha vida profissional.
 
