@@ -9,7 +9,6 @@ categoria = [
 ]
 +++
 
-
 ## O que é Linux?
 
 Linux é um componente de um sistema operacional, ele é o núcleo do sistema, que é chamado de kernel.
@@ -20,21 +19,25 @@ Tudo começa com o hardware, o componente mais baixo nível de um computador, qu
 
 ## Sistema Operacional
 
-Sistema Operacional é um programa (software) que gerencia recursos de software e hardware.  É formado por um conjunto de rotinas que oferece serviços aos usuários e às suas aplicações. Ele tem a função de fornecer instruções ao hardware, capacitando a realização das operações de um equipamento. 
+Sistema Operacional é um programa (software) que gerencia todos os recursos de um computador, ou seja, o software e hardware. Ele é formado por um conjunto de programas que desempenham papeis fundamentais para o funcionamento do equipamento, como por exemplo: inicialização do computador, rotiinas básicas para controle de dispositivos, gerência, escalonamento e interação de tarefas, suporte a aplicação multitarefas, manutenção da integridade do sistema, etc.
 
 ## Kernel
 
-Acima do hardware, fica o kernel, este é quem vai contatar o hardware diretamente. Portanto ele é basicamente o coração e cérebro do sistema, é toda implementação lógica de como o sistema vai gerenciar a memoria, como vai ser o desempenho no sistema.
+Kernel é o núcleo central do sistema operacional, ele serve de ponte entre os programas e o processamento real de dados feito a nível de hardware.
+
+Portanto é ele que vai contatar o hardware diretamente, ele funciona como um coração e cérebro do sistema, porque é nele que fica toda implementação lógica de como o sistema vai gerenciar os recursos do hardware.
 
 Vale ressaltar que o linux é um kernel open source, significa que todo o seu código está disponível para visualização, utilização e até modificação de acordo com a necessidade.
 
 ## Shell
 
-Shell é o interpretador de comandos, é uma interface para os usuários de comunicarem com o kernel, ou seja, o shell envia os comandos para o kernel
+Shell é o interpretador de comandos, é uma interface para os usuários de comunicarem com o kernel, ou seja, o shell envia os comandos para o kernel.
 
 Um exemplo disso é quando abrimos o terminal e digitamos um comando `cd ~`, esse comando é interpretado pelo shell, e ele entende que esse comando para mudar de pasta.
 
-De forma resumida, digita o comando no terminal, o shell lê, o kernel responde e o shell trás o resultado da resposta.
+Ele fica localizado em `/bin` e só conseguimos executar  esses comandos pois estão na variável de ambiente PATH, os quais podemos verificar com o comando: `echo $PATH`
+
+De forma resumida, o usuário digita o comando no terminal, o shell lê, o kernel responde e o shell trás o resultado da resposta.
 
 O shell nativo do linux é o bash, mas também existem outros como o zsh. A sintaxe de ambos são muito similares, a diferença fica mais no quesito recursos.
 

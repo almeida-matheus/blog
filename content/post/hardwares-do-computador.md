@@ -22,7 +22,7 @@ Principais fatores que definem o desempenho de um processador:
 - **Frequência**: A frequência da CPU (também conhecida como clock).  É medido em giga hertz (GHz) . Quanto maior a frequência, maior a quantidade de cálculos que será realizado.
 - **Núcleo**: A quantidade de núcleos influencia na capacidade do seu processador em desempenhar atividades multitarefas. Cada núcleo funciona como se fosse um processador independente. Assim, o número de ações que um computador consegue realizar por pulso de clock é maior.
 - **Cache**: É o espaço onde as instruções podem ser armazenadas dentro do processador, as informações mais requisitadas pelo processador são armazenadas aqui, a vantagem é a velocidade, pois é bem mais rápido que a memória RAM ou disco rígido. Geralmente existem três níveis de memória cache: L1, L2 e L3. Os níveis de número menor costumam ser menores, mas mais rápidos.
-- **Nanômetros**: Diz a respeito sobre a construção e a arquitetura interno do processador. Quanto menor a nanotecnologia, mais novo e, geralmente, melhor é o processador. Por exemplo: Um processador antigo quad core de 2GHz mais lento que um modelo mais recente que também é quad core mas com 1.8GHz de velocidade
+- **Nanômetros**: Diz a respeito sobre a construção e a arquitetura interna do processador, mais especificamente o tamanho dos transistores. Quanto menor a nanotecnologia, mais novo e, geralmente, melhor é o processador. Por exemplo: Um processador antigo quad core de 2GHz mais lento que um modelo mais recente que também é quad core mas com 1.8GHz de velocidade
 
 A melhor forma de comparar processadores é utilizando benchmarks em sites especializados, já que são vários fatores que influenciam no desempenho
 

@@ -11,7 +11,11 @@ categoria = [
 
 ## Definição
 
-SSH significa secure shell, é um protocolo de rede criptografado utilizado para criar conexões seguras entre sistemas, seu principal uso é para fazer conexões remotas, roda na porta 22 por padrão.
+SSH significa secure shell, é um protocolo de rede criptografado utilizado para criar conexões seguras entre sistemas.
+
+Seu principal uso é para fazer conexões remotas, embora seja possível fazer tunelamentos e redirecionamentos de portas TCP.
+
+Roda na porta TCP de número 22 por padrão.
 
 ## Como funciona
 
