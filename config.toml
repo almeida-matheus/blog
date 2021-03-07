@@ -43,7 +43,7 @@ googleAnalytics = ""
 	#listAuthor = true
 
 	# Add math typesetting with KaTeX (Global with this Param)
-	math = true
+	math = false
 
 	# Optional 80x80 avatar image.
 	avatar = "/img/logo_white.png"

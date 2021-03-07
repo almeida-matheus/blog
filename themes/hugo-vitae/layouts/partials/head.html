@@ -8,7 +8,7 @@
 	<meta property="og:title" content="{{ .Title }}">
 	<!--Showing Thumbnail Image Article / Post-->
 	{{ if isset .Params "image" }}
-	<meta property="og:image" content="{{ relURL .Params.image }}">
+	<meta property="og:image" content="{{ absURL .Params.image }}">
 	{{ end }}
 	<!-- If a author is set for the page it will be used -->
 	{{- with $.Param "author" -}}
@@ -20,7 +20,7 @@
 	{{- end -}}
 	<!-- Description is either out of the config or in front matter of a page -->
 	{{- if or .Description $.Site.Params.description -}}
-	<meta name="description" content="{{ if .IsHome }}{{ $.Site.Params.description }}{{ else }}{{ .Description }}{{ end }}">
+	<meta name="description" content="{{ if .IsHome }}{{ $.Site.Params.description }}{{ else }}{{ if isset .Params "description" }}{{ .Description }}{{ else }}{{ .Plain  | htmlUnescape | safeHTML | truncate 140 }}{{ end }}{{ end }}">
 	{{- end -}}
 	{{- template "_internal/opengraph.html" . -}}
 	{{- template "_internal/twitter_cards.html" . -}}
@@ -53,4 +53,5 @@
 	{{- else -}}
 	<title>{{ .Title }} | {{ .Site.Title }}</title>
 	{{- end -}}
+	{{- partial "extend_head.html" . -}}
 </head>

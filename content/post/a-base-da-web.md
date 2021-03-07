@@ -58,7 +58,7 @@ O protocolo HTTP define um conjunto de métodos de requisição responsáveis po
 
 ### GET
 
-Nesse caso a requisição é enviada como uma string na URL, isso porque os parâmetros são passados no cabeçalho (header); tem uma limitação de caracteres e no quesito performance é ligeiramente mais rápido que o método **POST.**
+Nesse caso a requisição é enviada como uma string na URL, isso porque os parâmetros são passados no cabeçalho (header); tem uma limitação de caracteres e no quesito performance é ligeiramente mais rápido que o método **POST**.
 
 As requisições do tipo **GET** são recomendadas para obter dados de um determinado recurso. Como em um formulário de busca ou em uma listagem de todos os produtos cadastrados.
 
@@ -67,6 +67,11 @@ As requisições do tipo **GET** são recomendadas para obter dados de um dete
 Nesse caso os parâmetros da requisição é encapsulada junto ao corpo (body) da requisição; não tem limitação de caracteres e no quesito performance é ligeiramente mais lento que o método **GET.**
 
 Já as requisições **POST** são mais utilizadas para enviar informações para serem processadas, como por exemplo, criar algum recurso, como um produto, ou um cliente.
+
+Outros metetódos:
+- **PUT**: É utilizado para alterar uma informação.
+- **DELE**: Deletar alguma informação.
+- **PATCH**: Alteração especifica.
 
 ## **Códigos de resposta HTTP**
 

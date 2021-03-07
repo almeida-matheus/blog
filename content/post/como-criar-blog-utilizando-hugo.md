@@ -11,7 +11,7 @@ categoria = [
 
 ## Sobre o Hugo
 
-O framework [hugo](https://gohugo.io/) é um gerador de sites estáticos, desenvolvido na linguagem Go, sua principal vantagem é o desempenho comparado aos seus concorrentes como wordpress, jekyll, etc.
+O framework [hugo](https://gohugo.io/) é um gerador de sites estáticos, desenvolvido na linguagem Go. Pelo fato de conter apenas arquivos de front-end e não ter nenhuma ligação com o back-end suas principais vantagens são: segurança e desempenho.
 
 ---
 
