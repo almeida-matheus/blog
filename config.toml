@@ -4,7 +4,7 @@ defaultContentLanguage = "en"
 author = "Matheus Almeida"
 title = "Matheus Almeida"
 theme = "hugo-vitae"
-paginate = 10
+paginate = 20
 enableRobotsTXT = true
 
 copyright = ""
@@ -28,7 +28,7 @@ googleAnalytics = ""
 	homepage = false
 
 	# Add meta keywords in head part (Site Keywords or Tags of Page)
-	keywords = ["Matheus Almeida Costa","Matheus Almeida","blog matheus almeida","site matheus almeida"]
+	keywords = ["Matheus Almeida Costa","blog matheus tech","blog matheus almeida","site matheus almeida"]
 
 	# Add meta description in head part
 	description = "Matheus Almeida Costa"
