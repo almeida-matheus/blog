@@ -8,26 +8,21 @@ categoria = [
     "Programação",
 ]
 +++
+## Sobre
 
-# Introdução ao Django
-
-Created: Jan 17, 2021 6:58 PM
-
-## Sobre o Django
-
-Django é um framework escrito em ython para a criação de aplicações web gratuito e de código aberto. 
-
-O framework django é um conjunto de componentes que auxiliam  no desenvolvimento rápido e design limpo e pragmático.
+O Django é um framework  python para a criação de aplicações web, ele contém um conjunto de componentes que auxiliam no desenvolvimento rápido e design limpo e pragmático.
 
 A arquitetura do django possui como padrão de projeto o MTV (Model, Template, View), que servem para:
 
-- Model: Mapeamento do banco de dados para o projeto.
-- Template: Páginas para visualização de dados. Normalmente, é aqui que fica o HTML que será renderizado nos navegadores.
-- View: Lógica de negócio. É aqui que determinamos o que irá acontecer em nosso projeto.
+- **Model**: Modelo do banco de dados para o projeto.
+- **Template**: Páginas para visualização de dados. Normalmente, é aqui que fica o HTML que será renderizado nos navegadores.
+- **View**: Lógica de negócio. É aqui que determinamos o que irá acontecer em nosso projeto.
 
-## Arquivos do Django
+É semelhante a arquitetura MVC, o templeta do django é equibalente a view, já a view do django seria equivalente ao controller.
 
-**manage.py:**
+## Arquivos
+
+### `manage.py`
 
 É um utilitário de linha de comando que permite interagir com o projeto e app django de várias maneiras. 
 
@@ -35,27 +30,25 @@ A arquitetura do django possui como padrão de projeto o MTV (Model, Template, 
 
 O projeto é uma coleção de configurações e apps para um site.
 
-Projeto é uma coleção de configurações, muitos apps podem fazer parte desse projeto
-
 Dentro da pasta do projeto do django temos os seguintes arquivos:
 
-**init.py**: 
+### `__init__.py`
 
-um arquivo vazio que indica ao python que este diretório deve ser considerado um pacote python.
+Arquivo vazio que indica ao python que este diretório deve ser considerado um pacote python.
 
-**settings.py**: 
+### `settings.py`
 
 Arquivo de configuração do projeto django, aqui você adiciona os apps, banco de dados, etc.
 
-**urls.py**: 
+### `urls.py`
 
-Arquivo onde declara as urls e rotas dos apps que estão relacionados ao respectivo projeto django. Por padrão tem a rota para o [admin.py](http://admin.py) declarada
+Arquivo onde declara as urls e rotas dos apps que estão relacionados ao respectivo projeto django. Por padrão tem a rota para o `admin.py` declarada
 
-**asgi.py**: 
+### `asgi.py`
 
-Ponto de integração para servidores web compatíveis com ASGI usado para servir seu projeto.Útil para quando for hospedar o projeto na nuvem.
+Ponto de integração para servidores web compatíveis com ASGI usado para servir seu projeto. Útil para quando for hospedar o projeto na nuvem.
 
-**wsgi.py**: 
+### `wsgi.py`
 
 Ponto de integração para servidores web compativeis com WSGI, protocolo que serve http. Útil para quando for hospedar o projeto na nuvem.
 
@@ -63,28 +56,27 @@ Ponto de integração para servidores web compativeis com WSGI, protocolo que se
 
 O app é uma aplicação que realiza uma determinada função.
 
-Observação: Um projeto pode conter muitos apps, um app pode estar em múltiplos projetos
+Observação: Um projeto pode conter muitos apps e um app pode estar em múltiplos projetos
 
 Dentro da pasta de app do django temos os seguintes arquivos:
 
-**__init__.py:** 
+### `__init__.py`
 
-um arquivo vazio que indica ao python que este diretório deve ser considerado um pacote python.
+Arquivo vazio que indica ao python que este diretório deve ser considerado um pacote python.
 
-**admin.py:**
+### `admin.py`
 
-É o arquivo para registrar a área administrativa do site, nele tem um crud do modelo do banco de dados da aplicação que está em [model.py](http://model.py). Para ser acessado tem que criar uma conta admin com o comando `python manage.py createsuperuser`
+É o arquivo para registrar a área administrativa do site, nele tem um crud do modelo do banco de dados da aplicação que está em `model.py`. Para ser acessado tem que criar uma conta admin com o comando `python manage.py createsuperuser`
 
-**apps.py:**
+### `apps.py`
 
 Arquivo responsável pela configuração do app do projeto django.
 
+### `migrations/`
 
-**migrations/:**
+As migrations estão relacionadas aos banco de dados, é a maneira do django de propagar as alterações feitas em seus modelos no `models.py` (adicionando um campo, excluindo um modelo, etc.) em seu esquema de banco de dados.
 
-As migrations estão relacionadas aos banco de dados, é a maneira do django de propagar as alterações feitas em seus modelos no models.py (adicionando um campo, excluindo um modelo, etc.) em seu esquema de banco de dados.
-
-**models.py**
+### `models.py`
 
 Arquivo responsável por definir os modelos da aplicação. Normalmente cada modelo representa uma tabela a ser criada no banco de dados.
 
@@ -92,9 +84,9 @@ Arquivo responsável por definir os modelos da aplicação. Normalmente cada mod
 - Cada atributo do modelo representa uma coluna do banco de dados.
 - Django fornece um api que cria automaticamente as querys SQL.
 
-exemplo de como fica no django:
+Exemplo de como fica no django:
 
-```python
+```
 from django.db import models
 
 class Person(models.Model):
@@ -102,9 +94,9 @@ class Person(models.Model):
     last_name = models.CharField(max_length=30)
 ```
 
-nesse caso ficaria representado como o seguinte comando SQL:
+Nesse caso ficaria representado como o seguinte comando SQL:
 
-```python
+```
 CREATE TABLE myapp_person (
     "id" serial NOT NULL PRIMARY KEY,
     "first_name" varchar(30) NOT NULL,
@@ -112,21 +104,23 @@ CREATE TABLE myapp_person (
 );
 ```
 
-**tests.py**
+### `tests.py`
 
 Arquivo responsável por definir as regras de testes da aplicação de maneira automatizada, isto é, você cria um conjunto de testes uma vez, e então conforme faz mudanças em sua aplicação, você pode checar se o seu código continua funcionando como você originalmente pretendia, sem ter que gastar tempo executando o teste manualmente.
 
 Confira mais sobre testes na [documentação](https://docs.djangoproject.com/pt-br/3.1/intro/tutorial05/).
 
-**views.py**
+
+
+### `views.py`
 
 Arquivo responsável por renderizar a página dinâmicamente. Utiliza-se uma lógica para representar os valores em um template. que é comumente um código html para representar os dados.
 
 É basicamente o arquivo responsável por definir as regras de negócio do app.
 
-Exemplo de uma view que retorna a data e hora corrente em um html
+Exemplo de uma view que retorna a data e hora corrente em html:
 
-```python
+```
 from django.http import HttpResponse
 import datetime
 
@@ -168,11 +162,11 @@ python manage.py startapp appdjango
 Isso criará um diretório, que é apresentada desta forma: 
 
 - init.py
-- [admin.py](http://admin.py/)
-- migrations/ init.py
-- [models.py](http://models.py/)
-- [tests.py](http://tests.py/)
-- [views.py](http://views.py/)
+- admin.py
+- migrations/init.py
+- models.py
+- tests.py
+- views.py
 
 Para criar as tabelas do banco de dados através do django devemos utilizar os 2 comandos abaixo:
 
@@ -180,7 +174,7 @@ Criar uma lista de coisas que queremos migrar para o banco:
 
 O comando makemigrations cria novas migrações com base nas alterações detectadas nos modelos.
 
-```python
+```
 python manage.py makemigrations
 ```
 
@@ -194,7 +188,7 @@ python manage.py migrate
 
 Carregar arquivos estáticos:
 
-```python
+```
 python3 manage.py collectstatic
 ```
 
@@ -208,7 +202,7 @@ python manage.py createsuperuser
 
 Iniciar o servidor de desenvolimento:
 
-Por padrão é o endereço [localhost](http://localhost) (127.0.0.1) na porta 8000, para selecionar outra porta basta digila-la como argumento após o runserver
+Por padrão é o endereço localhost (127.0.0.1) na porta 8000, para selecionar outra porta basta digila-la como argumento após o runserver.
 
 ```
 python manage.py runserver
@@ -216,44 +210,44 @@ python manage.py runserver
 
 ## Preparando o ambiente
 
-1. Instalar o python3
+Instalar o python3
 
 ```
 sudo apt-get install python3
 ```
 
-2. Instalar o pip, o gerenciador de pacotes do python
+Instalar o pip, o gerenciador de pacotes do python
 
 ```
 apt-get install python3-pip
 ```
 
-3. Instalar o ambiente virtual (venv)
+Instalar o ambiente virtual (venv)
 
 ```
 sudo apt-get install python3-venv
 ```
 
-Através deste módulo de Python, contendo seus próprios diretórios, arquivos binários, versões e módulos independentes do sistema operacional.
+Através deste módulo de python, contendo seus próprios diretórios, arquivos binários, versões e módulos independentes do sistema operacional.
 
 Utilizando o módulo `venv`, podemos separar as dependências de cada projeto.
 Desta forma, cada projeto possui suas próprias dependências, não precisando utilizar os módulos no escopo global.
 
-Crar o ambiente virtual venv
+Criar o ambiente virtual venv:
 
 `python3 -m venv <nome do ambiente virtual>`
 
-```jsx
+```
 python3 -m venv env
 ```
 
-Ativar o ambiente virtual no linux
+Ativar o ambiente virtual no linux:
 
-```jsx
+```
 source /env/bin/activate
 ```
 
-4. Instalar o framework Django
+Instalar o framework Django:
 
 ```
 pip3 install django
@@ -269,21 +263,21 @@ pip3 install --upgrade django==3.1.5
 
 ## Hello world no Django
 
-Primeiro passo é criar o projeto com o comando :
+Primeiro passo é criar o projeto com o comando:
 
-```python
+```
 django-admin startproject projeto .
 ```
 
 Agora temos que criar o app com o comando:
 
-```python
-python [manage.py](http://manage.py/) startapp app
+```
+python manage.py startapp app
 ```
 
-No arquivo `settings.py` do diretório do projeto devemos adicionar o app criado em INSTALED_APPS  alterar a linguagem, o horário da aplicação e também o local dos arquivos html para a pasta templates, que está dentro da pasta do app
+No arquivo `settings.py` do diretório do projeto devemos adicionar o app criado em INSTALED_APPS  alterar a linguagem, o horário da aplicação e também o local dos arquivos html para a pasta templates, que está dentro da pasta do app.
 
-```python
+```
 INSTALLED_APPS = [
     'app',
 ]
@@ -304,7 +298,7 @@ A ideia aqui é importar todas as views relacionadas a url com o comando `path()
 
 `views.index`: faz referência a função index do arquivo views, que renderiza a página.
 
-```python
+```
 from django.urls import path
 from . import views
 
@@ -321,20 +315,18 @@ Dentro de `index()`, inserimos `request`. Em seguida, devolvemos com `return`
 
 Essa função basicamente recebe uma requisição http e retorna a resposta http.
 
-```python
+```
 from django.shortcuts import render
-#from django.http import HttpResponse
 
 def index(request):
-    #return HttpResponse('<h1>Receitas</h1>')
-		return render(request,'index.html')
+	return render(request,'index.html')
 ```
 
-Agora temos que incluir o caminho index do app no `urls.py` do projeto
+Agora temos que incluir o caminho index do app no `urls.py` do projeto.
 
 Nesse caso quando acessar a raiz do site o django vai acessar acessar o arquivo `urls.py` do app.
 
-```python
+```
 from django.contrib import admin
 from django.urls import path, include
 
@@ -346,7 +338,7 @@ urlpatterns = [
 
 Próximo passo é renderizar um arquivo html, para isso no diretório do app criaremos a pasta `templates` com o arquivo `index.html` .
 
-```html
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -362,10 +354,8 @@ Próximo passo é renderizar um arquivo html, para isso no diretório do app cri
 
 Devemos executar o projeto com o seguinte comando:
 
-```python
-python [manage.py](http://manage.py/) startapp app
+```
+python manage.py runserver
 ```
 
 Para visualizar o hello world é só acessar a url [http://127.0.0.1:8000/](http://127.0.0.1:8000/), que é a porta padrão que o django abre no localhost.
-
-
