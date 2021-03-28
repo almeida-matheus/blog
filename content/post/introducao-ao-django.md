@@ -66,7 +66,7 @@ Arquivo vazio que indica ao python que este diretório deve ser considerado um p
 
 ### `admin.py`
 
-É o arquivo para registrar a área administrativa do site, nele tem um crud do modelo do banco de dados da aplicação que está em `model.py`. Para ser acessado tem que criar uma conta admin com o comando `python manage.py createsuperuser`
+É o arquivo para registrar a área administrativa do site, nele tem um crud do modelo do banco de dados da aplicação que está em `model.py`. Para ser acessado tem que criar uma conta admin com o comando `python3 manage.py createsuperuser`
 
 ### `apps.py`
 
@@ -153,10 +153,10 @@ Isso criará um diretório, que é apresentada desta forma:
 
 Criar uma aplicação (app):
 
-`python manage.py startapp <nome_app>`
+`python3 manage.py startapp <nome_app>`
 
 ```
-python manage.py startapp appdjango
+python3 manage.py startapp appdjango
 ```
 
 Isso criará um diretório, que é apresentada desta forma: 
@@ -175,7 +175,7 @@ Criar uma lista de coisas que queremos migrar para o banco:
 O comando makemigrations cria novas migrações com base nas alterações detectadas nos modelos.
 
 ```
-python manage.py makemigrations
+python3 manage.py makemigrations
 ```
 
 Inserir os arquivos do migrations no banco de dados:
@@ -183,7 +183,7 @@ Inserir os arquivos do migrations no banco de dados:
 O comando migrate sincroniza o estado do banco de dados com o conjunto atual de modelos e migrações.
 
 ```
-python manage.py migrate
+python3 manage.py migrate
 ```
 
 Carregar arquivos estáticos:
@@ -194,10 +194,10 @@ python3 manage.py collectstatic
 
 Criar usuário admin:
 
-`python manage.py createsuperuser`
+`python3 manage.py createsuperuser`
 
 ```
-python manage.py createsuperuser
+python3 manage.py createsuperuser
 ```
 
 Iniciar o servidor de desenvolimento:
@@ -205,7 +205,7 @@ Iniciar o servidor de desenvolimento:
 Por padrão é o endereço localhost (127.0.0.1) na porta 8000, para selecionar outra porta basta digila-la como argumento após o runserver.
 
 ```
-python manage.py runserver
+python3 manage.py runserver
 ```
 
 ## Preparando o ambiente
@@ -242,9 +242,17 @@ python3 -m venv env
 ```
 
 Ativar o ambiente virtual no linux:
+`source /<nome do ambiente virtual >/bin/activate`
 
 ```
 source /env/bin/activate
+```
+
+Ativar o ambiente virtual no windows:
+`<nome do ambiente virtual>\Scripts\activate.bat`
+
+```
+env\Scripts\activate.bat
 ```
 
 Instalar o framework Django:
@@ -272,7 +280,7 @@ django-admin startproject projeto .
 Agora temos que criar o app com o comando:
 
 ```
-python manage.py startapp app
+python3 manage.py startapp app
 ```
 
 No arquivo `settings.py` do diretório do projeto devemos adicionar o app criado em INSTALED_APPS  alterar a linguagem, o horário da aplicação e também o local dos arquivos html para a pasta templates, que está dentro da pasta do app.
@@ -355,7 +363,7 @@ Próximo passo é renderizar um arquivo html, para isso no diretório do app cri
 Devemos executar o projeto com o seguinte comando:
 
 ```
-python manage.py runserver
+python3 manage.py runserver
 ```
 
 Para visualizar o hello world é só acessar a url [http://127.0.0.1:8000/](http://127.0.0.1:8000/), que é a porta padrão que o django abre no localhost.

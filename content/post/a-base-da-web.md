@@ -58,21 +58,27 @@ O protocolo HTTP define um conjunto de métodos de requisição responsáveis po
 
 ### GET
 
-Nesse caso a requisição é enviada como uma string na URL, isso porque os parâmetros são passados no cabeçalho (header); tem uma limitação de caracteres e no quesito performance é ligeiramente mais rápido que o método **POST**.
+As requisições do tipo **GET** são recomendadas para obter dados de um determinado recurso. 
 
-As requisições do tipo **GET** são recomendadas para obter dados de um determinado recurso. Como em um formulário de busca ou em uma listagem de todos os produtos cadastrados.
+A requisição é enviada como uma string na URL, isso porque os parâmetros são passados no cabeçalho (header); tem uma limitação de caracteres e no quesito performance é ligeiramente mais rápido que o método **POST**.
 
+Exemplo de uso: Uma ferramenta de busca de postagens ou uma listagem de todos os produtos cadastrados.
 ### POST
 
-Nesse caso os parâmetros da requisição é encapsulada junto ao corpo (body) da requisição; não tem limitação de caracteres e no quesito performance é ligeiramente mais lento que o método **GET.**
+Já as requisições **POST** são comumente utilizadas para enviar dados para serem processados no servidor.
 
-Já as requisições **POST** são mais utilizadas para enviar informações para serem processadas, como por exemplo, criar algum recurso, como um produto, ou um cliente.
+Os parâmetros da requisição é encapsulada junto ao corpo (body) da requisição; não tem limitação de caracteres e no quesito performance é ligeiramente mais lento que o método **GET**.
 
-Outros metetódos:
-- **PUT**: É utilizado para alterar uma informação.
-- **DELE**: Deletar alguma informação.
-- **PATCH**: Alteração especifica.
+Exemplo de uso: formulário para cadastro de usuário.
 
+Outros metódos:
+- **PUT**: É utilizado para alterar um recurso inteiro. Se o recurso já existir, ele deve ser atualizado. Se não existir, pode ser criado.
+- **PATCH**: É utilizado para alterar um atributo específico.
+- **DELETE**: É utilziado para deletar a informação especificada.
+- **HEAD**: Funciona semelhante ao GET, porém, retorna somente os cabeçalhos de uma resposta.
+- **TRACE**: Devolve a mesma requisição que for enviada veja se houve mudança e/ou adições feitas por servidores intermediários.
+- **OPTIONS**: Retorna os métodos HTTP suportados pelo servidor para a URL especificada.
+- **CONNECT**: Converte a requisição de conexão para um túnel TCP/IP transparente, geralmente para facilitar a comunicação criptografada com SSL HTTPS através de um proxy HTTP não criptografado.
 ## **Códigos de resposta HTTP**
 
 Os códigos de status das respostas HTTP indicam se uma requisição HTTP foi corretamente concluída ou não. 

@@ -19,7 +19,7 @@ Tudo começa com o hardware, o componente mais baixo nível de um computador, qu
 
 ## Sistema Operacional
 
-Sistema Operacional é um programa (software) que gerencia todos os recursos de um computador, ou seja, o software e hardware. Ele é formado por um conjunto de programas que desempenham papeis fundamentais para o funcionamento do equipamento, como por exemplo: inicialização do computador, rotiinas básicas para controle de dispositivos, gerência, escalonamento e interação de tarefas, suporte a aplicação multitarefas, manutenção da integridade do sistema, etc.
+Sistema Operacional é um programa (software) que gerencia todos os recursos de um computador, ou seja, o software e hardware. Ele é formado por um conjunto de programas que desempenham papéis fundamentais para o funcionamento do equipamento, como por exemplo: inicialização do computador, rotinas básicas para controle de dispositivos, gerência, escalonamento e interação de tarefas, suporte a aplicação multitarefas, manutenção da integridade do sistema, etc.
 
 ## Kernel
 
@@ -62,7 +62,7 @@ Exemplo: Red Hat, CentOS, Suse, Ubuntu Server
 
 ### Desktop
 
-São distribuições voltada para os sistema de usuários finais, comumente instalado em computadores pessoais. Produtividade, objetividade, desempenho são algumas caracteristicas importantes. No mais apresenta interface gráfica e suporte para programas convencionais como editores de vídeo, navegador, jogosl, etc.
+São distribuições voltada para os sistema de usuários finais, comumente instalado em computadores pessoais. Produtividade, objetividade, desempenho são algumas características importantes. No mais apresenta interface gráfica e suporte para programas convencionais como editores de vídeo, navegador, jogosl, etc.
 
 Exemplo: Debian, Mint, Fedora, Manjaro
 
