@@ -18,7 +18,7 @@ A arquitetura do django possui como padrão de projeto o MTV (Model, Template, 
 - **Template**: Páginas para visualização de dados. Normalmente, é aqui que fica o HTML que será renderizado nos navegadores.
 - **View**: Lógica de negócio. É aqui que determinamos o que irá acontecer em nosso projeto.
 
-É semelhante a arquitetura MVC, o templeta do django é equibalente a view, já a view do django seria equivalente ao controller.
+É semelhante a arquitetura MVC, o templeta do django é equivalente a view, já a view do django seria equivalente ao controller.
 
 ## Arquivos
 
@@ -136,7 +136,7 @@ Ver todos comandos do django:
 
 `django-admin help`
 
-O primeiro passo é criar um projeto:
+Criar um projeto:
 
 `django-admin startproject <nome_do_projeto> .`
 
@@ -194,8 +194,6 @@ python3 manage.py collectstatic
 
 Criar usuário admin:
 
-`python3 manage.py createsuperuser`
-
 ```
 python3 manage.py createsuperuser
 ```
@@ -242,7 +240,7 @@ python3 -m venv env
 ```
 
 Ativar o ambiente virtual no linux:
-`source /<nome do ambiente virtual >/bin/activate`
+`source /<nome do ambiente virtual>/bin/activate`
 
 ```
 source /env/bin/activate
@@ -263,7 +261,7 @@ pip3 install django
 
 Verifique a versão instalada no sistema com o comando `python3 -m django --version`
 
-o ideal é ter a versão mais atualizada, caso já tenha a versão 2 instalar digite o comando:
+O ideal é ter a versão mais atualizada, caso já tenha a versão 2 do django, instale a versão 3 com o seguinte comando:
 
 ```
 pip3 install --upgrade django==3.1.5
