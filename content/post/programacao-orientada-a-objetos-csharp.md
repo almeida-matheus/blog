@@ -1,6 +1,6 @@
 +++ 
 title = "Programação orientada a objetos com C#"
-date = 2021-04-17T23:29:36-03:00
+date = 2021-04-10T23:29:36-03:00
 draft = false
 author = "Matheus Almeida Costa"
 description = "Os 4 pilares essenciais da POO"
@@ -24,13 +24,13 @@ Um programa pode criar vários objetos da mesma classe.
 
 > As classes na orientação a objetos funcionam como um molde para os objetos. Os objetos são criados a partir de uma classe e muitos deles podem ser feitos da mesma classe.
 
-Observação: Neste artigo irei utilizar a linguagem C# como exemplo, mas a ideia é a mesma em outras linguagens, só mudando um pouco a sintaxe, já que a orientação a objetos é algo atemporal e não está ligado a uma linguagem. 
+Observação: Neste artigo irei utilizar a linguagem C# como exemplo, mas a ideia é a mesma em outras linguagens, só mudando um pouco a sintaxe.
 
 ### Benefícios
 
-- **Reutilização de código:** Com POO, não precisamos repetir o código de criação dos campos da ContaCorrente, basta reutilizar a classe.
-- **Organização do código:** Agora que representamos conceitos por meio de classes, encontrar e organizar o código se torna muito mais simples.
-- **Manutenção**: Com o código centralizado nas classes, as manutenções e alterações são pontuais.
+- **Reutilização de código:** Com POO, não precisamos repetir o código de criação dos campos, basta reutilizar a classe.
+- **Organização do código:** Encontrar e organizar o código se torna muito mais simples.
+- **Manutenção**: Com o código centralizado nas classes, as manutenções e alterações para novos comportamentos são pontuais.
 
 ## Os 4 pilares
 
@@ -55,7 +55,7 @@ Exemplo na vida real: Ao clicar no interruptor você quer que a luz acenda ou ap
 
 É um princípio que consiste principalmente em agrupar dados (variáveis e metódos) que fazem sentido estar juntos e também em ocultar os detalhes de implementação de um componente dentro de uma classe,  expondo apenas operações seguras e que o mantenha em um estado consistente.
 
-### **Tipos de encapsulamento**
+#### Tipos de encapsulamento
 
 **Público:** Indica que todos as outras classes tem acesso a esse atributo, função ou classe.
 
@@ -63,7 +63,7 @@ Exemplo na vida real: Ao clicar no interruptor você quer que a luz acenda ou ap
 
 **Protegido:** Indica que somente a própria classe ou classes herdadas (subclasses) dela 44que podem ser acessadas.
 
-### Getters, setters e construtores
+#### Getters, setters e construtores
 
 Em C# os dados do objeto são expostos por meio de getter e setters de propriedades.
 
@@ -75,7 +75,7 @@ Para garantir a obrigatoriedade de que o objeto receba dados / dependências no 
 
 **Construtor:** Método de construção de atributos necessários quando o Objeto é instanciado.
 
-### Ordem sugerida para implementação de membros
+#### Ordem sugerida para implementação de membros
 
 1. Atributos privados
 2. Propriedades autoimplementadas
@@ -83,107 +83,21 @@ Para garantir a obrigatoriedade de que o objeto receba dados / dependências no 
 4. Propriedades customizadas
 5. Métodos da classe
 
-Confira um exemplo utilizando os conceitos de abstração e encapsulamento na prática em C#
+Confira um exemplo utilizando os conceitos de abstração e encapsulamento na prática em C#:
 
-```
-public class Posto
-{
-    //campo/atributo privado
-    private int _valorlitro = 2;
-    private string _proprietario;
-    //propriedades autoimplementadaa
-    public int Tanque { get; private set; }
-    public int VeiculosAbastecidos { get; private set; }
-    //construtor
-    public Posto(string proprietario)
-    {
-        _proprietario = proprietario;
-    }
-    //propriedade customizada
-    public string Modelo
-    {
-        get { return Modelo; }
-        set
-        {
-            if (value != null && value.Length > 1)
-            {
-                Modelo = value;
-            }
-        }
-    }
-
-    //metodo -> função
-    public void Abastecer(int valor)
-    {
-        Tanque += valor / _valorlitro;
-        VeiculosAbastecidos++;
-    }
-}
-class Program
-{
-    static void Main(string[] args)
-    {
-        //cria um objeto/instancia da classe
-        Posto carro1 = new Posto("roberto");
-        carro1.Modelo = "palio";
-        carro1.Abastecer(10);
-        Console.WriteLine("Litros de combustivel:", carro1.Tanque); //imprime 5
-
-        Posto carro2 = new Posto("ricardo");
-        carro2.Modelo = "polo";
-        carro2.Abastecer(100);
-        Console.WriteLine("Litros de combustivel: ", carro2.Tanque); //imprime 10
-
-        Console.WriteLine("Quantidade de veiculos abastecidos: ",carro2.VeiculosAbastecidos); //imprime 2
-    }
-}
-```
+![POO - Encapsulation](https://almeidamatheus.netlify.app/uploads/21/04/poo1.png)
 
 ### Herança
 
 Herança é um conceito que possibilita uma classe herda as propriedades e métodos de outra classe, dessa forma você pode extender e criar variações de uma classe semelhante e relacionada, sendo assim evita a duplicação de código.
 
-A ideia é a classe derivada "filha" possa herdar propriedades e métodos de uma classe "pai", dessa forma você pode extender, criar variações, fazendo assim melhor reuso do código
+A ideia é a classe derivada "filha" possa herdar propriedades e métodos de uma classe "pai", dessa forma você pode extender, criar variações, fazendo assim melhor reuso do código.
 
 Imagine exista uma classe chamada Veiculo que contém várias informações como motor, rodas, airbag, retrovisor. Supondo que você queira cadastrar um carro de auto escola, ao invés de criar uma classe com todos os elementos de um veiculo, é mais interessante herdar as características em comum da classe Veiculo e incrementar novas informações, dessa forma aplica o conceito herança de uma forma eficaz melhorando a legibilidade e evitando a duplicação de características entre as classes. Nesse caso a classe Veiculo e a classe do carro de auto escola são entidades com relacionamento pai e filho respectivamente.
 
 Exemplo utilizando conceitos de herança na prática:
 
-```
-//super classe -> classe base
-public class Veiculo
-{
-    private string _proprietario;
-    public bool Motor = true;
-    public bool Airbag = true;
-    public Veiculo(string proprietario)
-    {
-        _proprietario = proprietario;
-    }
-
-    public double Rodas () {
-        return 4;
-    }
-
-}
-//sub classe -> classe derivada
-public class CarroAutoEscola : Veiculo
-{
-    public string Aluno { get; private set; }
-
-    public CarroAutoEscola(string proprietario, string aluno) : base(proprietario)
-    {
-        Aluno = aluno;
-    }
-}
-class Program
-{
-    static void Main(string[] args)
-    {
-        Veiculo prisma = new CarroAutoEscola("roberto", "ricardo");
-    }
-}
-```
+![POO - Inheritance](https://almeidamatheus.netlify.app/uploads/21/04/poo2.png)
 
 Sintaxe:
 
@@ -198,42 +112,11 @@ O C# faz uso de método virtuais (com a palavra-chave virtual) que podem ser rei
 
 Exemplo utilizando conceitos de polimorfismo na prática:
 
-```
-public class Veiculo
-{
-    public bool Motor = true;
-    public bool Airbag = true;
-    public virtual double Rodas()
-    {
-        return 4;
-    }
+![POO - Polymorphism](https://almeidamatheus.netlify.app/uploads/21/04/poo3.png)
 
-}
-
-public class Carreta : Veiculo
-{
-    public bool Carroceria = true;
-    public override double Rodas()
-    {
-        return base.Rodas() + 4;
-    }
-}
-class Program
-{
-    static void Main(string[] args)
-    {
-        Veiculo volvo = new Carreta();
-        Console.WriteLine(volvo.Rodas());
-    }
-}
-```
 
 Sintaxe:
 
 - base (reaproveitar a operação da superclasse e adicionar algo)
 - virtual (prefixo que indica que valor que será sobrescrito)
 - override (prefixo que indica que esse valor irá sobrepor o virtual)
-
-
-
-
