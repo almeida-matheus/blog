@@ -72,9 +72,9 @@ Os parâmetros da requisição é encapsulada junto ao corpo (body) da requisiç
 Exemplo de uso: formulário para cadastro de usuário.
 
 Outros metódos:
-- **PUT**: É utilizado para alterar um recurso inteiro. Se o recurso já existir, ele deve ser atualizado. Se não existir, pode ser criado.
-- **PATCH**: É utilizado para alterar um atributo específico.
-- **DELETE**: É utilziado para deletar a informação especificada.
+- **PUT**: É utilizado para alterar o recurso inteiro. Se o recurso já existir, ele deve ser atualizado. Se não existir, pode ser criado.
+- **PATCH**: É utilizado para alterar um dado específico do recurso.
+- **DELETE**: É utiliziado para deletar a informação especificada.
 - **HEAD**: Funciona semelhante ao GET, porém, retorna somente os cabeçalhos de uma resposta.
 - **TRACE**: Devolve a mesma requisição que for enviada veja se houve mudança e/ou adições feitas por servidores intermediários.
 - **OPTIONS**: Retorna os métodos HTTP suportados pelo servidor para a URL especificada.

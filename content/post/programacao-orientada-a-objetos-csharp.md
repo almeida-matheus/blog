@@ -3,7 +3,7 @@ title = "Programação orientada a objetos com C#"
 date = 2021-04-10T23:29:36-03:00
 draft = false
 author = "Matheus Almeida Costa"
-description = "Os 4 pilares essenciais da POO"
+description = "Os 4 pilares essenciais da POO na teoria e na prática"
 categoria = [
     "Programação",
 ]
