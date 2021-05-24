@@ -78,9 +78,9 @@ Importar banco de dados:
 
 A primary key identifica de forma única cada registro em uma tabela do banco de dados.
 
-1. deve conter valor único, ou seja, não pode repetir.
-2. na coluna de chave primaria não pode haver valor nulo.
-3. só 1 primary key é permitido, não pode ter outra primary key.
+1. Deve conter valor único, ou seja, não pode repetir.
+2. Na coluna de chave primaria não pode haver valor nulo.
+3. Só 1 primary key é permitido, não pode ter outra primary key.
 
 Existem 2 tipos de primary key:
 
@@ -135,7 +135,7 @@ CREATE TABLE users (
 	id INT NOT NULL AUTO_INCREMENT,
 	email VARCHAR(255) NOT NULL UNIQUE,
 	country CHAR(2),
-  PRIMARY KEY (id)
+    PRIMARY KEY (id)
 );
 ```
 
@@ -185,79 +185,6 @@ ALTER TABLE users ADD updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CU
 
 Observação: Caso não gere a data atual, na consulta troque o `CURRENT_TIMESTAMP` por `NOW()`
 
-- CHANGE, MODIFY, RENAME
-
-    ### **CHANGE**
-
-    Ele tem mais capacidade do que o `MODIFY`, pois permite a alteração do nome da coluna. Ele é mais utilizado, quando há algum erro no nome da coluna e na suas definições.
-
-    Pode ser utilizado para renomear uma coluna e alterar suas definições, como o tipo de dados de uma coluna, por exemplo:
-
-    ```
-    CREATE TABLE clientes(
-        nome int,
-        id int,
-        endereco int
-    );
-
-    ALTER TABLE clientes CHANGE COLUMN nome nome_cliente VARCHAR(50);
-    ```
-
-
-    Permite utilizar o `FIRST` e o `AFTER` para reordenar as colunas, por exemplo:
-
-    ```
-    ALTER TABLE clientes CHANGE COLUMN id id_cliente INT FIRST;
-
-    ALTER TABLE clientes CHANGE COLUMN id id_cli INT AFTER endereco;
-    ```
-
-    ### **MODIFY**
-
-    É mais utilizado quando quer alterar somente as definições da coluna.
-
-    Pode ser utilizado para alterar as definições de uma coluna, mas não o seu nome, por exemplo:
-
-    ```
-    CREATE TABLE clientes(
-        nome int,
-        id int,
-        endereco int
-    );
-
-    ALTER TABLE clientes MODIFY COLUMN nome VARCHAR(50);
-    ```
-
-    Permite utilizar o `FIRST` e o `AFTER` para reordenar as colunas, por exemplo:
-
-    ```
-    ALTER TABLE clientes CHANGE COLUMN id id_cliente INT FIRST;
-
-    ALTER TABLE clientes CHANGE COLUMN id id_cli INT AFTER endereco;
-    ```
-
-    ### RENAME
-
-    SQL RENAME TABLE é uma sintaxe utilizada para renomear o nome de uma tabela.
-
-    ```
-    ALTER TABLE table_name   
-    RENAME TO new_table_name;
-    ```
-
-    Ou apenas:
-
-    ```
-    RENAME old_table_name TO new_table_name
-    ```
-
-    Alguns bancos de dados renomear o nome da coluna também
-
-    ```
-    ALTER TABLE table_name
-    RENAME COLUMN old_column_name TO new_column_name;
-    ```
-
 # **DML - Linguagem de Manipulação de Dados**
 
 > Data Manipulation Language
@@ -293,8 +220,8 @@ VALUES
 	('hello2@email.com', 'BR'),
 	('hello3@email.com', 'AR'),
 	('hello4@email.com', 'FR'),
-  ('hello5@email.com', 'BR'),
-  ('hello6@email.com', 'US');
+    ('hello5@email.com', 'BR'),
+    ('hello6@email.com', 'US');
 ```
 
 ## UPDATE
@@ -391,15 +318,7 @@ SELECT id, email, country FROM users
 WHERE country = 'US'
 AND email LIKE 'hello%'
 ORDER BY id DESC
-LIMIT 2;--@block
-CREATE TABLE cars(
-	id INT AUTO_INCREMENT,
-	model VARCHAR(255),
-    age INT NOT NULL,
-	owner_id INT NOT NULL,
-	PRIMARY KEY (id),
-	FOREIGN KEY (owner_id) REFERENCES users(id)
-);
+LIMIT 2;
 ```
 
 Resultado do primeiro bloco:
@@ -421,7 +340,7 @@ Para utilizarmos o join devemos primeiramente criar uma nova tabela com uma `FOR
 CREATE TABLE cars(
 	id INT AUTO_INCREMENT,
 	model VARCHAR(255),
-  price DOUBLE NOT NULL,
+    price DOUBLE NOT NULL,
 	owner_id INT NOT NULL,
 	PRIMARY KEY (id),
 	FOREIGN KEY (owner_id) REFERENCES users(id)
@@ -469,8 +388,8 @@ Também é possível utilizar junto com as outras clausulas da DQL, aliado a iss
 ```
 --@block
 SELECT
-  u.id,
-  c.owner_id,
+    u.id,
+    c.owner_id,
 	u.email,
 	c.model
 FROM users AS u
