@@ -1,6 +1,6 @@
 +++ 
 title = "Política de mesa limpa e tela limpa"
-date = 2021-03-07T19:16:24-03:00
+date = 2021-03-05T19:16:24-03:00
 draft = false
 author = "Matheus Almeida Costa"
 description = "Informações sobre o controle A11.2.9 da ISO 27001"

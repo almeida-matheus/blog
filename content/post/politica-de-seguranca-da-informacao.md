@@ -1,6 +1,6 @@
 +++ 
 title = "Política de Segurança da Informação"
-date = 2020-12-30T20:39:25-03:00
+date = 2020-11-30T20:39:25-03:00
 draft = false
 author = "Matheus Almeida Costa"
 description = "Entenda o que é e  saiba como criar uma PSI"

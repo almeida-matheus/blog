@@ -1,6 +1,6 @@
 +++ 
 title = "Estagiário Técnico em Eletrônica"
-date = 2021-01-01T14:41:52-03:00
+date = 2020-10-14T14:41:52-03:00
 draft = false
 author = "Matheus Almeida Costa"
 description = "Minha experiência como estagiário Técnico em Eletrônica"

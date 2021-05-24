@@ -1,6 +1,6 @@
 +++ 
 title = "A base da WEB"
-date = 2021-01-03T23:30:34-03:00
+date = 2021-01-09T23:30:34-03:00
 draft = false
 author = "Matheus Almeida Costa"
 description = "Entenda assuntos por trás de uma requisição WEB"
