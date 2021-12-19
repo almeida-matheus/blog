@@ -20,7 +20,7 @@ A arquitetura do django possui como padrão de projeto o MTV (Model, Template, 
 
 É semelhante a arquitetura MVC, o templeta do django é equivalente a view, já a view do django seria equivalente ao controller.
 
-## Arquivos
+## Arquivos padrões
 
 ### `manage.py`
 
@@ -34,7 +34,7 @@ Dentro da pasta do projeto do django temos os seguintes arquivos:
 
 ### `__init__.py`
 
-Arquivo vazio que indica ao python que este diretório deve ser considerado um pacote python.
+Arquivo vazio que indica ao python que este diretório deve ser considerado como um pacote.
 
 ### `settings.py`
 
@@ -46,11 +46,11 @@ Arquivo onde declara as urls e rotas dos apps que estão relacionados ao respect
 
 ### `asgi.py`
 
-Ponto de integração para servidores web compatíveis com ASGI usado para servir seu projeto. Útil para quando for hospedar o projeto na nuvem.
+Ponto de integração entre servidores web compatíveis com ASGI e a aplicação python.
 
 ### `wsgi.py`
 
-Ponto de integração para servidores web compativeis com WSGI, protocolo que serve http. Útil para quando for hospedar o projeto na nuvem.
+Ponto de integração entre servidores web compatíveis com WSGI e a aplicação python.
 
 ### Aplicação
 
@@ -109,8 +109,6 @@ CREATE TABLE myapp_person (
 Arquivo responsável por definir as regras de testes da aplicação de maneira automatizada, isto é, você cria um conjunto de testes uma vez, e então conforme faz mudanças em sua aplicação, você pode checar se o seu código continua funcionando como você originalmente pretendia, sem ter que gastar tempo executando o teste manualmente.
 
 Confira mais sobre testes na [documentação](https://docs.djangoproject.com/pt-br/3.1/intro/tutorial05/).
-
-
 
 ### `views.py`
 
@@ -364,4 +362,4 @@ Devemos executar o projeto com o seguinte comando:
 python3 manage.py runserver
 ```
 
-Para visualizar o hello world é só acessar a url [http://127.0.0.1:8000/](http://127.0.0.1:8000/), que é a porta padrão que o django abre no localhost.
+Para visualizar o hello world é só acessar a URL [http://127.0.0.1:8000/](http://127.0.0.1:8000/), que é a porta padrão que o django executa no localhost.

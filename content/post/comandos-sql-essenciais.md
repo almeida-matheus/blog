@@ -10,7 +10,7 @@ categoria = [
 +++
 
 
-## Definição
+# Definição
 
 SQL é a sigla para "Standard Query Language", que significa, traduzindo para o português,"Linguagem de Consulta Estruturada". Trata-se de uma linguagem de consulta a banco de dados relacionais.
 
@@ -19,40 +19,6 @@ Com o SQL, você pode executar vários comandos para gerenciar, criar, alterar, 
 Costumamos dizer que bancos SQL seguem uma modelagem relacional, pois estes se baseiam no fato de que todos seus dados sejam armazenados em tabelas que podem se relacionar entre si.
 
 A linguagem SQL é utilizada de maneira relativamente parecida entre os principais bancos de dados relacionais do mercado: MySQL, MariaDB, PostgreSQL, Microsoft SQL Server, Oracle, SQLite, entre muitos outros.
-
-## Comandos no terminal
-
-Mostrar os bancos de dados:
-
-`show databases;`
-
-Entrar no banco de dados:
-
-`use name_database;`
-
-Mostrar tabelas do banco de dado:
-
-`show tables;`
-
-Visualizar estrutura da tabela:
-
-`describe name_table;`
-
-Criar uma cópia do banco de dados (dump):
-
-`mysqldump -u root -p database_name > database_name.sql;`
-
-Criar uma cópia somente da estrutura da base de dados:
-
-`mysqldump -u root -p database_name --no-data > database_name.sql;`
-
-Criar uma cópia de todos os bancos de de dados:
-
-`mysqldump -u user -p --all-databases > full_path_to\file.sql`
-
-Importar banco de dados:
-
-`mysql -u root -p database_name < database_name.sql;`
 
 # Atributos e tipos de dados
 
@@ -72,7 +38,7 @@ Importar banco de dados:
 
 - `ENUM` Deve escolher um dos valores, se escolher um valor que não existe no ENUM gera um erro, usa muito em select.
 
-### Constraint (restrições)
+# Constraint (restrições)
 
 - `PRIMARY KEY` (PK)
 
@@ -332,8 +298,9 @@ Resultado do segundo bloco:
 
 
 # JOINs
+O `JOIN` é utilizado para selecionar registros de mais de uma tabela em um único `SELECT`, tabelas essas que devem ser ligadas por pelo menos um campo em comum, através de uma `FOREIGN KEY`.
 
-Para utilizarmos o join devemos primeiramente criar uma nova tabela com uma `FOREIGN KEY`  que faça referência a `PRIMARY KEY` da outra tabela.
+Portanto, para utilizarmos o `JOIN` devemos primeiramente criar uma nova tabela com uma `FOREIGN KEY`  que faça referência a `PRIMARY KEY` da outra tabela.
 
 ```
 --@block
@@ -463,6 +430,39 @@ ON cars.owner_id = users.id;
 
 O resultado desta consulta será o mesmo da seção `LEFT JOIN`.
 
+## Extra - Comandos no terminal
+
+Mostrar os bancos de dados:
+
+`show databases;`
+
+Entrar no banco de dados:
+
+`use name_database;`
+
+Mostrar tabelas do banco de dado:
+
+`show tables;`
+
+Visualizar estrutura da tabela:
+
+`describe name_table;`
+
+Criar uma cópia do banco de dados (dump):
+
+`mysqldump -u root -p database_name > database_name.sql;`
+
+Criar uma cópia somente da estrutura da base de dados:
+
+`mysqldump -u root -p database_name --no-data > database_name.sql;`
+
+Criar uma cópia de todos os bancos de de dados:
+
+`mysqldump -u user -p --all-databases > full_path_to\file.sql`
+
+Importar banco de dados:
+
+`mysql -u root -p database_name < database_name.sql;`
 
 
 

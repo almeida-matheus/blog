@@ -1,4 +1,4 @@
-+++ 
++++
 title = "Hardwares do computador"
 date = 2021-02-16T23:53:48-03:00
 draft = false
@@ -11,7 +11,7 @@ categoria = [
 
 # Hardwares de um computador
 
-Confira os principais hardwares responsáveis pelo funcionamento de um computador
+Confira os principais hardwares responsáveis pelo funcionamento de um computador.
 
 ## Processador
 
@@ -22,9 +22,9 @@ Principais fatores que definem o desempenho de um processador:
 - **Frequência**: A frequência da CPU (também conhecida como clock).  É medido em giga hertz (GHz) . Quanto maior a frequência, maior a quantidade de cálculos que será realizado.
 - **Núcleo**: A quantidade de núcleos influencia na capacidade do seu processador em desempenhar atividades multitarefas. Cada núcleo funciona como se fosse um processador independente. Assim, o número de ações que um computador consegue realizar por pulso de clock é maior.
 - **Cache**: É o espaço onde as instruções podem ser armazenadas dentro do processador, as informações mais requisitadas pelo processador são armazenadas aqui, a vantagem é a velocidade, pois é bem mais rápido que a memória RAM ou disco rígido. Geralmente existem três níveis de memória cache: L1, L2 e L3. Os níveis de número menor costumam ser menores, mas mais rápidos.
-- **Nanômetros**: Diz a respeito sobre a construção e a arquitetura interna do processador, mais especificamente o tamanho dos transistores. Quanto menor a nanotecnologia, mais novo e, geralmente, melhor é o processador. Por exemplo: Um processador antigo quad core de 2GHz mais lento que um modelo mais recente que também é quad core mas com 1.8GHz de velocidade
+- **Nanômetros**: Diz a respeito sobre a construção e a arquitetura interna do processador, mais especificamente o tamanho dos transistores. Quanto menor a nanotecnologia, mais novo e, geralmente, melhor é o processador. Por exemplo: Um processador antigo quad core de 2GHz mais lento que um modelo mais recente que também é quad core mas com 1.8GHz de velocidade.
 
-A melhor forma de comparar processadores é utilizando benchmarks em sites especializados, já que são vários fatores que influenciam no desempenho
+A melhor forma de comparar processadores é utilizando benchmarks em sites especializados, já que são vários fatores que influenciam no desempenho.
 
 As principais fabricantes são:
 
@@ -43,7 +43,7 @@ Existem 2 tipos de placa de vídeo:
 
 A placa de vídeo é integrada junto a placa mãe ou ao processador, nesse caso o sistema armazena uma parte da memória ram para usar como memória de vídeo.
 
-Os principais modelos disponíveis atualmente são os da Intel core UHD graphics e AMD ryzen vega. A desvantagem é o desempenho gráfico, por isso são recomendados para tarefas mais simples
+Os principais modelos disponíveis atualmente são os da Intel core UHD graphics e AMD ryzen vega. A desvantagem é o desempenho gráfico, por isso são recomendados para tarefas mais simples.
 
 ### Offboard
 
@@ -83,7 +83,7 @@ As informações contidas no HD não são perdidas ao ser desligada a máquina, 
 
 Conta com discos móveis, utilizados para armazenar os dados, e um braço mecânico, que faz a leitura e escrita. Por esse motivo deve se evitar o HD sofra impactos fortes e que nunca fique perto de imãs ou mesmo outros dispositivos magnéticos.
 
-Normalmente utiliza a interface de comunicação SATA para se conectar na placa mãe
+Normalmente utiliza a interface de comunicação SATA para se conectar na placa mãe.
 
 Principais fatores para a escolha de um HD:
 
@@ -102,7 +102,7 @@ Os principais tipos de SSD são:
 
 ### SATA
 
-Os SSD tipo SATA é do mesmo tamanho do HD para notebooks, também utilizam o protocolo de comunicação SATA III e chegam ao limite de velocidade dessa conexão
+Os SSD tipo SATA é do mesmo tamanho do HD para notebooks, também utilizam o protocolo de comunicação SATA III e chegam ao limite de velocidade dessa conexão.
 
 ### M.2
 
@@ -120,7 +120,7 @@ Para saber a potência necessária para o computador deve se levar em considera�
 
 ## Gabinete
 
-É o componente responsável por suportar e proteger os outros hardwares, para evitar que os outros hardwares se movam e que não junte tanto poeira
+É o componente responsável por suportar e proteger os outros hardwares, para evitar que os outros hardwares se movam e que não junte tanto poeira.
 
 O que precisa ser levado em consideração em um gabinete é a ventilação (localização e número de coolers alinhados como fluxo de ar) e o tamanho, por causa da compatibilidade com outros componentes, como um water cooler e principalmente a placa mãe. Os principais gabinetes são: Full Tower, Mid Tower, Mid Tower. E cada um suporta cada tamanho de placa mãe.
 
@@ -136,8 +136,8 @@ Alguns pontos para levar em consideração em uma placa mãe:
 
 - Existem placa mãe de diversos tamanho, desde a maior até a menor respectivamente: EATX, ATX, micro ATX, mini ATX.
 - A escolha da placa mãe deve estar principalmente relacionada ao socket, para que seja compatível com o processador escolhido.
-- A memória ram também deve ser compatível com a placa mãe, desde a capacidade e até a interface (DDR3, DDR4, etc)
-- Entrada para conexão de SSD m.2
+- A memória ram também deve ser compatível com a placa mãe, desde a capacidade e até a interface (DDR3, DDR4, etc).
+- Entrada para conexão de SSD m.2.
 - Quantidade de conexões SATA, portas USB, etc.
 - Chip de áudio integrado, placa de rede wireless integrada, etc.
 - Se a estrutura e os componentes da placa suportam overclock.

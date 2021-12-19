@@ -3,7 +3,7 @@ title = "A base da WEB"
 date = 2021-01-09T23:30:34-03:00
 draft = false
 author = "Matheus Almeida Costa"
-description = "Entenda assuntos por trás de uma requisição WEB"
+description = "Entenda os conceitos por trás de uma requisição WEB"
 categoria = [
     "Redes",
 ]
@@ -13,21 +13,19 @@ categoria = [
 
 O endereço IP (Internet Protocol) é um número de identificação de cada dispositivo que está conectado a uma rede.
 
-Um exemplo de IP é o 216.58.202.238, acessando esse IP teremos acesso ao Google
-
 ## URL
 
-A URL (Uniform Resource Locator) é o endereço virtual de uma aplicação na WEB
+A URL (Uniform Resource Locator) é o endereço virtual de uma aplicação na WEB.
 
-Para melhor exemplificar vamos levar em consideração o site atual: [https://blog.matheustech.com.br/post/a-base-da-web/](https://blog.matheustech.com.br/post/a-base-da-web/)
+Para melhor exemplificar vamos levar em consideração o site atual: [https://blog.almeidamatheus.me/post/a-base-da-web/](https://blog.almeidamatheus.me/post/a-base-da-web/)
 
-A URL sempre inicia com o protocolo (https://). Seguida pelo domínio (blog.matheustech.com.br), o blog é o sub-dominio do matheustech.com.br. Após isso é especificado o caminho para um recurso (/post/a-base-da-web), o recurso recurso é algo concreto na aplicação que queremos acessar
+A URL sempre inicia com o protocolo (https://). Seguida pelo domínio (blog.almeidamatheus.me), o blog é o sub-dominio do almeidamatheus.me. Após isso é especificado o caminho para um recurso (/post/a-base-da-web), o recurso recurso é algo concreto na aplicação que queremos acessar.
 
-Vale a pena ressaltar que depois do domínio pode vir a porta, se não for definida é utilizada a porta padrão desse protocolo (blog.matheustech.com.br:443)
+Vale a pena ressaltar que depois do domínio pode vir a porta, se não for definida é utilizada a porta padrão desse protocolo (blog.almeidamatheus.me:443).
 
 ## DNS
 
-Como vimos anteriormente, as maquinas são referenciadas na rede pelo seu número de endereço IP, mas para entrar nesse site não precisou especificar o IP mas sim o domínio, isso é por causa do DNS
+Como vimos anteriormente, as maquinas são referenciadas na rede pelo seu número de endereço IP, mas para entrar nesse site não precisou especificar o IP mas sim o domínio, isso é por causa do DNS.
 
 O servidor DNS (Domain Name System) são os responsáveis por localizar e traduzir o nome de um domínio para o endereço de IP correspondente.
 
@@ -39,7 +37,7 @@ Em um computador temos apenas um endereço IP e geralmente há vários serviços
 
 Utilizando uma analogia da vida real é como se um serviço de entrega tivesse que entregar um pacote de dados em um endereço do prédio, nesse caso o prédio seria o IP e o número do apartamento seria a porta.
 
-É importante frisar que um serviço pode utilizar mais de uma porta, e a porta do protocolo **HTTP** é 80 e a do **HTTPS** é 443
+É importante frisar que um serviço pode utilizar mais de uma porta, e a porta do protocolo **HTTP** é 80 e a do **HTTPS** é 443.
 
 Como as portas padrões são conhecidas pelo navegador, elas podem ser omitidas ao escrevermos uma URL.
 
@@ -127,7 +125,7 @@ Você pode checar todos os detalhes de uma requisição através da ferramenta d
 
 Confira a imagem abaixo um exemplo de requisição **HTTP**.
 
-Requisição HTTP         
+Requisição HTTP
 :--------------------------------------------------:
 ![](https://almeidamatheus.netlify.app/uploads/21/01/web-http-headers-body.png)
 
