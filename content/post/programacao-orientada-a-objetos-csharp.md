@@ -22,7 +22,8 @@ Um programa pode criar vários objetos da mesma classe.
 
 > As classes na orientação a objetos funcionam como um molde para os objetos. Os objetos são criados a partir de uma classe e muitos deles podem ser feitos da mesma classe.
 
-Observação: Neste artigo irei utilizar a linguagem C# como exemplo, mas a essencia é a mesma em outras linguagens, só mudando um a sintaxe.
+Observação: Neste artigo irei utilizar a linguagem C# como exemplo, mas a essência é a mesma em outras linguagens, só mudando um a sintaxe.
+
 ## Benefícios
 - **Reutilização de código:** Com POO, não precisamos repetir o código de criação dos campos basta reutilizar a classe.
 
@@ -47,7 +48,7 @@ Dessa forma, reduz a complexidade do código simplificando e focando no que real
 
 Exemplo na vida real: Ao clicar no interruptor você quer que a luz acenda ou apaga, não precisa saber o caminho da energia elétrica para acontecer essa ação, portanto isso é uma abstração.
 ### Encapsulamento
-É um princípio que consiste principalmente em agrupar dados (variáveis e metódos) que fazem sentido estar juntos e também em ocultar os detalhes de implementação de um componente dentro de uma classe, expondo apenas operações seguras e que o mantenha em um estado consistente.
+É um princípio que consiste principalmente em agrupar dados (variáveis e métodos) que fazem sentido estar juntos e também em ocultar os detalhes de implementação de um componente dentro de uma classe, expondo apenas operações seguras e que o mantenha em um estado consistente.
 #### Tipos de encapsulamento
 
 - **Público:** Indica que todos as outras classes tem acesso a esse atributo, função ou classe.
@@ -70,7 +71,7 @@ Para garantir a obrigatoriedade de que o objeto receba dados dependências no mo
 #### Ordem sugerida para implementação de membros
 
 1. Atributos privados
-2. Propriedades autoimplementadas
+2. Propriedades auto-implementadas
 3. Construtores
 4. Propriedades customizadas
 5. Métodos da classe
@@ -79,9 +80,9 @@ Confira um exemplo utilizando os conceitos de abstração e encapsulamento na pr
 
 ![POO - Encapsulation](https://almeidamatheus.netlify.app/uploads/21/04/poo1.png)
 
-A ideia do programa acima é criar alguns atributos privados para serem utilizados somente na classe posto e 2 propriedades autoimplementadas com a função get pública e o set privado, ou seja, fora da classe é possível obter os valores mas não altera-los.
+A ideia do programa acima é criar alguns atributos privados para serem utilizados somente na classe posto e 2 propriedades auto-implementadas com a função get pública e o set privado, ou seja, fora da classe é possível obter os valores mas não altera-los.
 
-Existe um construtor da classe, então quando for criar um objeto da classe deve-se se passar o parametro exigido, que no caso é o `proprietario` do carro.
+Existe um construtor da classe, então quando for criar um objeto da classe deve-se se passar o parâmetro exigido, que no caso é o `proprietario` do carro.
 
 Temos uma propriedade customizada (`Modelo`), que retorna o `modelo` e também modifica o valor do `modelo`, desde que satisfação a condição estipulada (diferente de nulo e maior que 1 caractere).
 
@@ -102,17 +103,15 @@ Exemplo utilizando conceitos de herança na prática:
 
 Sintaxe:
 - : (estende)
-
 - base (referência para a superclasse)
+
 ### Polimorfismo
 
 É uma funcionalidade no qual objetos relacionados se comportam de maneiras distinta em razão da capacidade de invocar métodos comuns que possuem comportamento específicos para cada tipo do objeto.Portanto podemos invocar métodos comuns entre os objetos, onde cada objeto possuirá um comportamento diferente.
 
 O C# faz uso de método virtuais (com a palavra-chave virtual) que podem ser reimplementados (com a palavra-chave override) nas classes filhas.
 
-
 Exemplo utilizando conceitos de polimorfismo na prática:
-
 
 ![POO - Polymorphism](https://almeidamatheus.netlify.app/uploads/21/04/poo3.png)
 
@@ -120,8 +119,8 @@ A ideia do programa acima é criar uma classe `Carreta` que tem como base a clas
 
 Sintaxe:
 
-- base (reaproveitar a operação da superclasse e adicionar algo)
+- base (reaproveitar a operação da superclasse e adicionar algo).
 
-- virtual (prefixo que indica que valor que será sobrescrito)
+- virtual (prefixo que indica que valor que será sobrescrito).
 
-- override (prefixo que indica que esse valor irá sobrepor o virtual)
+- override (prefixo que indica que esse valor irá sobrepor o virtual).

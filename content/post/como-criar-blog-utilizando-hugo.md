@@ -11,7 +11,7 @@ categoria = [
 
 ## Sobre o Hugo
 
-O framework [hugo](https://gohugo.io/) é um gerador de sites estáticos, desenvolvido na linguagem Go. Pelo fato de conter apenas arquivos de front-end e não ter nenhuma ligação com o back-end suas principais vantagens são: segurança e desempenho.
+O framework [hugo](https://gohugo.io/) é um gerador de sites estáticos, desenvolvido na linguagem Go. Pelo fato de conter apenas arquivos de front-end e não ter nenhuma ligação com o back-end suas principais vantagens são: desempenho e segurança.
 
 ---
 
@@ -33,12 +33,12 @@ vá para a pasta criada: `cd nome_site`
 
 Digitando `ls` ou `tree` você poderá observar a estrutura de um projeto hugo.
 
-- Diretório archetypes contém o arquivo default.md: É basicamente o cabeçalho de todas as páginas, nesse arquivo temos como exemplo o titulo, a data e rascunho (draft)
-- Arquivo config.toml: É nele que voce modifica a estrura básica do site, como o titulo, menus de navegação, url do site, etc
-- Diretório content: É onde tem o conteudo do site, por exemplo, onde fica a pasta do site, a página sobre, etc
-- Diretório layout: É onde fica os arquivos HTML, responsavel pela estrutura do site
-- Diretório static: É onde fica os arquivos reponsáveis pela estilização e ações por meios de scripts, arquivos de CSS e javascript respectivamente 
-- Diretório themes: É nessa pasta onde fica o tema adicionado
+- Diretório archetypes contém o arquivo default.md: É basicamente o cabeçalho de todas as páginas, nesse arquivo temos como exemplo o titulo, a data e rascunho (draft).
+- Arquivo config.toml: É nele que você modifica a estrutura básica do site, como o titulo, menus de navegação, url do site, etc.
+- Diretório content: É onde tem o conteúdo do site, por exemplo, onde fica a pasta do site, a página sobre, etc.
+- Diretório layout: É onde fica os arquivos HTML, responsável pela estrutura do site.
+- Diretório static: É onde fica os arquivos responsáveis pela estilização e ações por meios de scripts, arquivos de CSS e javascript respectivamente. 
+- Diretório themes: É nessa pasta onde fica o tema adicionado.
 
 ## 3º - Preparar o ambiente
 
@@ -80,10 +80,10 @@ git push origin master
 
 No Netlify devemos:
 
-1 - Conectar sua conta do GitHub no Netlify
-2 - Selecionar o repositório do site hugo
+1. Conectar sua conta do GitHub no Netlify
+2. Selecionar o repositório do site hugo
 
-Devemos mudar o nome do dominio do site na Netlify, o caminho é esse abaixo:
+Devemos mudar o nome do domínio do site na Netlify, o caminho é esse abaixo:
 
 Domain settings > Domain management > Options > Edit site name.
 
@@ -91,18 +91,18 @@ Domain settings > Domain management > Options > Edit site name.
 
 Primeiramente escolha um tema de sua preferência [clicando aqui](https://themes.gohugo.io/).
 
-1 - Clique em Download
-2 -  No GitHub clique em Code e copie a URL HTTPS
+1. Clique em Download
+2.  No GitHub clique em Code e copie a URL HTTPS
 
 O método git clone para instalar temas não é compatível com o Netlify. Se você fosse usar o clone do git, seria necessário remover recursivamente o subdiretório .git da pasta do tema e, portanto, impediria a compatibilidade com versões futuras do tema.
 
-Uma abordagem melhor é instalar um tema como um submódulo git. Então iremos adicionar o seguinte comando para o tema ir na pasta themes
+Uma abordagem melhor é instalar um tema como um submódulo git. Então iremos adicionar o seguinte comando para o tema ir na pasta `themes`.
 
 ```
 git submodule add https://github.com/xxxx/hugo-theme-xxxx themes/xxxx
 ```
 
-Iremos copiar tudo que está no diretório `exampleSite` dentro do tema para a raiz do site que criamos (o comando abaixo é para ser utilizado na raiz do projeto)
+Iremos copiar tudo que está no diretório `exampleSite` dentro do tema para a raiz do site que criamos (o comando abaixo é para ser utilizado na raiz do projeto).
 
 ```
 cp -r themes/xxxx/exampleSite/* .
@@ -112,9 +112,9 @@ cp -r themes/xxxx/exampleSite/* .
 
 ### Configurar o config.toml ou config.yaml
 
-Modifique os dados do site através do config conforme o necessário
+Modifique os dados do site através do config conforme o necessário.
 
-Importante: no arquivo config.toml tem alterar o atributo `baseURL` para o nome de domínio que você configurou na netilify.
+Importante: no arquivo `config.toml` tem alterar o atributo `baseURL` para o nome de domínio que você configurou na netlify.
 
 ```
 baseURL = "https://xxxx.netlify.com"
@@ -155,7 +155,7 @@ Rode o projeto na sua máquina local para visualiza-lo antes de enviar as modifi
 hugo server -D
 ```
 
--D é para mostrar os posts que estão com o rascunho ativado (draft: true).
+-D é para mostrar os __posts__ que estão com o rascunho ativado (draft: true).
 
 ## 8º - Atualizar o projeto
 
@@ -163,7 +163,7 @@ Na raiz do projeto execute os seguintes comandos:
 ```
 git status
 git add .
-git commit -m " config blog added"
+git commit -m "config blog added"
 git push origin master 
 ```
 

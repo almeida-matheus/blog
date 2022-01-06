@@ -11,7 +11,7 @@ categoria = [
 
 ## Definição
 
-SSH significa secure shell, é um protocolo de rede criptografado utilizado para criar conexões seguras entre sistemas.
+SSH significa Secure Shell, é um protocolo de rede criptografado utilizado para criar conexões seguras entre sistemas.
 
 Seu principal uso é para fazer conexões remotas, embora seja possível fazer tunelamentos e redirecionamentos de portas TCP.
 
@@ -19,28 +19,28 @@ Roda na porta TCP de número 22 por padrão.
 
 ## Como funciona
 
-- Cliente abre uma conexão para o Servidor
-- Servidor responde com o protocolo e sua Public Host Key
-- Cliente confirma que esse é o servidor correto
-- Geração da Public Key
+- Cliente abre uma conexão para o Servidor.
+- Servidor responde com o protocolo e sua Public Host Key.
+- Cliente confirma que esse é o servidor correto.
+- Geração da Public Key.
 - 
-    - Gerar um Large Prime Number
-    - Acordar o método de encriptação (exemplo: AES)
-    - Gerar uma Private Key
-    - Combinar Private Key + método de encriptação + Large Prime
-    - Number para gerar a Public Key
-    - Realizada a troca de Public Keys (a chave publica do servidor pro cliente e chave publica do cliente pro servidor)
-- Geração da Secret Session Key
+    - Gerar um Large Prime Number.
+    - Acordar o método de encriptação (exemplo: AES).
+    - Gerar uma Private Key.
+    - Combinar Private Key + método de encriptação + Large Prime.
+    - Number para gerar a Public Key.
+    - Realizada a troca de Public Keys (a chave publica do servidor pro cliente e chave publica do cliente pro servidor).
+- Geração da Secret Session Key.
 - 
     - Combinar Private Key local + Public Key recebida + Large Prime Number para gerar a Secret Session Key
-    - Ela será igual para ambos (tanto o cliente e servidor tera essa chave localmente)
-- Essa Secret Session Key (simétrica) é usada para encriptar e decriptar a conexão
+    - Ela será igual para ambos (tanto o cliente e servidor tera essa chave localmente).
+- Essa Secret Session Key (simétrica) é usada para encriptar e decriptar a conexão.
 
 Todas essas etapas descritas acima é para estabelecer a conexão, antes de enviar qualquer dado, por isso o SSH é seguro, não é atoa que seu nome é secure shell.
 
-Uma maneira de ver todas as etapas detalhadas de uma conexão SSH é passando o `-vvv` como argumento, exemplo: `ssh usuario@192.168.0.10 -vvv`
+Uma maneira de ver todas as etapas detalhadas de uma conexão SSH é passando o `-vvv` como argumento, exemplo: `ssh usuario@192.168.0.10 -vvv`.
 
-Observação: Neste artigo estou levando em consideracão que o usuário do servidor se chama usuario e que o ip é 192.168.0.10
+Observação: Neste artigo estou levando em consideracão que o usuário do servidor se chama **usuario** e que o IP é **192.168.0.10**.
 
 ## Configurar o SSH na prática
 
@@ -66,23 +66,23 @@ systemctl start sshd
 
 ### Testar funcionamento
 
-No cliente basta usar o netcat no IP desse servidor
+No cliente basta usar o netcat no IP desse servidor.
 
 ```
 nc -v 192.168.0.10 22
 ```
 
-(Se tiver um resultado como SSH - 2.0-OpenSSH_7.4 significa que o serviço está ativo)
+(Se tiver um resultado como SSH - 2.0-OpenSSH_7.4 significa que o serviço está ativo).
 
-No servidor basta usar o comando `ss` (antigo netstat) para confirma se está escutando na porta 22 com o TCP
+No servidor basta usar o comando `ss` (antigo netstat) para confirma se está escutando na porta 22 com o TCP.
 
 ```
 ss -ln | grep 22
 ```
 
-(Se não aparecer nada na tela é porque o serviço não está ativo)
+(Se não aparecer nada na tela é porque o serviço não está ativo).
 
-Se o serviço não estiver ativo provavelmente é porque o firewall está bloqueando, nesse caso tem que criar uma exceção pra porta do SSH no firewall, outra opção é checar os possíveis erros no /var/log.
+Se o serviço não estiver ativo provavelmente é porque o firewall está bloqueando, nesse caso tem que criar uma exceção para a porta do SSH no firewall, outra opção é checar os possíveis erros no `/var/log`.
 
 ### Cliente
 
@@ -94,7 +94,7 @@ apt-get install openssh-client
 yum install openssh-client 
 ```
 
-2 - Conectar no ssh
+2 - Conectar no SSH
 
 ```
 ssh usuario@10.10.10.10
@@ -115,19 +115,19 @@ A chave pública e privada são complementares, isso porque quando o cliente for
 
 ### Servidor
 
-Local das chaves: /etc/ssh 
+Local das chaves: `/etc/ssh` `.
 
 (ssh_host_rsa_key e ssh_host_rsa_key.pub)
 
 
-Arquivo de configuração: /etc/ssh/sshd_config
+Arquivo de configuração: `/etc/ssh/sshd_config`
 
 
 Modificar no arquivo de configuração:
 
 `PubkeyAuthentication yes`
 
-O PubkeyAuthentication habilita a autenticação de chaves, já o AuthorizedKeysFile é o lugar onde vai ficar armazenada as chaves autorizadas, por padrão é em ~/.ssh/authorized_keys
+O `PubkeyAuthentication` habilita a autenticação de chaves, já o `AuthorizedKeysFile` é o lugar onde vai ficar armazenada as chaves autorizadas, por padrão é em `~/.ssh/authorized_keys`.
 
 
 Configuração SSH          
@@ -135,7 +135,7 @@ Configuração SSH
 ![](https://almeidamatheus.netlify.app/uploads/21/01/ssh-configuracao-chave.png)
 
 
-Sempre que modificar esse arquivo de configuração tem que reiniciar o serviço SSH
+Sempre que modificar esse arquivo de configuração tem que reiniciar o serviço SSH.
 
 ```
 systemctl restart sshd
@@ -143,15 +143,15 @@ systemctl restart sshd
 
 ### Cliente
 
-Local das chaves: ~/.ssh
+Local das chaves: `~/.ssh`
 
 (id_rsa e id_rsa.pub)
 
-Local de configuração do ssh: /etc/ssh/ssh_config
+Local de configuração do ssh: `/etc/ssh/ssh_config`
 
 Sempre que configurar tem que reiniciar o serviço com o comando  `systemctl restart ssh`
 
-Gerar chave no cliente com ssh-keygen
+Gerar chave no cliente com ssh-keygen.
 
 ```
 ssh-keygen -b 2048 -t rsa -v
@@ -163,9 +163,9 @@ Essa chave deve estar no authorized_keys do servidor, portanto basta utilizar o 
 ssh-copy-id usuario@192.168.0.10
 ```
 
-Ou simplesmente copiar a chave pública do cliente `~/.ssh/id_rsa.pub` e colocar no arquivo authorized_keys do servidor `~/.ssh/authorized_keys`
+Ou simplesmente copiar a chave pública do cliente `~/.ssh/id_rsa.pub` e colocar no arquivo authorized_keys do servidor `~/.ssh/authorized_keys`.
 
-Após isso basta conectar normalmente
+Após isso basta conectar normalmente.
 
 ```
 ssh usuario@192.168.0.10 -p 22
@@ -173,11 +173,13 @@ ssh usuario@192.168.0.10 -p 22
 
 Observação: `-p` é a porta; se o local padrão da chave privada for alterado deve passar o caminho dela "path" pelo argumento `-i`
 
+Vale ressaltar que por se tratar de uma chave privada, no ponto de vista de segurança é interessante ter o menor acesso possível, com acesso de leitura somente pelo dono, isso pode ser feito a partir do comando `chmod 400 ~/.aws/id_rsa`.
+
 ## Medidas de segurança
 
 ### Cliente
 
-As chaves ficam no arquivo ~/.ssh e isso não é muito seguro porque alguém pode chegar e copiar esse arquivo, a ideia é salvar a chave privada em local seguro, para isso podemos usar o ssh-agent
+As chaves ficam no arquivo ~/.ssh e isso não é muito seguro porque alguém pode chegar e copiar esse arquivo, a ideia é salvar a chave privada em local seguro, para isso podemos usar o ssh-agent.
 
 O ssh-add manda as chaves para o ssh agent, que é um serviço que guarda as chaves criptografadas.
 
@@ -213,13 +215,13 @@ Desabilitar a opção de acesso com senha vazia:
 
 **`PermitEmptyPasswords no`**
 
-Bloquear conexão de usuários ou grupos especificos:
+Bloquear conexão de usuários ou grupos específicos:
 
 **`DenyUsers nome_do_usuario12`**
 
 **`DenyGroups nome_do_grupo12`**
 
-(Embora  a opção de cima seja uma boa medida de segurança, a opção de baixo é melhor porque nega todo o resto)
+(Embora a opção de cima seja uma boa medida de segurança, a opção de baixo é melhor porque nega todo o resto).
 
 Permitir alguns usuários ou grupos específicos:
 
@@ -237,13 +239,13 @@ Definir um tempo limite de inatividade, ao passar desse tempo o usuário será a
 
 **`ClientAliveCountMax 0`**
 
-(Da pra fazer a mesma coisa utilizando o comando export TMOUT=360 no terminal)
+(Da pra fazer a mesma coisa utilizando o comando `export TMOUT=360` no terminal).
 
 Limitar o número de tentativas de conexão:
 
 **`MaxAuthTries 6`**
 
-Limitar a quantidade de  pessoas  que podem estar logadas simultaneamente utilizando shell via SSH:
+Limitar a quantidade de pessoas que podem estar logadas simultaneamente utilizando shell via SSH:
 
 **`MaxSessions 10`**
 
@@ -251,17 +253,17 @@ Limitar o número de conexões não autenticadas por um determinado IP:
 
 **`MaxStartups 5:60:10`**
 
-(Quando tiver 5 conexões não autenticadas, a partir daí irá rejeitar 60% das conexões do IP do cliente, quando chegar a 10 conexões não autenticadas desse mesmo endereço IP irá rejeitar todas, evitar bruteforce)
+(Quando tiver 5 conexões não autenticadas, a partir daí irá rejeitar 60% das conexões do IP do cliente, quando chegar a 10 conexões não autenticadas desse mesmo endereço IP irá rejeitar todas, evitar __bruteforce__)
 
 Autenticar com as contas do linux com todas restrições do PAM:
 
 **`UsePAM yes`**
 
-Mostrar quando ocorreu a ultima conexão do usuário:
+Mostrar quando ocorreu a última conexão do usuário:
 
 **`PrintLasLog yes`**
 
-Tempo do Inicio da autenticação e final da autenticação:
+Tempo do início da autenticação e final da autenticação:
 
 **`LoginGraceTime 60`**
 
@@ -273,13 +275,13 @@ banner de aviso quando for conectar:
 
 **`Banner /etc/issue.net`**
 
-(Deve digitar o banner no arquivo /etc/issue.net)
+(Deve digitar o banner no arquivo `/etc/issue.net`)
 
 banner depois de conectado:
 
 **`PrintMotd yes`**
 
-(Deve digitar o banner no arquivo /etc/motd)
+(Deve digitar o banner no arquivo `/etc/motd`)
 
 Para aplicar as modificações do arquivo de configuração devemos utilizar os seguintes comandos:
 
@@ -295,7 +297,7 @@ Outras dicas de segurança:
 
 Utilizar a versão do SSH mais atualizada possível, porque versões anteriores podem ter vulnerabilidades.
 
-Não colocar nomes de usuários comuns, porque a chance dos nomes comuns estarem em dicionários "wordlist" de atacantes é alta.
+Não colocar nomes de usuários comuns, porque a chance dos nomes comuns estarem em dicionários (wordlist) de atacantes é alta.
 
 Para garantir ainda mais a segurança deve utilizar programas externos, como um firewall e o fail2ban.
 

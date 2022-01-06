@@ -10,15 +10,15 @@ categoria = [
 +++
 ## Sobre
 
-O Django é um framework  python para a criação de aplicações web, ele contém um conjunto de componentes que auxiliam no desenvolvimento rápido e design limpo e pragmático.
+O Django é um framework em python para a criação de aplicações web, ele contém um conjunto de componentes que auxiliam no desenvolvimento rápido e design limpo e pragmático.
 
-A arquitetura do django possui como padrão de projeto o MTV (Model, Template, View), que servem para:
+A arquitetura do Django possui como padrão de projeto o MTV (Model, Template, View), que servem para:
 
 - **Model**: Modelo do banco de dados para o projeto.
 - **Template**: Páginas para visualização de dados. Normalmente, é aqui que fica o HTML que será renderizado nos navegadores.
 - **View**: Lógica de negócio. É aqui que determinamos o que irá acontecer em nosso projeto.
 
-É semelhante a arquitetura MVC, o templeta do django é equivalente a view, já a view do django seria equivalente ao controller.
+É semelhante a arquitetura MVC,o templeta do Django é equivalente a view, já a view do django seria equivalente ao controller.
 
 ## Arquivos padrões
 
@@ -196,7 +196,7 @@ Criar usuário admin:
 python3 manage.py createsuperuser
 ```
 
-Iniciar o servidor de desenvolimento:
+Iniciar o servidor de desenvolvimento:
 
 Por padrão é o endereço localhost (127.0.0.1) na porta 8000, para selecionar outra porta basta digila-la como argumento após o runserver.
 

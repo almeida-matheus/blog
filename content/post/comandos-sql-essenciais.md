@@ -216,17 +216,17 @@ DELETE FROM users WHERE id = 4;
 
 > Data Query Language
 
-O Objetivo do DQL é retornar dados da tabela do banco de dados com base nas consultas
+O Objetivo do DQL é retornar dados da tabela do banco de dados com base nas consultas.
 
-O comando `SELECT` é utilizado para ler dados de tabelas
+O comando `SELECT` é utilizado para ler dados de tabelas.
 
 As buscas podem ser melhoradas com cláusulas:
 
 `SELECT * FROM nome_tabela`
 
-Neste caso realiza uma busca por todos os dados  `*`  da `FROM` tabela chamada u`sers`.
+Neste caso realiza uma busca por todos os dados  `*`  da `FROM` tabela chamada `users`.
 
-Você poderia especificar colunas que deseja fazer a seleção, alterando o `*` pelo nome da coluna
+Você poderia especificar colunas que deseja fazer a seleção, alterando o `*` pelo nome da coluna.
 
 `SELECT nome_coluna FROM nome_tabela`
 
@@ -251,7 +251,7 @@ Operadores relacionais permitem fazer comparações nas consultas:
 - `=` Igual
 - `<>` Diferente
 
-No final da consulta podemos limitar a quantidade de resultados
+No final da consulta podemos limitar a quantidade de resultados.
 
 - `LIMIT` Limitar resultados
 
@@ -335,7 +335,7 @@ Vale ressaltar que neste exemplo nem todos os usuários estão ligados a um carr
 
 ![sql5](https://almeidamatheus.netlify.app/uploads/21/05/5sql.png)
 
-Basicamente irá mostrar os registros que tem valores em comuns, no caso do exemplo é a `PRIMARY KEY` do `users` com a `FOREIGN KEY` do `cars`
+Basicamente irá mostrar os registros que tem valores em comuns, no caso do exemplo é a `PRIMARY KEY` do `users` com a `FOREIGN KEY` do `cars`.
 
 ```
 --@block
@@ -348,9 +348,9 @@ Obtendo assim o seguinte resultado:
 
 ![sql6](https://almeidamatheus.netlify.app/uploads/21/05/6sql.png)
 
-Vale a pena ressaltar que caso não queremos obter valores repetidos por algum motivo, por exemplo o `email`, deveríamos então no final da consulta adicionar `GROUP BY email;`
+Vale a pena ressaltar que caso não queremos obter valores repetidos por algum motivo, por exemplo o `email`, deveríamos então no final da consulta adicionar `GROUP BY email;`.
 
-Também é possível utilizar junto com as outras clausulas da DQL, aliado a isso eu utilizei o `AS`, que cria uma espécie de apelido temporário para uma tabela, neste exemplo renomeei `users` para `u` e `cars` para `c`
+Também é possível utilizar junto com as outras clausulas da DQL, aliado a isso eu utilizei o `AS`, que cria uma espécie de apelido temporário para uma tabela, neste exemplo renomeei `users` para `u` e `cars` para `c`.
 
 ```
 --@block
@@ -415,7 +415,7 @@ FULL OUTER JOIN cars
 ON cars.owner_id = users.id;
 ```
 
-Vale ressaltar que alguns bancos de dados como o MySQL não existe o comando `FULL OUTER JOIN`, nesse caso devemos utilizar a união  `UNION` do `LEFT JOIN` e `RIGHT JOIN` 
+Vale ressaltar que alguns bancos de dados como o MySQL não existe o comando `FULL OUTER JOIN`, nesse caso devemos utilizar a união  `UNION` do `LEFT JOIN` e `RIGHT JOIN`.
 
 ```
 --@block
