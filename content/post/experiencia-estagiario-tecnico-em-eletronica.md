@@ -1,5 +1,5 @@
 +++ 
-title = "Estagiário Técnico em Eletrônica"
+title = "Experiência como estagiário de eletrônica"
 date = 2020-10-14T14:41:52-03:00
 draft = false
 author = "Matheus Almeida Costa"
