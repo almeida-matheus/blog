@@ -45,8 +45,7 @@ Definição: Propriedade de segurança que garante que a informação seja acess
 
 Exemplo de ameaça: Um cibercriminoso realiza um ataque de negação de serviço distribuído (DDOS), e então deixa o site da empresa fora do ar.
 
-Exemplo de reforço: Manutenção em hardwares, assim como software atualizados, firewall bem configurado. Um plano de Recuperação de Desastres (RD) que contenha procedimentos e diretrizes para se administrar crises, sendo assim imprescindível a realização periódica de backups para recuperar dados se necessário.
-
+Exemplo de reforço: Manutenção em hardwares, assim como software atualizados, __firewall__ bem configurado. Um plano de Recuperação de Desastres (RD) que contenha procedimentos e diretrizes para se administrar crises, sendo assim imprescindível a realização periódica de backups para recuperar dados se necessário.
 
 Confira esses e outros atributos relacionados a Segurança da Informação de maneira resumida.
 
@@ -61,7 +60,7 @@ Confira esses e outros atributos relacionados a Segurança da Informação de ma
 
 A prática da segurança da informação em uma empresa é de extrema importância, embora não ajude especificamente a aumentar a receita, vai ajudar a reduzir os impactos incidentes relacionados a segurança.
 
-Exemplo 1: Um ransomware afeta os computadores e servidores de várias empresas; seria um cenário horrível porque os arquivos seriam criptografados gerando uma interrupção de atividades que dependem desses arquivos. 
+Exemplo 1: Um __ransomware__ afeta os computadores e servidores de várias empresas; seria um cenário horrível porque os arquivos seriam criptografados gerando uma interrupção de atividades que dependem desses arquivos. 
 
 Exemplo 2: Cibercriminosos invadem os servidores de uma empresa e divulgam dados cruciais de funcionários dessa empresa de maneira pública na internet.
 

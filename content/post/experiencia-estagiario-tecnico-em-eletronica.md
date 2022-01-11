@@ -18,9 +18,9 @@ O estágio foi realizado no centro de Belo Horizonte/MG do dia 16/08/2019 até 1
 
 ## A empresa
 
-A FW&HW Sistemas é uma startup de base tecnológica, que desenvolve produtos eletrônicos inovadores, com tecnologias atuais, proporcionando versatilidade, eficiência e robustez, produtos esses que são baseados em módulos eletrônicos de terceiros, podendo atender a demandas específicas.
+A FW&HW Sistemas é uma __startup__ de base tecnológica, que desenvolve produtos eletrônicos inovadores, com tecnologias atuais, proporcionando versatilidade, eficiência e robustez, produtos esses que são baseados em módulos eletrônicos de terceiros, podendo atender a demandas específicas.
 
-Tem sua atividade econômica principal relacionada ao desenvolvimento e licenciamento de programas embarcados (firmwares) e a parte física (hardwares), tanto é que esse é o motivo do nome da startup.
+Tem sua atividade econômica principal relacionada ao desenvolvimento e licenciamento de programas embarcados (firmwares) e a parte física (hardwares), tanto é que esse é o motivo do nome da __startup__.
 
 ## Atividades realizadas
 
@@ -34,7 +34,7 @@ O software utilizado pra realizar essa atividade foi o AutoDesk EAGLE. Nele eu f
 
 Portanto para criar as diversas placas eu tive que dedicar boa parte do meu tempo para estudar esse software para fazer da melhor maneira possível, como criar e adicionar uma biblioteca externa, como desenhar componentes personalizados, como gerar arquivos gerber, etc.
 
-O objetivo dessas placas seria para a criação de uCMods que são módulos de processamento com funções já pré-programadas e que podem ser reconfiguradas pelo usuário via smartphone.
+O objetivo dessas placas seria para a criação de uCMods que são módulos de processamento com funções já pré-programadas e que podem ser reconfiguradas pelo usuário pelo aplicativo de celular.
 
 As imagens abaixo são layout e esquemático de uma PCB respectivamente.
 

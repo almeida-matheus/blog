@@ -35,7 +35,7 @@ Shell é o interpretador de comandos, é uma interface para os usuários de comu
 
 Um exemplo disso é quando abrimos o terminal e digitamos um comando `cd ~`, esse comando é interpretado pelo shell, e ele entende que esse comando para mudar de pasta.
 
-Ele fica localizado em `/bin` e só conseguimos executar  esses comandos pois estão na variável de ambiente PATH, os quais podemos verificar com o comando: `echo $PATH`
+Ele fica localizado em `/bin` e só conseguimos executar  esses comandos pois estão na variável de ambiente PATH, os quais podemos verificar com o comando: `echo $PATH`.
 
 De forma resumida, o usuário digita o comando no terminal, o shell lê, o kernel responde e o shell trás o resultado da resposta.
 
@@ -50,21 +50,21 @@ Hardware - Kernel - Shell
 
 Os sistemas operacionais que utilizam o Kernel Linux são chamados de distribuições Linux. 
 
-Imagine que o kernel linux é um sorvete, as distribuições seriam uma barraquinha de sorvete, cada barraquinha tem o seu jeito proprio de fazer o sorvete, uma forma diferente, um sabor diferente.
+Imagine que o kernel linux é um sorvete, as distribuições seriam uma barraquinha de sorvete, cada barraquinha tem o seu jeito próprio de fazer o sorvete, uma forma diferente, um sabor diferente.
 
 As distribuições do mercado estão divididas em dois grupos:
 
 ### Enterprise
 
-São distribuições voltadas para empresas, comumente instalada como servidores. A principal característica é o fato dessas serem muito estáveis, suas atualizações tem foco em segurança para possíveis falhas
+São distribuições voltadas para empresas, comumente instalada como servidores. A principal característica é o fato dessas serem muito estáveis, suas atualizações tem foco em segurança para possíveis falhas.
 
-Exemplo: Red Hat, CentOS, Suse, Ubuntu Server
+Exemplo: Red Hat, CentOS, Suse, Ubuntu Server.
 
 ### Desktop
 
-São distribuições voltada para os sistema de usuários finais, comumente instalado em computadores pessoais. Produtividade, objetividade, desempenho são algumas características importantes. No mais apresenta interface gráfica e suporte para programas convencionais como editores de vídeo, navegador, jogosl, etc.
+São distribuições voltada para os sistema de usuários finais, comumente instalado em computadores pessoais. Produtividade, objetividade, desempenho são algumas características importantes. No mais apresenta interface gráfica e suporte para programas convencionais como editores de vídeo, navegador, jogos, etc.
 
-Exemplo: Debian, Mint, Fedora, Manjaro
+Exemplo: Debian, Mint, Fedora, Manjaro.
 
 ## Interface Gráfica
 
@@ -72,10 +72,10 @@ Exemplo: Debian, Mint, Fedora, Manjaro
 
 Existem muitas interfaces disponíveis no mundo Linux, mas entre as mais famosas podemos encontrar:
 
-- GNOME
-- KDE
-- XFCE
-- Cinnamon
+- GNOME.
+- KDE.
+- XFCE.
+- Cinnamon.
 
 Cada interface apresenta suas devidas diferenças, algumas tem foco mais no desempenho para hardware fracos, outras focam na liberdade de customização, outras em produtividade.
 
@@ -104,13 +104,13 @@ Através do comando `hostnamectl`  podemos ver o sistema operacional e sua vers�
 
 Observação: esse comando funciona em distribuições baseadas em GNU systemd, todavia existem comandos com resultados semelhantes como: `uname -a` , `lsb_release -a`, `cat /etc/*-release`.
 
-Para ver a interface gráfica basta digitar o comando `echo $XDG_CURRENT_DESKTOP`
+Para ver a interface gráfica basta digitar o comando `echo $XDG_CURRENT_DESKTOP`.
 
 ```
 X-Cinnamon
 ```
 
-Para ver informações do hardware de maneira resumida basta utilizar o comando `inxi`
+Para ver informações do hardware de maneira resumida basta utilizar o comando `inxi`.
 
 ```
 CPU: Single Core AMD Ryzen 5 3600 (-UP-) 

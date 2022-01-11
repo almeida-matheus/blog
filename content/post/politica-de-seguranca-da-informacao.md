@@ -19,24 +19,24 @@ Política de Segurança da Informação (PSI) é uma declaração que define o p
 
 Os benefícios:
 
-- Minimizar o risco de perda ou roubo da informação
-- Proteger a organização contra agentes maliciosos internos ou externos
-- Funcionar como um guia para ações de Segurança da Informação e aplicação de boas práticas
-- Apoio proativo para questões legais relacionadas ao uso da informação
-- Promover a conscientização dos empregados a partes interessadas
+- Minimizar o risco de perda ou roubo da informação.
+- Proteger a organização contra agentes maliciosos internos ou externos.
+- Funcionar como um guia para ações de Segurança da Informação e aplicação de boas práticas.
+- Apoio proativo para questões legais relacionadas ao uso da informação.
+- Promover a conscientização dos empregados a partes interessadas.
 
 As necessidades:
 
-- Ser aprovada pela alta direção da organização
-- Prover orientação da direção e apoio para a segurança da informação de acordo com os requisitos do negócio, leis e regulamentações relevantes
-- Ser adequada aos propósitos e requisitos da organização, por isso é importante o apoio da alta direção, pois eles são capazes de assegurar que a politica de segurança estabelecidos são compatíveis com a estratégia corporativa
-- Incluir as etapas para fornecer estrutura para estabelecer os objetivos de segurança da informação
-- Garantir o comprometimento com requisitos aplicáveis, relacionados com segurança da informação e com a melhoria contínua do sistema de gestão do mesmo
-- Atribuir responsabilidades e regras claras para o comportamento de colaboradores e apoio na conformidade com leis e regulamentações
-- Estabelecer a abordagem da organização para gerenciar os objetivos de segurança da informação, ou seja, falar como a segurança da informação deve ser conduzida
-- Atuar como uma proteção proativa da organização
-- Estabelecer regras para o comportamento dos colaboradores
-- Definir e dar força para aplicação de sanções e punições
+- Ser aprovada pela alta direção da organização.
+- Prover orientação da direção e apoio para a segurança da informação de acordo com os requisitos do negócio, leis e regulamentações relevantes.
+- Ser adequada aos propósitos e requisitos da organização, por isso é importante o apoio da alta direção, pois eles são capazes de assegurar que a politica de segurança estabelecidos são compatíveis com a estratégia corporativa.
+- Incluir as etapas para fornecer estrutura para estabelecer os objetivos de segurança da informação.
+- Garantir o comprometimento com requisitos aplicáveis, relacionados com segurança da informação e com a melhoria contínua do sistema de gestão do mesmo.
+- Atribuir responsabilidades e regras claras para o comportamento de colaboradores e apoio na conformidade com leis e regulamentações.
+- Estabelecer a abordagem da organização para gerenciar os objetivos de segurança da informação, ou seja, falar como a segurança da informação deve ser conduzida.
+- Atuar como uma proteção proativa da organização.
+- Estabelecer regras para o comportamento dos colaboradores.
+- Definir e dar força para aplicação de sanções e punições.
 
 ## Pontos importantes
 
@@ -62,7 +62,7 @@ Isso realça o ponto de partida essencial, que é o apoio da alta direção, poi
 
 ## Documentos
 
-Uma politica de segurança da informação organizada e bem estruturada é essencial para ser realmente funcional em uma organização, a ideia é que essa a politica seja algo acessível para que mesmo pessoas mais legaias em segurança possam ler e compreender ao menos os princípios básicos, então o que fizer para poder otimizar vira beneficio pratico ao longo da operação da empresa
+Uma politica de segurança da informação organizada e bem estruturada é essencial para ser realmente funcional em uma organização, a ideia é que essa a politica seja algo acessível para que mesmo pessoas mais leigas em segurança possam ler e compreender ao menos os princípios básicos, então o que fizer para poder otimizar vira beneficio pratico ao longo da operação da empresa.
 
 Nesse artigo proponho a ideia de dividir a politica de segurança da informação em vários documentos, mas essa não é a única maneira de estruturar, isso porque a estrutura hierárquica dos documentos variam conforme o contexto especifico da organização.
 

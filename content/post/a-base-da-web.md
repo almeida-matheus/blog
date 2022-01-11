@@ -17,7 +17,7 @@ O endereço IP (Internet Protocol) é um número de identificação de cada disp
 
 A URL (Uniform Resource Locator) é o endereço virtual de uma aplicação na WEB.
 
-Para melhor exemplificar vamos levar em consideração o site atual: [https://blog.almeidamatheus.me/post/a-base-da-web/](https://blog.almeidamatheus.me/post/a-base-da-web/)
+Para melhor exemplificar vamos levar em consideração o site atual: [https://blog.almeidamatheus.me/post/a-base-da-web/](https://blog.almeidamatheus.me/post/a-base-da-web/).
 
 A URL sempre inicia com o protocolo (https://). Seguida pelo domínio (blog.almeidamatheus.me), o blog é o sub-dominio do almeidamatheus.me. Após isso é especificado o caminho para um recurso (/post/a-base-da-web), o recurso recurso é algo concreto na aplicação que queremos acessar.
 
@@ -69,10 +69,10 @@ Os parâmetros da requisição é encapsulada junto ao corpo (body) da requisiç
 
 Exemplo de uso: formulário para cadastro de usuário.
 
-Outros metódos:
+Outros métodos:
 - **PUT**: É utilizado para alterar o recurso inteiro. Se o recurso já existir, ele deve ser atualizado. Se não existir, pode ser criado.
 - **PATCH**: É utilizado para alterar um dado específico do recurso.
-- **DELETE**: É utiliziado para deletar a informação especificada.
+- **DELETE**: É utilizado para deletar a informação especificada.
 - **HEAD**: Funciona semelhante ao GET, porém, retorna somente os cabeçalhos de uma resposta.
 - **TRACE**: Devolve a mesma requisição que for enviada veja se houve mudança e/ou adições feitas por servidores intermediários.
 - **OPTIONS**: Retorna os métodos HTTP suportados pelo servidor para a URL especificada.
@@ -91,21 +91,21 @@ Essas respostas são agrupadas em cinco classes:
 
 Sendo os mais comuns:
 
-- 200: OK; o pedido está OK
+- 200: OK; o pedido está OK.
 
-- 201: Created; o pedido foi preenchido e um novo recurso foi criado
+- 201: Created; o pedido foi preenchido e um novo recurso foi criado.
 
-- 400: Bad Request; o pedido não pode ser cumprido devido à sintaxe inválida
+- 400: Bad Request; o pedido não pode ser cumprido devido à sintaxe inválida.
 
 - 401: Unauthorized; o cliente deve se autenticar para obter a resposta solicitada.
 
 - 403: Forbidden; o cliente não tem direitos de acesso ao conteúdo portanto o servidor está rejeitando dar a resposta. Diferente do código 401, aqui a identidade do cliente é conhecida.
 
-- 404: Not Found; a página solicitada não pôde ser encontrada
+- 404: Not Found; a página solicitada não pôde ser encontrada.
 
-- 500: Internal Server Error; uma mensagem de erro genérica do lado do servidor
+- 500: Internal Server Error; uma mensagem de erro genérica do lado do servidor.
 
-- 503: Service Unavailable: o servidor não está pronto para manipular a requisição
+- 503: Service Unavailable: o servidor não está pronto para manipular a requisição.
 
 - 504: Gateway Timeout; o servidor está atuando como um gateway e não obtém uma resposta a tempo.
 
@@ -115,13 +115,13 @@ Com todos os conceitos anteriores em mente confira um exemplo de uma requisiçã
 
 ### **HTTP Request / Response**
 
-- O cliente (navegador) entra em contato com um servidor DNS para descobrir o ip e onde o site está hospedado
-- Em seguida, envia um HTTP request (requisição) com o metódo **GET** no header para o servidor web na porta 80
-- O servidor web recebe a requisição e se a página existir o servidor executa a aplicação
-- O servidor retorna um HTTP response (resposta) para o cliente (navegador) com o header e body
-- O cliente (navegador) recebe a resposta e exibe o conteúdo da aplicação requisitada caso o código 200 de sucesso seja retornado
+- O cliente (navegador) entra em contato com um servidor DNS para descobrir o ip e onde o site está hospedado.
+- Em seguida, envia um HTTP request (requisição) com o método **GET** no header para o servidor web na porta 80.
+- O servidor web recebe a requisição e se a página existir o servidor executa a aplicação.
+- O servidor retorna um HTTP response (resposta) para o cliente (navegador) com o header e body.
+- O cliente (navegador) recebe a resposta e exibe o conteúdo da aplicação requisitada caso o código 200 de sucesso seja retornado.
 
-Você pode checar todos os detalhes de uma requisição através da ferramenta de desenvolvedor presente nos navegadores através das teclas F12 ou CTRL + SHIFT + I
+Você pode checar todos os detalhes de uma requisição através da ferramenta de desenvolvedor presente nos navegadores através das teclas <kbd><kbd>F12</kbd></kbd> ou <kbd><kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>I</kbd></kbd>.
 
 Confira a imagem abaixo um exemplo de requisição **HTTP**.
 
