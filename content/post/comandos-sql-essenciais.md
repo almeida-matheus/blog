@@ -105,7 +105,7 @@ CREATE TABLE users (
 );
 ```
 
-Podemos utilizar o CREATE TABLE IF NOT EXISTS, no primeiro bloco não irá criar pois já existe uma tabela com esse nome, já no segundo bloco irá criar uma nova tabela.
+Podemos utilizar o `CREATE TABLE IF NOT EXISTS`, no primeiro bloco não irá criar pois já existe uma tabela com esse nome, já no segundo bloco irá criar uma nova tabela.
 
 ```
 --@block

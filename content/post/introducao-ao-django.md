@@ -18,7 +18,7 @@ A arquitetura do Django possui como padrão de projeto o MTV (Model, Template, 
 - **Template**: Páginas para visualização de dados. Normalmente, é aqui que fica o HTML que será renderizado nos navegadores.
 - **View**: Lógica de negócio. É aqui que determinamos o que irá acontecer em nosso projeto.
 
-É semelhante a arquitetura MVC,o templeta do Django é equivalente a view, já a view do django seria equivalente ao controller.
+É semelhante a arquitetura MVC, o Templeta do Django é equivalente a View, já a view do django seria equivalente ao Controller.
 
 ## Arquivos padrões
 
@@ -86,13 +86,13 @@ Arquivo responsável por definir os modelos da aplicação. Normalmente cada mod
 
 Exemplo de como fica no django:
 
-```
+{{< highlight python >}}
 from django.db import models
 
 class Person(models.Model):
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
-```
+{{< /highlight >}}
 
 Nesse caso ficaria representado como o seguinte comando SQL:
 
@@ -342,7 +342,7 @@ urlpatterns = [
 
 Próximo passo é renderizar um arquivo html, para isso no diretório do app criaremos a pasta `templates` com o arquivo `index.html` .
 
-```
+{{< highlight html >}}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -354,7 +354,7 @@ Próximo passo é renderizar um arquivo html, para isso no diretório do app cri
     <h1>hello world</h1>
 </body>
 </html>
-```
+{{< /highlight >}}
 
 Devemos executar o projeto com o seguinte comando:
 

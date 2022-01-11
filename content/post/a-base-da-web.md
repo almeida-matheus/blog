@@ -121,7 +121,7 @@ Com todos os conceitos anteriores em mente confira um exemplo de uma requisiçã
 - O servidor retorna um HTTP response (resposta) para o cliente (navegador) com o header e body.
 - O cliente (navegador) recebe a resposta e exibe o conteúdo da aplicação requisitada caso o código 200 de sucesso seja retornado.
 
-Você pode checar todos os detalhes de uma requisição através da ferramenta de desenvolvedor presente nos navegadores através das teclas F12 ou CTRL + SHIFT + I.
+Você pode checar todos os detalhes de uma requisição através da ferramenta de desenvolvedor presente nos navegadores através das teclas <kbd><kbd>F12</kbd></kbd> ou <kbd><kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>I</kbd></kbd>.
 
 Confira a imagem abaixo um exemplo de requisição **HTTP**.
 

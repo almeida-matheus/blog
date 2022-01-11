@@ -1,4 +1,4 @@
-baseURL = "https://blog.matheustech.com.br"
+baseURL = "https://blog.almeidamatheus.me"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 author = "Matheus Almeida"
@@ -7,7 +7,7 @@ theme = "hugo-vitae"
 paginate = 20
 enableRobotsTXT = true
 
-copyright = ""
+copyright = "Matheus Almeida"
 
 pygmentsstyle = "colorful"
 pygmentscodefences = true
@@ -103,7 +103,7 @@ weight = 3
 [[params.social]]
 name = "Site"
 icon = "fab fa-odnoklassniki-square"
-url = "https://matheustech.com.br"
+url = "https://almeidamatheus.me/"
 
 [[params.social]]
 name = "Linkedin"
