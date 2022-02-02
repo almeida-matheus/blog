@@ -43,7 +43,7 @@ Grande parte das tecnologias utilizadas durante o trabalho eram novas para mim, 
 
 Apesar de ter sido uma passagem curta foi de bastante valia porque foi minha primeira experiência na área de programação e então pude experienciar na prática como é a trabalhar como desenvolvedor, programar para um sistema em produção,dar manutenção em código dos outros, passar perrengues com o Git, abusar da função debug, etc.
 
-Experiencie a metodologia ágil Scrum na prática, que era bastante difundida, com reuniões pontuais durante a Sprint.
+Experienciei a metodologia ágil Scrum na prática, que era bastante difundida, com reuniões pontuais durante a Sprint.
 
 Tive que aprender também um pouco da área de financias, já que era o time de negócios que passavam as tarefas na Sprint Planning com base nas cobranças de clientes e boa parte do trabalho não era nem programando, mas sim entendendo a regra do negócio, para performar a resolução do problema da melhor maneira possível.
 
