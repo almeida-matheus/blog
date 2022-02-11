@@ -7,7 +7,7 @@ theme = "hugo-vitae"
 paginate = 20
 enableRobotsTXT = true
 
-copyright = "Matheus Almeida"
+copyright = "[Matheus Almeida](https://almeidamatheus.me/) ©"
 
 pygmentsstyle = "colorful"
 pygmentscodefences = true
