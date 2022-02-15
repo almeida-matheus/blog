@@ -31,7 +31,7 @@ googleAnalytics = ""
 	keywords = ["Matheus Almeida Costa","blog matheus tech","blog matheus almeida","site matheus almeida"]
 
 	# Add meta description in head part
-	description = "Matheus Almeida Costa"
+	description = "Blog pessoal sobre Tecnologia da Informação"
 
 	# Add pagetitle to homepage <title> tag
 	pagetitle = "Blog"

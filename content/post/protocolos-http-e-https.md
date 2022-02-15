@@ -72,7 +72,7 @@ O SSL/TLS é essencial sempre que houver informações sensíveis sendo transmit
 
 Vale ressaltar que quando você instala um certificado SSL a transmissão de dados é configurada para ser feita via HTTPS. Ambas as tecnologias andam de mãos dadas e não funcionam uma sem a outra.
 
-Quando o cliente faz uma requisição para o servidor que utiliza o HTTPS acontece as seguintes etapas: 
+Quando o cliente faz uma requisição para o servidor que utiliza o HTTPS acontece as seguintes etapas após requisitar e receber o IP de destino pelo servidor DNS: 
 
 TLS SSL Handshake         
 :--------------------------------------------------:

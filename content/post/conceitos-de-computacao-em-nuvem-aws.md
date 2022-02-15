@@ -65,7 +65,7 @@ Reflete no ambiente com alta disponibilidade:
     - AWS disponibiliza nossas instancia em duas ou mais zonas de disponibilidade.
 - Estratégia de **Disaster Recovery (DR).**
     - Em caso de desastre natural ou em um incidente, o seu negócio não é afetado.
-- Tolerância a falha.
+- Tolerância a falhas.
     - Resiliência: A habilidade de um sistema permanecer em funcionamento, mesmo se um dos seus componentes falhar.
 - Exemplos.
     - Exemplo na AWS: **AWS Load Balancer com multi-az** conforme a demanda e o **Auto Scaling** cria um novo servidor em AZ diferente.
