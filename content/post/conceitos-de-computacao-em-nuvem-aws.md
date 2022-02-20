@@ -61,9 +61,9 @@ Executar aplicação em pelo menos 2 zonas de disponibilidade
 
 Reflete no ambiente com alta disponibilidade:
 
-- Distribuição **Multi AZ.**
+- Distribuição **Multi AZ**.
     - AWS disponibiliza nossas instancia em duas ou mais zonas de disponibilidade.
-- Estratégia de **Disaster Recovery (DR).**
+- Estratégia de **Disaster Recovery (DR)**.
     - Em caso de desastre natural ou em um incidente, o seu negócio não é afetado.
 - Tolerância a falhas.
     - Resiliência: A habilidade de um sistema permanecer em funcionamento, mesmo se um dos seus componentes falhar.
@@ -79,22 +79,71 @@ suas necessidades. Confira os tipos em ordem crescente de abstração:
 
 ### Infraestrutura como serviço (IaaS)
 
-O IaaS contém os componentes básicos da TI na nuvem, oferecendo acesso a recursos de rede, computadores virtuais e armazenamento de dados com alto nível de flexibilidade, gerenciamento e controle sobre os recurso de TI.
+O IaaS contém os componentes básicos da TI na nuvem, oferecendo acesso a recursos de rede, computadores virtuais e armazenamento de dados com alto nível de flexibilidade, gerenciamento e controle sobre os recursos de TI.
 
-Exemplo de serviço: EC2 para gerência instancias de computadores na nuvem para **hospedar** aplicações.
+Prós:
+
+- Controle total sobre os recursos provisionados.
+    - Semelhante a TI tradicional.
+- Ideal para *lift-an-shift*.
+    - Migra uma aplicação de host sem alterar a lógica ou modo de funcionamento.
+
+Contras:
+
+- Necessita de mais gerenciamento e configuração.
+- Requer uma equipe maior especializada.
+
+Exemplos:
+
+- EC2 para gerenciar instancias de computadores na nuvem para **hospedar** aplicações.
 
 ### Plataforma como serviço (PaaS)
 
-Com o PaaS, você não precisa mais gerenciar a infraestrutura (hardware e sistemas operacionais) e pode manter o foco na implantação e no gerenciamento de aplicativos. 
+Com o PaaS, você não precisa mais gerenciar a infraestrutura (hardware e sistemas operacionais) e pode manter o foco na implantação e no gerenciamento de aplicativos.
 
 Não é necessário se preocupar com o gerenciamento dos recursos de infraestrutura de tecnologia, permitindo que o foco do cliente seja, principalmente, no **desenvolvimento** das aplicações que vão ser executados sobre os recursos.
 
-Exemplo de serviço: ElasticBeenStalk.
+Prós:
+
+- Sistema operacional gerenciado.
+- Requer menos gerenciamento e manutenção.
+- Escalabilidade de forma simples.
+- Ambiente de desenvolvimento amigável.
+
+Contras:
+
+- Menor controle sobre os recurso.
+- Customizações limitadas.
+
+Exemplos:
+
+- Hospedar aplicações no servidor do ElasticBeenStalk sem se preocupar em instalar servidor web, banco de dados, etc.
 
 ### Software como serviço (SaaS)
 
 O SaaS oferece uma aplicação completa, executado e gerenciado pelo provedor de
 serviços. Isso implica que o usuário final faz uso de aplicações sem se preocuparem em como foram construídas e implementadas. Diferente dos outros modelos, aqui o usuário não atua sobre a manutenção do serviço ou o gerenciamento da infraestrutura.
+
+Prós:
+
+- Totalmente gerenciado pelo provedor.
+- Configuração e implantação rápida.
+- Sem gerenciamento e manutenção (somente configuração).
+
+Contras:
+
+- Pouco customizável.
+- Não tem controle sobre a infraestrutura.
+- Integração com outros sistemas.
+
+Exemplos:
+
+- Adotar uma forma de comunicação em uma plataforma como o Microsoft Teams.
+- Ao invés de um servidor de e-mail, usar serviços como Gmail e Outlook.
+
+Modelos de computação em nuvem
+:--------------------------------------------------:
+![modelos-de-computação-em-nuvem](https://almeidamatheus.netlify.app/uploads/22/01/modelos-de-computacao-em-nuvem.jpg)
 
 # Modelos de implantação de computação em nuvem
 
@@ -102,13 +151,34 @@ serviços. Isso implica que o usuário final faz uso de aplicações sem se preo
 
 Uma aplicação baseada na nuvem é uma aplicação totalmente implantada na nuvem.
 
-### **Abordagem híbrida**
+Características da nuvem pública:
 
-Uma implantação híbrida é uma maneira de conectar infraestrutura e aplicações entre recursos baseados na nuvem e recursos existentes que não se encontram na nuvem. O objetivo é estender e aumentar a infraestrutura de uma organização na nuvem e ao mesmo tempo conectar os recursos da nuvem ao sistema interno.
+- Infraestrutura compartilhada entre os clientes.
+- Mais barato (paga pelo o que usar).
+- Escalabilidade sob demanda.
+- Sem manutenção de hardware.
 
 ### **On-premises**
 
 Este modelo de implantação é igual à infraestrutura de TI tradicional. A implantação de recursos *on-premises* com o uso de ferramentas de gerenciamento de recursos e virtualização de aplicações para fornecer recursos. Recursos esses que em grande maioria são dedicados, isto é, para uma demanda específica.  
+
+Características da nuvem privada:
+
+- Infraestrutura exclusiva.
+- Maior customização.
+- Requisitos de compliance.
+
+
+### **Abordagem híbrida**
+
+Uma implantação híbrida é uma maneira de conectar infraestrutura e aplicações entre recursos baseados na nuvem e recursos existentes que não se encontram na nuvem. O objetivo é estender e aumentar a infraestrutura de uma organização na nuvem e ao mesmo tempo conectar os recursos da nuvem ao sistema interno.
+
+Características nuvem híbrida:
+
+- Combinação de nuvem pública com privada.
+- Permite balancear o custo com customização.
+- Permite migração gradual para nuvem.
+- Utilizado para estender um datacenter *on-premises* (DR e backups).
 
 # Infraestrutura global
 

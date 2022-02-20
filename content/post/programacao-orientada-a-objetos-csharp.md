@@ -10,6 +10,7 @@ categoria = [
 +++
 
 ## Definição
+
 Programação orientada orientada a objeto (POO), do inglês Object Oriented Programming (OOP), é um paradigma aplicado na programação que consiste na interação entre diversas unidades chamadas de objetos.
 
 **Classe:** Uma classe define os membros e a estrutura que os objetos deste tipo de classe devem seguir.
@@ -25,12 +26,15 @@ Um programa pode criar vários objetos da mesma classe.
 Observação: Neste artigo irei utilizar a linguagem C# como exemplo, mas a essência é a mesma em outras linguagens, só mudando um a sintaxe.
 
 ## Benefícios
+
 - **Reutilização de código:** Com POO, não precisamos repetir o código de criação dos campos basta reutilizar a classe.
 
 - **Organização do código:** Encontrar e organizar o código se torna muito mais simples.
 
 - **Manutenção**: Com o código centralizado nas classes as manutenções e alterações para novos comportamentos são pontuais.
+
 ## Os 4 pilares
+
 A programação orientada a objetos pode ser definida por quatro pilares principais, sendo eles herança, encapsulamento, abstração e polimorfismo.
 
 - **Encapsulamento**: Agrupar variável e funções em pequenas e reutilizáveis partes do código.
@@ -40,6 +44,7 @@ A programação orientada a objetos pode ser definida por quatro pilares princip
 - **Herança**: Reaproveitar o código, para trazer características de um objeto pai para um filho.
 
 - **Polimorfismo**: Reutilizar a mesma propriedade do objeto pai, porém com algumas alterações.
+
 ### Abstração
 
 Abstração é um conceito que oculta os detalhes da implementação e exibe apenas a funcionalidade para o usuário.
@@ -47,8 +52,11 @@ Abstração é um conceito que oculta os detalhes da implementação e exibe ape
 Dessa forma, reduz a complexidade do código simplificando e focando no que realmente é importante para a aplicação específica mostrando somente aquilo que é relevante necessário.
 
 Exemplo na vida real: Ao clicar no interruptor você quer que a luz acenda ou apaga, não precisa saber o caminho da energia elétrica para acontecer essa ação, portanto isso é uma abstração.
+
 ### Encapsulamento
+
 É um princípio que consiste principalmente em agrupar dados (variáveis e métodos) que fazem sentido estar juntos e também em ocultar os detalhes de implementação de um componente dentro de uma classe, expondo apenas operações seguras e que o mantenha em um estado consistente.
+
 #### Tipos de encapsulamento
 
 - **Público:** Indica que todos as outras classes tem acesso a esse atributo, função ou classe.
@@ -68,6 +76,7 @@ Em C# os dados do objeto são expostos por meio de getter e setters de proprieda
 Para garantir a obrigatoriedade de que o objeto receba dados dependências no momento de sua instanciação devemos util zar o construtor.
 
 - **Construtor:** Método de construção de atributos necessários quando o Objeto é instanciado.
+
 #### Ordem sugerida para implementação de membros
 
 1. Atributos privados
@@ -89,6 +98,7 @@ Temos uma propriedade customizada (`Modelo`), que retorna o `modelo` e também m
 Temos também a função `Abastecer` que recebe como parâmetro o valor, e esse valor utilizamos para calcular quantos litros de tanque será enchido, considerando que o valor do litro é 2 reais.
 
 Vale ressaltar que toda vez que essa função é invocada, é acrescentado mais um no valor do membro estático `VeiculosAbastecidos`, como trata-se de uma operação estática, sempre que obter o seu valor, ele irá sempre ter o mesmo resultado independente de objeto, já que não é atrelado especificamente a um objeto.
+
 ### Herança
 
 Herança é um conceito que possibilita uma classe herda as propriedades e métodos de outra classe, dessa forma você pode extender e criar variações de uma classe semelhante e relacionada, sendo assim evita a duplicação de código.
