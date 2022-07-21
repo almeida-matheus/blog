@@ -3,7 +3,7 @@ title = "Protocolos HTTP e HTTPS"
 date = 2021-01-02T23:56:58-03:00
 draft = false
 author = "Matheus Almeida Costa"
-description = "Entenda o que HTTP e HTTPS e quais são as diferenças"
+description = "Entenda o que é HTTP e HTTPS e quais são suas diferenças"
 categoria = [
     "Redes",
 ]
@@ -74,7 +74,7 @@ Vale ressaltar que quando você instala um certificado SSL a transmissão de dad
 
 Quando o cliente faz uma requisição para o servidor que utiliza o HTTPS acontece as seguintes etapas após requisitar e receber o IP de destino pelo servidor DNS: 
 
-TLS SSL Handshake         
+TLS SSL Handshake
 :--------------------------------------------------:
 ![tls-ssl-handshake](https://almeidamatheus.netlify.app/uploads/21/01/web-tls-ssl-handshake.png)
 

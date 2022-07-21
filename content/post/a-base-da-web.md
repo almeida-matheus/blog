@@ -11,7 +11,7 @@ categoria = [
 
 ## IP
 
-O endereço IP (Internet Protocol) é um número de identificação de cada dispositivo que está conectado a uma rede.
+O endereço IP (Internet Protocol) é um número de identificação de cada dispositivo que está conectado a uma rede pelos pacotes de dados de origem e destino numa conexão.
 
 ## URL
 
@@ -47,7 +47,7 @@ De maneira resumido HTTP e HTTPS são protocolos que definem as regras da comuni
 
 Uma comunicação com HTTP sempre é iniciada pelo cliente que manda uma requisição ao servidor esperando por uma resposta.
 
-Para saber mais sobre esses protocolos confira [essa postagem](https://blog.matheustech.com.br/post/protocolos-http-e-https/).
+Para saber mais sobre esses protocolos confira [essa postagem](https://blog.almeidamatheus.me/post/protocolos-http-e-https/).
 
 
 ## **Métodos de requisição HTTP**
