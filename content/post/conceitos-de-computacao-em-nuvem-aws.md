@@ -19,17 +19,17 @@ Os serviços de nuvem estão em um datacenter fora do seu ambiente local (*on-pr
 
 # As Vantangens da computação em nuvem
 
-**Troque as despesas de capital por despesas variáveis:** Em vez de ter de investir em datacenters e servidores antes de saber como vai usá-los, você pode usar a computação em nuvem e pagar somente pelos recursos consumidos.
-    - CAPEX (*capital expenditure*) e que diz respeito às despesas ou investimentos em bens de capital. Já OPEX (*operational expenditure*) refere-se às despesas operacionais. Com computação em nuvem você aumenta o OPEX em deterimento do CAPEX já que paga se pelo uso e não pela propriedade do bem físico.
-**Beneficie-se de grandes economias de escala:** Quanto mais pessoas utilizam a nuvem, mais os provedores como a AWS podem alcançar maior economia de escala. O que se traduz em preços menores de pagamento conforme o uso.
-**Pare de fazer suposições sobre capacidade:** Elimine as suposições ao determinar sua necessidade de capacidade de infraestrutura. Ao tomar uma decisão sobre a capacidade antes da implantação da aplicação, muitas vezes você acaba lidando com a ociosidade de recursos caros ou com limites de capacidade. Com a computação em nuvem você pode acessar o máximo ou o mínimo de capacidade possível, além de aumentar e reduzir a escala na vertical conforme a necessidade, com apenas alguns minutos de aviso prévio.
+- **Troque as despesas de capital por despesas variáveis:** Em vez de ter de investir em datacenters e servidores antes de saber como vai usá-los, você pode usar a computação em nuvem e pagar somente pelos recursos consumidos.
+    - CAPEX (*capital expenditure*) são às despesas ou investimentos em bens de capital. Já OPEX (*operational expenditure*) refere-se às despesas operacionais. Com computação em nuvem você aumenta o OPEX em deterimento do CAPEX já que paga se pelo uso e não pela propriedade do bem físico.
+- **Beneficie-se de grandes economias de escala:** Quanto mais pessoas utilizam a nuvem, mais os provedores como a AWS podem alcançar maior economia de escala. O que se traduz em preços menores de pagamento conforme o uso.
+- **Pare de fazer suposições sobre capacidade:** Elimine as suposições ao determinar sua necessidade de capacidade de infraestrutura. Ao tomar uma decisão sobre a capacidade antes da implantação da aplicação, muitas vezes você acaba lidando com a ociosidade de recursos caros ou com limites de capacidade. Com a computação em nuvem você pode acessar o máximo ou o mínimo de capacidade possível, além de aumentar e reduzir a escala na vertical conforme a necessidade, com apenas alguns minutos de aviso prévio.
     - Aumenta ou diminui seus recursos facilmente conforme a demanda.
     - AWS oferece **baixo custo variável**, já que possui o modelo "*pay-as-you-go*", permitindo utilizar os serviços da Nuvem **sem precisar pagar adiantado** ou assinar algum termo de compromisso de uso.
-**Aumente a velocidade e a agilidade:** No ambiente de computação em nuvem, novos recursos de TI estão ao alcance com apenas um clique, o que significa que o tempo necessário para disponibilizar esses recursos aos desenvolvedores é reduzido de semanas para apenas minutos. Isso aumenta significativamente a agilidade da organização porque o custo e tempo necessários para experimentar e desenvolver é consideravelmente mais baixo.
+- **Aumente a velocidade e a agilidade:** No ambiente de computação em nuvem, novos recursos de TI estão ao alcance com apenas um clique, o que significa que o tempo necessário para disponibilizar esses recursos aos desenvolvedores é reduzido de semanas para apenas minutos. Isso aumenta significativamente a agilidade da organização porque o custo e tempo necessários para experimentar e desenvolver é consideravelmente mais baixo.
     - Menos tempo da equipe é necessário para lançar novas cargas de trabalho. e Maior produtividade para as equipes de desenvolvimento de aplicativos.
-**Pare de investir dinheiro em administração e manutenção de datacenters:** Concentre-se em projetos que diferenciam seus negócios, não na infraestrutura. A computação em nuvem permite que você tenha como foco seus próprios clientes, em vez de centrar a atenção no pesado trabalho de montagem em rack, empilhamento e ativação dos servidores.
+- **Pare de investir dinheiro em administração e manutenção de datacenters:** Concentre-se em projetos que diferenciam seus negócios, não na infraestrutura. A computação em nuvem permite que você tenha como foco seus próprios clientes, em vez de centrar a atenção no pesado trabalho de montagem em rack, empilhamento e ativação dos servidores.
     - Um **recurso gerenciado** é quando um serviço ou algumas configurações da camada anterior de configuração não é administrada pelo usuário e sim pela própria provedora.
-**Torne-se global em minutos:** Implante facilmente sua aplicação em várias regiões ao redor do mundo com apenas alguns cliques. Isso significa que você pode fornecer menor latência e melhor experiência aos seus clientes a um custo mínimo.
+- **Torne-se global em minutos:** Implante facilmente sua aplicação em várias regiões ao redor do mundo com apenas alguns cliques. Isso significa que você pode fornecer menor latência e melhor experiência aos seus clientes a um custo mínimo.
     - Você não precisa mais esperar a compra de um novo servidor para melhorar seu desempenho. Na Nuvem você escolhe um serviço, configura e já começa a usar. Enquanto que em um ambiente *on-premises* você precisa aguardar o hardware chegar na sua empresa, na Nuvem ele está literalmente na distância de alguns cliques.
 
 # Conceitos da nuvem
@@ -38,20 +38,18 @@ Os serviços de nuvem estão em um datacenter fora do seu ambiente local (*on-pr
 
 ### **Vertical**
 
-Capacidade de um sistema crescer seu escopo, seja em tamanho, capacidade ou poder computacional (desempenho) do recurso para suportar mais cargas.
-    - Maior poder.
-    - Aumentar ⇒ Scale up e Diminuir ⇒ Scale down.
-Exemplos.
+- Capacidade de um sistema crescer seu escopo, seja em tamanho, capacidade ou poder computacional (desempenho) do recurso para suportar mais cargas.
+    - Scale up (Aumentar) e Scale down (Diminuir).
+- Exemplos.
     - AWS: Atualizar instâcia t2.micro para t2.large.
     - Vida real: Subir o cargo do atendente.
 
-### **Horizontal  ⇒ Elasticidade**
+### **Horizontal - Elasticidade**
 
-Elasticidade: A capacidade de um sistema crescer e diminuir com base na demanda.
-    - Adicionar quantidade.
-        - Com base tempo de uso ou volume de uso (*cores*, armazenamento, *throughput*).
-    - Aumentar ⇒ Scale out e Diminuir ⇒ Scale in.
-Exemplos.
+- Elasticidade: A capacidade de um sistema crescer e diminuir com base na demanda.
+    - Adicionar quantidade com base tempo de uso ou volume de uso (*cores*, armazenamento, *throughput*).
+    - Scale out (Aumentar) e Scale in (Diminuir).
+- Exemplos.
     - AWS: Aumentar a quantidade da instancia com o AWS Auto Scaling Group.
     - Vida real: Contratar mais atendentes.
 
@@ -60,15 +58,14 @@ Exemplos.
 Executar aplicação em pelo menos 2 zonas de disponibilidade
 
 Reflete no ambiente com alta disponibilidade:
-
-Distribuição **Multi AZ**.
-    - AWS disponibiliza nossas instancia em duas ou mais zonas de disponibilidade.
-Estratégia de **Disaster Recovery (DR)**.
+- Distribuição **Multi AZ**.
+    - Criar instâncias em duas ou mais zonas de disponibilidades.
+- Estratégia de **Disaster Recovery (DR)**.
     - Em caso de desastre natural ou em um incidente, o seu negócio não é afetado.
-Tolerância a falhas.
+- Tolerância a falhas.
     - Resiliência: A habilidade de um sistema permanecer em funcionamento, mesmo se um dos seus componentes falhar.
-Exemplos.
-    - AWS: **AWS Load Balancer com multi-az** conforme a demanda e o **Auto Scaling** cria um novo servidor em AZ diferente.
+- Exemplos.
+    - AWS: **AWS Load Balancer multi-az** que distribui as requisições entre servidores de diferentes AZ conforme a demanda e o **Auto Scali multi-az** para criar um novo servidor em uma AZ diferente.
     - Vida real: Ter 2 *call centers* ao invés de 1, caso 1 fique sem energia.
 
 # Modelos de computação em nuvem
@@ -203,7 +200,7 @@ Exemplo de região: `us-east-1a`.
 
 ### Pontos de presença (PoP)
 
-Também conhecido como Edge Locations (Zona de borda), trata-se de uma infraestrutura de servidores, localizado próxima de uma ZD, que armazena os dados mais solicitados no cache, para entregar com menor latência uma requisição de consulta acelerando a distribuição de conteúdo (CDN).
+Também conhecido como Edge Locations (Zona de borda), trata-se de uma infraestrutura de servidores que armazena os dados mais solicitados no cache, para entregar com menor latência uma requisição de consulta acelerando a distribuição de conteúdo (CDN).
 
 Serve como cache dos seus dados, entregando requisições de leituras em menor latência quando o cliente não está proximo da região que você disponibilizou o serviço.
 

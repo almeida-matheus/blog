@@ -11,7 +11,7 @@ categoria = [
 
 ## IP
 
-O endereço IP (Internet Protocol) é um número de identificação de cada dispositivo que está conectado a uma rede pelos pacotes de dados de origem e destino numa conexão.
+O endereço IP (Internet Protocol) é um número que indentifica cada dispositivo que está conectado a uma rede pelos pacotes de dados de origem e destino numa conexão.
 
 ## URL
 
