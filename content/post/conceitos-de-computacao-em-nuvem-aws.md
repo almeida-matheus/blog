@@ -55,7 +55,7 @@ Os serviços de nuvem estão em um datacenter fora do seu ambiente local (*on-pr
 
 ## Alta disponibilidade
 
-Executar aplicação em pelo menos 2 zonas de disponibilidade
+Alta disponibilidade é garantir que uma aplicação sempre fique disponível mesmo que ocorra alguma falha.
 
 Reflete no ambiente com alta disponibilidade:
 - Distribuição **Multi AZ**.
