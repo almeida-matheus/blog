@@ -7,7 +7,7 @@ theme = "hugo-vitae"
 paginate = 20
 enableRobotsTXT = true
 
-copyright = "[Matheus Almeida](https://almeidamatheus.me/) ©"
+copyright = "[Matheus Almeida](https://almeidamatheus.me/) © 2020 – 2023"
 
 pygmentsstyle = "colorful"
 pygmentscodefences = true
@@ -103,7 +103,7 @@ weight = 3
 [[params.social]]
 name = "Site"
 icon = "fab fa-odnoklassniki-square"
-url = "https://almeidamatheus.me/"
+url = "https://almeidamatheus.me"
 
 [[params.social]]
 name = "Linkedin"
@@ -114,3 +114,8 @@ url = "https://www.linkedin.com/in/matheus-almeida-costa"
 name = "Github"
 icon = "fab fa-github-square"
 url = "https://github.com/almeida-matheus"
+
+[[params.social]]
+name = "Youtube"
+icon = "fab fa-youtube"
+url = "https://youtube.com/c/matheusalmeidac"

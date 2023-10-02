@@ -1,5 +1,5 @@
 +++
-title = "O que é e como utilizar o aws-vault para gerenciar credenciais da AWS"
+title = "O que é e como utilizar o aws-vault para gerenciar credenciais AWS"
 date = 2022-03-20T00:47:11-03:00
 draft = false
 author = "Matheus Almeida Costa"
@@ -9,9 +9,9 @@ categoria = [
 ]
 +++
 
+![AWS — Computação em Nuvem](https://miro.medium.com/v2/format:webp/1*d2PGRzWIbQbFFq2kmlzFqQ.png)
 
-
-Nesse artigo irei abordar os principais pontos da ferramenta aws-vault, que é utilizada para gerenciar credenciais da AWS de forma segura.
+Nesse artigo irei abordar os principais pontos da ferramenta [aws-vault](https://github.com/99designs/aws-vault), que é utilizada para gerenciar credenciais da AWS de forma segura.
 
 Para melhor compreensão sobre esse assunto é imprescindível o conhecimento da configuração e utilização das credenciais AWS com AWS CLI da forma tradicional, caso você não tenha recomendo conferir o seguinte artigo:
 
@@ -214,7 +214,7 @@ Quando você faz uma operação exec no aws-vault é exigido uma senha, ìsso se
 
 ## Rotação de credencial
 
-Rotacionar as credenciais de acesso programático (access key e secret key) periodicamente é uma boa prática de segurança, por que se por algum motivo essas credenciais vazarem não terá problema porque já foram desativadas.
+Rotacionar as credenciais de acesso programático (*access key* e *secret key*) periodicamente é uma boa prática de segurança, por que se por algum motivo essas credenciais vazarem não terá problema porque já foram desativadas.
 
 Para rotacionar as credenciais no método padrão da AWS você deve ir no Console AWS e no serviço IAM você desativa e remove as credenciais antigas e então cria a nova e adicionar através do comando `aws configure`.
 
@@ -241,4 +241,4 @@ Se você tem interesse nos assuntos mencionados nesse artigo sinta-se a vontade 
 
 Até a próxima!
 
-Este artigo foi originalmente publicado no [Medium](https://medium.com/@almeida-matheus/o-que-%C3%A9-e-como-utilizar-o-aws-vault-para-gerenciar-credenciais-da-aws-d8e73f669e8) :).
+Este artigo foi originalmente publicado no [Medium](https://almeida-matheus.medium.com/o-que-%C3%A9-e-como-utilizar-o-aws-vault-para-gerenciar-credenciais-da-aws-d8e73f669e8) :).

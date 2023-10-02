@@ -9,8 +9,6 @@ categoria = [
 ]
 +++
 
----
-
 ![AWS — Computação em Nuvem](https://cdn-images-1.medium.com/v2/resize:fit:800/1*GAO5BQVLxF49G68d2csZfQ.png)
 
 
@@ -380,7 +378,7 @@ Ao utilizar o comando `aws sts get-caller-identity` você verá o arn da role qu
 
 Como vimos, tanto a chamada de API **GetSessionToken** quanto a **AssumeRole** geram credenciais temporárias, que por padrão expiram em 1 hora.
 
-Existe um argumento no qual podemos alterar o tempo de duração dessas credenciais, esse argumento é o --duration-seconds em que devemos passar logo em seguida os segundos de duração.
+Existe um argumento no qual podemos alterar o tempo de duração dessas credenciais, esse argumento é o `--duration-seconds` em que devemos passar logo em seguida os segundos de duração.
 
 Confira um exemplo utilizando o **AssumeRole**:
 ```
@@ -393,7 +391,7 @@ Esse tempo em segundos equivale a 12 horas, que é o tempo máximo permitido.
 
 Vale ressaltar que por padrão as *roles* só permitem serem assumidas por no máximo uma hora, mas isso pode ser alterado conforme o campo "Maximum session duration" que está presente em cada *role*.
 
-![AWS Management Console - Edição da duração da sessão de uma role](https://cdn-images-1.medium.com/v2/resize:fit:800/1*akqV_CeiaoxAiU8nrPPeEQ.png)
+![AWS Management Console - Edição da duração da sessão de uma role](https://cdn-images-1.medium.com/v2/1*akqV_CeiaoxAiU8nrPPeEQ.png)
 
 # Conclusão
 
