@@ -241,4 +241,4 @@ Se você tem interesse nos assuntos mencionados nesse artigo sinta-se a vontade 
 
 Até a próxima!
 
-Este artigo foi originalmente publicado no [Medium](https://almeida-matheus.medium.com/o-que-%C3%A9-e-como-utilizar-o-aws-vault-para-gerenciar-credenciais-da-aws-d8e73f669e8) :).
+Este artigo foi originalmente publicado no [Medium](https://almeida-matheus.medium.com/o-que-%C3%A9-e-como-utilizar-o-aws-vault-para-gerenciar-credenciais-da-aws-d8e73f669e8).

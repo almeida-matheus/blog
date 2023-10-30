@@ -405,4 +405,4 @@ Se você tem interesse nos assuntos mencionados nesse artigo sinta-se a vontade 
 
 Até a próxima!
 
-Este artigo foi originalmente publicado no [Medium](https://almeida-matheus.medium.com/como-gerar-configurar-e-utilizar-credencias-aws-com-aws-cli-84b56403e79e) :).
+Este artigo foi originalmente publicado no [Medium](https://almeida-matheus.medium.com/como-gerar-configurar-e-utilizar-credencias-aws-com-aws-cli-84b56403e79e).
