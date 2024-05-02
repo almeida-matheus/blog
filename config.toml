@@ -4,10 +4,10 @@ defaultContentLanguage = "en"
 author = "Matheus Almeida"
 title = "Matheus Almeida"
 theme = "hugo-vitae"
-paginate = 20
+paginate = 30
 enableRobotsTXT = true
 
-copyright = "[Matheus Almeida](https://almeidamatheus.me/) © 2020 – 2023"
+copyright = "[Matheus Almeida Costa](https://almeidamatheus.me/) © 2020 – 2024"
 
 pygmentsstyle = "colorful"
 pygmentscodefences = true
