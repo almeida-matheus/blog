@@ -1,6 +1,6 @@
 +++
 title = "Comandos úteis para manipulação de certificados SSL"
-date = 2024-03-30T00:47:11-03:00
+date = 2024-04-30T00:47:11-03:00
 draft = false
 author = "Matheus Almeida Costa"
 description = "Gerencie certificados digitais através das ferramentas openssl e keytool"

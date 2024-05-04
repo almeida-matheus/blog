@@ -3,7 +3,7 @@ title = "Tipos de formatos de certificados SSL"
 date = 2024-04-30T00:48:11-03:00
 draft = false
 author = "Matheus Almeida Costa"
-description = "Confira ops diferentes tipos de formatos de certificados digitais e suas características e usos específico"
+description = "Confira ps diferentes tipos de formatos de certificados digitais e suas características e usos específico"
 categoria = [
     "Segurança",
 ]
